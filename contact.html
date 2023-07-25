@@ -5,31 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contact</title>
-    <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/main-52be2324.js"></script>
-    <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/main-f37c4c74.css">
+    <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/main-98ad64af.js"></script>
+    <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/main-b71fbb87.css">
   </head>
   <body>
     <div class="d-flex justify-content-center">
-    <header class="topbar w-lg-75 w-xl-50 w-xxl-45 rounded-pill">
+    <header class="topbar w-lg-75 w-xl-50 w-xxl-45 rounded-pill position-fixed">
         <div class="d-flex align-items-center justify-content-between">
             <a href="#"><img src="/HayMo-Dog-Hotel/assets/Logo-0e921db4.png" alt="Logo" class="topbar-logo"></a>
-            <ul class="menu d-flex ps-0 mb-0">
-                <li class="menu-item menu-p">
-                    <a href="#" class="menu-link active">首頁</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-link">關於我們</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-link">服務項目</a>
-                </li>
-                <li class="menu-item">
-                    <a href="#" class="menu-link">常見問題</a>
-                </li>
-                <li class="menu-item d-md-none">
-                    <a href="#" class="menu-link">線上預約</a>
-                </li>
-            </ul>
+            <!-- 768px以上的menu -->
+            <div class="d-none d-md-block">
+                <ul class="menu d-flex ps-0 mb-0">
+                    <li class="menu-item">
+                        <a href="#" class="menu-link active">首頁</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">關於我們</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">服務項目</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">常見問題</a>
+                    </li>
+                    <li class="menu-item d-md-none">
+                        <a href="#" class="menu-link">線上預約</a>
+                    </li>
+                </ul>
+            </div>
             <ul class="d-flex align-items-center ps-0 mb-0">
                 <li>
                     <a href="#" class="reserve-wrap d-flex align-items-center justify-content-center">
@@ -44,6 +47,32 @@
             </ul>
         </div>
     </header>
+
+    <!-- 768px以下展開的menu -->
+    <div class="d-block d-md-none yyy">
+        <ul class="menu d-flex flex-column ps-0 mb-0">
+            <li class="menu-closedHam">
+                <div class="closedHam">
+                    <div class="closedHam-line"></div>
+                </div>
+            </li>
+            <li class="menu-item menu-p">
+                <a href="#" class="menu-link active">首頁</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">關於我們</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">服務項目</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">常見問題</a>
+            </li>
+            <li class="menu-item d-md-none">
+                <a href="#" class="menu-link">線上預約</a>
+            </li>
+        </ul>
+    </div>
 </div>    <h1>我是contact</h1>
     <footer>
     <div class="container">
@@ -59,14 +88,14 @@
                     <li><a href="#"><i class="bi bi-instagram fs-4 icon"></i></a></li>
                 </ul>
                 <div>
-                    <div class="contact-info d-flex justify-content-between">
-                        <h3 class="h5 text-white fw-bold mb-3">聯絡資訊</h3>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h3 class="h5 text-white fw-bold mb-0">聯絡資訊</h3>
                         <h3 class="h5 fw-bold mb-0"><a href="#" class="cms-link">後台管理<span><i
                                         class="bi bi-arrow-right-short fs-4 ms-3"></i></span></a></h3>
                     </div>
-                    <p class="text-white mb-1">電話<a href="#" class="ms-4 info-link">02-2618-0000</a></p>
-                    <p class="text-white mb-1">地址<a href="#" class="ms-4 info-link">新北市八里區星光里星光大道</a></p>
-                    <p class="text-white mb-0">時間<span class="ms-4">週一至週日 09：00 ~21：00</span></p>
+                    <p class="text-white mb-1">電話<a href="#" class="contact-info link">02-2618-0000</a></p>
+                    <p class="text-white mb-1">地址<a href="#" class="contact-info link">新北市八里區星光里星光大道</a></p>
+                    <p class="text-white mb-0">時間<span class="contact-info">週一至週日 09：00 ~21：00</span></p>
                 </div>
             </div>
             <div class="col-xl-3 col-xxl-6">
