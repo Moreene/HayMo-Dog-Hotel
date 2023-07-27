@@ -7,20 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>嘿毛寵物旅館</title>
   <link rel="icon" href="/HayMo-Dog-Hotel/assets/logo-09125146.ico" type="image/x-icon">
-  <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/main-3fc8fe25.js"></script>
-  <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/main-78fdf420.css">
+  <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/main-fb5b0a75.js"></script>
+  <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/main-af7ff88b.css">
 </head>
 
 <body>
   <div class="d-flex justify-content-center">
     <header class="topbar w-lg-75 w-xl-50 w-xxl-45 rounded-pill position-fixed">
-        <div class="d-flex align-items-center justify-content-between">
-            <a href="#"><img src="/HayMo-Dog-Hotel/assets/Logo-0e921db4.png" alt="Logo" class="topbar-logo"></a>
+        <div class="d-flex align-items-center justify-content-between try">
+            <a href="../pages/index.html"><img src="/HayMo-Dog-Hotel/assets/Logo-0e921db4.png" alt="Logo" class="topbar-logo"></a>
             <!-- 768px以上的menu -->
             <div class="d-none d-md-block">
-                <ul class="menu d-flex ps-0 mb-0">
+                <ul class="table-menu d-flex ps-0 mb-0">
                     <li class="menu-item">
-                        <a href="#" class="menu-link active">首頁</a>
+                        <a href="../pages/index.html" class="menu-link active">首頁</a>
                     </li>
                     <li class="menu-item">
                         <a href="#" class="menu-link">關於我們</a>
@@ -31,14 +31,11 @@
                     <li class="menu-item">
                         <a href="#" class="menu-link">常見問題</a>
                     </li>
-                    <li class="menu-item d-md-none">
-                        <a href="#" class="menu-link">線上預約</a>
-                    </li>
                 </ul>
             </div>
             <ul class="d-flex align-items-center ps-0 mb-0">
                 <li>
-                    <a href="#" class="reserve-wrap d-flex align-items-center justify-content-center">
+                    <a href="../pages/reverse.html" class="reserve-link d-flex align-items-center justify-content-center">
                         <p class="reserve-text mb-0">線上<span class="d-md-block">預約</span></p>
                     </a>
                 </li>
@@ -52,7 +49,7 @@
     </header>
 
     <!-- 768px以下展開的menu -->
-    <div class="d-block d-md-none yyy">
+    <div class="d-block d-md-none mobile-menu">
         <ul class="menu d-flex flex-column ps-0 mb-0">
             <li class="menu-closedHam">
                 <div class="closedHam">
@@ -60,7 +57,7 @@
                 </div>
             </li>
             <li class="menu-item menu-p">
-                <a href="#" class="menu-link active">首頁</a>
+                <a href="../pages/index.html" class="menu-link">首頁</a>
             </li>
             <li class="menu-item">
                 <a href="#" class="menu-link">關於我們</a>
@@ -72,7 +69,7 @@
                 <a href="#" class="menu-link">常見問題</a>
             </li>
             <li class="menu-item d-md-none">
-                <a href="#" class="menu-link">線上預約</a>
+                <a href="../pages/reverse.html" class="menu-link">線上預約</a>
             </li>
         </ul>
     </div>
@@ -150,10 +147,14 @@
             <p class="text-black-80 mb-4">在這裡，我們盡全力讓他們得到最好的照顧</p>
           </div>
           <div class="d-flex flex-wrap justify-content-betwen">
-            <p class="w-50 fw-bold fs-4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKlSURBVHgBxVVBbtpQEJ35NotKLMiuUkhLTwA9QIV9gjYnSHKCxqCsY9YtmBskOUHaE9hpD1BygiKVSFlaapb4T2f8wTbGBIpUdSRL9vef9978mfkD8I8Nd93YDAMHFLVB0wGAimauF+3it5XgZRi0bKWveKtTXCeAaaLRfXS96V8TGLXJB/7d5qfDSw1+YtJwI/+VgvdM0BISBJoy3f1cW+MqsjWC5vfRJWjwS8uTJ1Ybu14sH60waMwVhfzaWdmlwJ+96w02EhyGw1NUeJV+aBqwuom8/gYrWoIvTY6uBkmHgGICi/3gRNZJk/fg9sfVBHejnyihlzbtYgVx8azbO1gjOAyDDir6wQvTX93eG9jDcoH49sH10uhVgUkSKdURw55mEs4YFr1erqUEcp6kyJw90U4EciSs+KSSiGDc4ELICGoq8SU0Bo+eSB1vA5dKk/Nmn+viuq1T34lg1UGfZwQaVNeIV165WspKV8qYK624dyq+OvFSLIWpj52GJOrZlolZCXdRtgzcMqA5+Mzt++X9M/ciat6NMsxlkmOjNuiUHTKVArwFvIgh1ZgTLK4AVDpYJidXxEDFo3gGXHxxUSyaMMoIbEDfMKJTV/oW1sLu+9x8Z1zCp5vAxRa+HcFKCAYGG0xyjsLPHt9it9IIVcadfQ1bDU0v6eTs0b2YZhGkIYGVLhBiC/Y0yprVzipR5QrTCool+682NNBzxlX2UXzleIrVaK8okBtUYaC5gY6+DR1K1E3CqljZpHzXS0JfADjybtky6UyFsa9f3Lc+D8KhDwovS8sr80DA61XzoKLCKiea3E0W0DkitZFzkk8v/dXsUHKE6ZTj9p8Q4T1C8kWarIy100yusVpadGYxqrnG471mcpU1w08OK3fMl46q1P4X+wNUBElixvMBgAAAAABJRU5ErkJggg==" alt="打勾圖案" class="me-2 me-xl-3">專業美容</p>
-            <p class="w-50 fw-bold fs-4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKlSURBVHgBxVVBbtpQEJ35NotKLMiuUkhLTwA9QIV9gjYnSHKCxqCsY9YtmBskOUHaE9hpD1BygiKVSFlaapb4T2f8wTbGBIpUdSRL9vef9978mfkD8I8Nd93YDAMHFLVB0wGAimauF+3it5XgZRi0bKWveKtTXCeAaaLRfXS96V8TGLXJB/7d5qfDSw1+YtJwI/+VgvdM0BISBJoy3f1cW+MqsjWC5vfRJWjwS8uTJ1Ybu14sH60waMwVhfzaWdmlwJ+96w02EhyGw1NUeJV+aBqwuom8/gYrWoIvTY6uBkmHgGICi/3gRNZJk/fg9sfVBHejnyihlzbtYgVx8azbO1gjOAyDDir6wQvTX93eG9jDcoH49sH10uhVgUkSKdURw55mEs4YFr1erqUEcp6kyJw90U4EciSs+KSSiGDc4ELICGoq8SU0Bo+eSB1vA5dKk/Nmn+viuq1T34lg1UGfZwQaVNeIV165WspKV8qYK624dyq+OvFSLIWpj52GJOrZlolZCXdRtgzcMqA5+Mzt++X9M/ciat6NMsxlkmOjNuiUHTKVArwFvIgh1ZgTLK4AVDpYJidXxEDFo3gGXHxxUSyaMMoIbEDfMKJTV/oW1sLu+9x8Z1zCp5vAxRa+HcFKCAYGG0xyjsLPHt9it9IIVcadfQ1bDU0v6eTs0b2YZhGkIYGVLhBiC/Y0yprVzipR5QrTCool+682NNBzxlX2UXzleIrVaK8okBtUYaC5gY6+DR1K1E3CqljZpHzXS0JfADjybtky6UyFsa9f3Lc+D8KhDwovS8sr80DA61XzoKLCKiea3E0W0DkitZFzkk8v/dXsUHKE6ZTj9p8Q4T1C8kWarIy100yusVpadGYxqrnG471mcpU1w08OK3fMl46q1P4X+wNUBElixvMBgAAAAABJRU5ErkJggg==" alt="打勾圖案" class="me-2 me-xl-3">優質照顧</p>
-            <p class="w-50 fw-bold fs-4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKlSURBVHgBxVVBbtpQEJ35NotKLMiuUkhLTwA9QIV9gjYnSHKCxqCsY9YtmBskOUHaE9hpD1BygiKVSFlaapb4T2f8wTbGBIpUdSRL9vef9978mfkD8I8Nd93YDAMHFLVB0wGAimauF+3it5XgZRi0bKWveKtTXCeAaaLRfXS96V8TGLXJB/7d5qfDSw1+YtJwI/+VgvdM0BISBJoy3f1cW+MqsjWC5vfRJWjwS8uTJ1Ybu14sH60waMwVhfzaWdmlwJ+96w02EhyGw1NUeJV+aBqwuom8/gYrWoIvTY6uBkmHgGICi/3gRNZJk/fg9sfVBHejnyihlzbtYgVx8azbO1gjOAyDDir6wQvTX93eG9jDcoH49sH10uhVgUkSKdURw55mEs4YFr1erqUEcp6kyJw90U4EciSs+KSSiGDc4ELICGoq8SU0Bo+eSB1vA5dKk/Nmn+viuq1T34lg1UGfZwQaVNeIV165WspKV8qYK624dyq+OvFSLIWpj52GJOrZlolZCXdRtgzcMqA5+Mzt++X9M/ciat6NMsxlkmOjNuiUHTKVArwFvIgh1ZgTLK4AVDpYJidXxEDFo3gGXHxxUSyaMMoIbEDfMKJTV/oW1sLu+9x8Z1zCp5vAxRa+HcFKCAYGG0xyjsLPHt9it9IIVcadfQ1bDU0v6eTs0b2YZhGkIYGVLhBiC/Y0yprVzipR5QrTCool+682NNBzxlX2UXzleIrVaK8okBtUYaC5gY6+DR1K1E3CqljZpHzXS0JfADjybtky6UyFsa9f3Lc+D8KhDwovS8sr80DA61XzoKLCKiea3E0W0DkitZFzkk8v/dXsUHKE6ZTj9p8Q4T1C8kWarIy100yusVpadGYxqrnG471mcpU1w08OK3fMl46q1P4X+wNUBElixvMBgAAAAABJRU5ErkJggg==" alt="打勾圖案" class="me-2 me-xl-3">多元環境</p>
-            <p class="w-50 fw-bold fs-4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKlSURBVHgBxVVBbtpQEJ35NotKLMiuUkhLTwA9QIV9gjYnSHKCxqCsY9YtmBskOUHaE9hpD1BygiKVSFlaapb4T2f8wTbGBIpUdSRL9vef9978mfkD8I8Nd93YDAMHFLVB0wGAimauF+3it5XgZRi0bKWveKtTXCeAaaLRfXS96V8TGLXJB/7d5qfDSw1+YtJwI/+VgvdM0BISBJoy3f1cW+MqsjWC5vfRJWjwS8uTJ1Ybu14sH60waMwVhfzaWdmlwJ+96w02EhyGw1NUeJV+aBqwuom8/gYrWoIvTY6uBkmHgGICi/3gRNZJk/fg9sfVBHejnyihlzbtYgVx8azbO1gjOAyDDir6wQvTX93eG9jDcoH49sH10uhVgUkSKdURw55mEs4YFr1erqUEcp6kyJw90U4EciSs+KSSiGDc4ELICGoq8SU0Bo+eSB1vA5dKk/Nmn+viuq1T34lg1UGfZwQaVNeIV165WspKV8qYK624dyq+OvFSLIWpj52GJOrZlolZCXdRtgzcMqA5+Mzt++X9M/ciat6NMsxlkmOjNuiUHTKVArwFvIgh1ZgTLK4AVDpYJidXxEDFo3gGXHxxUSyaMMoIbEDfMKJTV/oW1sLu+9x8Z1zCp5vAxRa+HcFKCAYGG0xyjsLPHt9it9IIVcadfQ1bDU0v6eTs0b2YZhGkIYGVLhBiC/Y0yprVzipR5QrTCool+682NNBzxlX2UXzleIrVaK8okBtUYaC5gY6+DR1K1E3CqljZpHzXS0JfADjybtky6UyFsa9f3Lc+D8KhDwovS8sr80DA61XzoKLCKiea3E0W0DkitZFzkk8v/dXsUHKE6ZTj9p8Q4T1C8kWarIy100yusVpadGYxqrnG471mcpU1w08OK3fMl46q1P4X+wNUBElixvMBgAAAAABJRU5ErkJggg==" alt="打勾圖案" class="me-2 me-xl-3">24hr錄影</p>
+            <p class="w-50 fw-bold fs-4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKlSURBVHgBxVVBbtpQEJ35NotKLMiuUkhLTwA9QIV9gjYnSHKCxqCsY9YtmBskOUHaE9hpD1BygiKVSFlaapb4T2f8wTbGBIpUdSRL9vef9978mfkD8I8Nd93YDAMHFLVB0wGAimauF+3it5XgZRi0bKWveKtTXCeAaaLRfXS96V8TGLXJB/7d5qfDSw1+YtJwI/+VgvdM0BISBJoy3f1cW+MqsjWC5vfRJWjwS8uTJ1Ybu14sH60waMwVhfzaWdmlwJ+96w02EhyGw1NUeJV+aBqwuom8/gYrWoIvTY6uBkmHgGICi/3gRNZJk/fg9sfVBHejnyihlzbtYgVx8azbO1gjOAyDDir6wQvTX93eG9jDcoH49sH10uhVgUkSKdURw55mEs4YFr1erqUEcp6kyJw90U4EciSs+KSSiGDc4ELICGoq8SU0Bo+eSB1vA5dKk/Nmn+viuq1T34lg1UGfZwQaVNeIV165WspKV8qYK624dyq+OvFSLIWpj52GJOrZlolZCXdRtgzcMqA5+Mzt++X9M/ciat6NMsxlkmOjNuiUHTKVArwFvIgh1ZgTLK4AVDpYJidXxEDFo3gGXHxxUSyaMMoIbEDfMKJTV/oW1sLu+9x8Z1zCp5vAxRa+HcFKCAYGG0xyjsLPHt9it9IIVcadfQ1bDU0v6eTs0b2YZhGkIYGVLhBiC/Y0yprVzipR5QrTCool+682NNBzxlX2UXzleIrVaK8okBtUYaC5gY6+DR1K1E3CqljZpHzXS0JfADjybtky6UyFsa9f3Lc+D8KhDwovS8sr80DA61XzoKLCKiea3E0W0DkitZFzkk8v/dXsUHKE6ZTj9p8Q4T1C8kWarIy100yusVpadGYxqrnG471mcpU1w08OK3fMl46q1P4X+wNUBElixvMBgAAAAABJRU5ErkJggg==" alt="打勾圖案"
+                class="me-2 me-xl-3">專業美容</p>
+            <p class="w-50 fw-bold fs-4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKlSURBVHgBxVVBbtpQEJ35NotKLMiuUkhLTwA9QIV9gjYnSHKCxqCsY9YtmBskOUHaE9hpD1BygiKVSFlaapb4T2f8wTbGBIpUdSRL9vef9978mfkD8I8Nd93YDAMHFLVB0wGAimauF+3it5XgZRi0bKWveKtTXCeAaaLRfXS96V8TGLXJB/7d5qfDSw1+YtJwI/+VgvdM0BISBJoy3f1cW+MqsjWC5vfRJWjwS8uTJ1Ybu14sH60waMwVhfzaWdmlwJ+96w02EhyGw1NUeJV+aBqwuom8/gYrWoIvTY6uBkmHgGICi/3gRNZJk/fg9sfVBHejnyihlzbtYgVx8azbO1gjOAyDDir6wQvTX93eG9jDcoH49sH10uhVgUkSKdURw55mEs4YFr1erqUEcp6kyJw90U4EciSs+KSSiGDc4ELICGoq8SU0Bo+eSB1vA5dKk/Nmn+viuq1T34lg1UGfZwQaVNeIV165WspKV8qYK624dyq+OvFSLIWpj52GJOrZlolZCXdRtgzcMqA5+Mzt++X9M/ciat6NMsxlkmOjNuiUHTKVArwFvIgh1ZgTLK4AVDpYJidXxEDFo3gGXHxxUSyaMMoIbEDfMKJTV/oW1sLu+9x8Z1zCp5vAxRa+HcFKCAYGG0xyjsLPHt9it9IIVcadfQ1bDU0v6eTs0b2YZhGkIYGVLhBiC/Y0yprVzipR5QrTCool+682NNBzxlX2UXzleIrVaK8okBtUYaC5gY6+DR1K1E3CqljZpHzXS0JfADjybtky6UyFsa9f3Lc+D8KhDwovS8sr80DA61XzoKLCKiea3E0W0DkitZFzkk8v/dXsUHKE6ZTj9p8Q4T1C8kWarIy100yusVpadGYxqrnG471mcpU1w08OK3fMl46q1P4X+wNUBElixvMBgAAAAABJRU5ErkJggg==" alt="打勾圖案"
+                class="me-2 me-xl-3">優質照顧</p>
+            <p class="w-50 fw-bold fs-4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKlSURBVHgBxVVBbtpQEJ35NotKLMiuUkhLTwA9QIV9gjYnSHKCxqCsY9YtmBskOUHaE9hpD1BygiKVSFlaapb4T2f8wTbGBIpUdSRL9vef9978mfkD8I8Nd93YDAMHFLVB0wGAimauF+3it5XgZRi0bKWveKtTXCeAaaLRfXS96V8TGLXJB/7d5qfDSw1+YtJwI/+VgvdM0BISBJoy3f1cW+MqsjWC5vfRJWjwS8uTJ1Ybu14sH60waMwVhfzaWdmlwJ+96w02EhyGw1NUeJV+aBqwuom8/gYrWoIvTY6uBkmHgGICi/3gRNZJk/fg9sfVBHejnyihlzbtYgVx8azbO1gjOAyDDir6wQvTX93eG9jDcoH49sH10uhVgUkSKdURw55mEs4YFr1erqUEcp6kyJw90U4EciSs+KSSiGDc4ELICGoq8SU0Bo+eSB1vA5dKk/Nmn+viuq1T34lg1UGfZwQaVNeIV165WspKV8qYK624dyq+OvFSLIWpj52GJOrZlolZCXdRtgzcMqA5+Mzt++X9M/ciat6NMsxlkmOjNuiUHTKVArwFvIgh1ZgTLK4AVDpYJidXxEDFo3gGXHxxUSyaMMoIbEDfMKJTV/oW1sLu+9x8Z1zCp5vAxRa+HcFKCAYGG0xyjsLPHt9it9IIVcadfQ1bDU0v6eTs0b2YZhGkIYGVLhBiC/Y0yprVzipR5QrTCool+682NNBzxlX2UXzleIrVaK8okBtUYaC5gY6+DR1K1E3CqljZpHzXS0JfADjybtky6UyFsa9f3Lc+D8KhDwovS8sr80DA61XzoKLCKiea3E0W0DkitZFzkk8v/dXsUHKE6ZTj9p8Q4T1C8kWarIy100yusVpadGYxqrnG471mcpU1w08OK3fMl46q1P4X+wNUBElixvMBgAAAAABJRU5ErkJggg==" alt="打勾圖案"
+                class="me-2 me-xl-3">多元環境</p>
+            <p class="w-50 fw-bold fs-4"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKlSURBVHgBxVVBbtpQEJ35NotKLMiuUkhLTwA9QIV9gjYnSHKCxqCsY9YtmBskOUHaE9hpD1BygiKVSFlaapb4T2f8wTbGBIpUdSRL9vef9978mfkD8I8Nd93YDAMHFLVB0wGAimauF+3it5XgZRi0bKWveKtTXCeAaaLRfXS96V8TGLXJB/7d5qfDSw1+YtJwI/+VgvdM0BISBJoy3f1cW+MqsjWC5vfRJWjwS8uTJ1Ybu14sH60waMwVhfzaWdmlwJ+96w02EhyGw1NUeJV+aBqwuom8/gYrWoIvTY6uBkmHgGICi/3gRNZJk/fg9sfVBHejnyihlzbtYgVx8azbO1gjOAyDDir6wQvTX93eG9jDcoH49sH10uhVgUkSKdURw55mEs4YFr1erqUEcp6kyJw90U4EciSs+KSSiGDc4ELICGoq8SU0Bo+eSB1vA5dKk/Nmn+viuq1T34lg1UGfZwQaVNeIV165WspKV8qYK624dyq+OvFSLIWpj52GJOrZlolZCXdRtgzcMqA5+Mzt++X9M/ciat6NMsxlkmOjNuiUHTKVArwFvIgh1ZgTLK4AVDpYJidXxEDFo3gGXHxxUSyaMMoIbEDfMKJTV/oW1sLu+9x8Z1zCp5vAxRa+HcFKCAYGG0xyjsLPHt9it9IIVcadfQ1bDU0v6eTs0b2YZhGkIYGVLhBiC/Y0yprVzipR5QrTCool+682NNBzxlX2UXzleIrVaK8okBtUYaC5gY6+DR1K1E3CqljZpHzXS0JfADjybtky6UyFsa9f3Lc+D8KhDwovS8sr80DA61XzoKLCKiea3E0W0DkitZFzkk8v/dXsUHKE6ZTj9p8Q4T1C8kWarIy100yusVpadGYxqrnG471mcpU1w08OK3fMl46q1P4X+wNUBElixvMBgAAAAABJRU5ErkJggg==" alt="打勾圖案"
+                class="me-2 me-xl-3">24hr錄影</p>
           </div>
         </li>
         <li>
@@ -172,10 +173,14 @@
             <p class="text-black-80 mb-4">在這裡，我們盡全力讓他們得到最好的照顧</p>
           </div>
           <div class="d-flex flex-wrap justify-content-betwen">
-            <p class="w-50 fw-bold fs-5"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKlSURBVHgBxVVBbtpQEJ35NotKLMiuUkhLTwA9QIV9gjYnSHKCxqCsY9YtmBskOUHaE9hpD1BygiKVSFlaapb4T2f8wTbGBIpUdSRL9vef9978mfkD8I8Nd93YDAMHFLVB0wGAimauF+3it5XgZRi0bKWveKtTXCeAaaLRfXS96V8TGLXJB/7d5qfDSw1+YtJwI/+VgvdM0BISBJoy3f1cW+MqsjWC5vfRJWjwS8uTJ1Ybu14sH60waMwVhfzaWdmlwJ+96w02EhyGw1NUeJV+aBqwuom8/gYrWoIvTY6uBkmHgGICi/3gRNZJk/fg9sfVBHejnyihlzbtYgVx8azbO1gjOAyDDir6wQvTX93eG9jDcoH49sH10uhVgUkSKdURw55mEs4YFr1erqUEcp6kyJw90U4EciSs+KSSiGDc4ELICGoq8SU0Bo+eSB1vA5dKk/Nmn+viuq1T34lg1UGfZwQaVNeIV165WspKV8qYK624dyq+OvFSLIWpj52GJOrZlolZCXdRtgzcMqA5+Mzt++X9M/ciat6NMsxlkmOjNuiUHTKVArwFvIgh1ZgTLK4AVDpYJidXxEDFo3gGXHxxUSyaMMoIbEDfMKJTV/oW1sLu+9x8Z1zCp5vAxRa+HcFKCAYGG0xyjsLPHt9it9IIVcadfQ1bDU0v6eTs0b2YZhGkIYGVLhBiC/Y0yprVzipR5QrTCool+682NNBzxlX2UXzleIrVaK8okBtUYaC5gY6+DR1K1E3CqljZpHzXS0JfADjybtky6UyFsa9f3Lc+D8KhDwovS8sr80DA61XzoKLCKiea3E0W0DkitZFzkk8v/dXsUHKE6ZTj9p8Q4T1C8kWarIy100yusVpadGYxqrnG471mcpU1w08OK3fMl46q1P4X+wNUBElixvMBgAAAAABJRU5ErkJggg==" alt="打勾圖案" class="me-2 me-xl-3">專業美容</p>
-            <p class="w-50 fw-bold fs-5"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKlSURBVHgBxVVBbtpQEJ35NotKLMiuUkhLTwA9QIV9gjYnSHKCxqCsY9YtmBskOUHaE9hpD1BygiKVSFlaapb4T2f8wTbGBIpUdSRL9vef9978mfkD8I8Nd93YDAMHFLVB0wGAimauF+3it5XgZRi0bKWveKtTXCeAaaLRfXS96V8TGLXJB/7d5qfDSw1+YtJwI/+VgvdM0BISBJoy3f1cW+MqsjWC5vfRJWjwS8uTJ1Ybu14sH60waMwVhfzaWdmlwJ+96w02EhyGw1NUeJV+aBqwuom8/gYrWoIvTY6uBkmHgGICi/3gRNZJk/fg9sfVBHejnyihlzbtYgVx8azbO1gjOAyDDir6wQvTX93eG9jDcoH49sH10uhVgUkSKdURw55mEs4YFr1erqUEcp6kyJw90U4EciSs+KSSiGDc4ELICGoq8SU0Bo+eSB1vA5dKk/Nmn+viuq1T34lg1UGfZwQaVNeIV165WspKV8qYK624dyq+OvFSLIWpj52GJOrZlolZCXdRtgzcMqA5+Mzt++X9M/ciat6NMsxlkmOjNuiUHTKVArwFvIgh1ZgTLK4AVDpYJidXxEDFo3gGXHxxUSyaMMoIbEDfMKJTV/oW1sLu+9x8Z1zCp5vAxRa+HcFKCAYGG0xyjsLPHt9it9IIVcadfQ1bDU0v6eTs0b2YZhGkIYGVLhBiC/Y0yprVzipR5QrTCool+682NNBzxlX2UXzleIrVaK8okBtUYaC5gY6+DR1K1E3CqljZpHzXS0JfADjybtky6UyFsa9f3Lc+D8KhDwovS8sr80DA61XzoKLCKiea3E0W0DkitZFzkk8v/dXsUHKE6ZTj9p8Q4T1C8kWarIy100yusVpadGYxqrnG471mcpU1w08OK3fMl46q1P4X+wNUBElixvMBgAAAAABJRU5ErkJggg==" alt="打勾圖案" class="me-2 me-xl-3">優質照顧</p>
-            <p class="w-50 fw-bold fs-5"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKlSURBVHgBxVVBbtpQEJ35NotKLMiuUkhLTwA9QIV9gjYnSHKCxqCsY9YtmBskOUHaE9hpD1BygiKVSFlaapb4T2f8wTbGBIpUdSRL9vef9978mfkD8I8Nd93YDAMHFLVB0wGAimauF+3it5XgZRi0bKWveKtTXCeAaaLRfXS96V8TGLXJB/7d5qfDSw1+YtJwI/+VgvdM0BISBJoy3f1cW+MqsjWC5vfRJWjwS8uTJ1Ybu14sH60waMwVhfzaWdmlwJ+96w02EhyGw1NUeJV+aBqwuom8/gYrWoIvTY6uBkmHgGICi/3gRNZJk/fg9sfVBHejnyihlzbtYgVx8azbO1gjOAyDDir6wQvTX93eG9jDcoH49sH10uhVgUkSKdURw55mEs4YFr1erqUEcp6kyJw90U4EciSs+KSSiGDc4ELICGoq8SU0Bo+eSB1vA5dKk/Nmn+viuq1T34lg1UGfZwQaVNeIV165WspKV8qYK624dyq+OvFSLIWpj52GJOrZlolZCXdRtgzcMqA5+Mzt++X9M/ciat6NMsxlkmOjNuiUHTKVArwFvIgh1ZgTLK4AVDpYJidXxEDFo3gGXHxxUSyaMMoIbEDfMKJTV/oW1sLu+9x8Z1zCp5vAxRa+HcFKCAYGG0xyjsLPHt9it9IIVcadfQ1bDU0v6eTs0b2YZhGkIYGVLhBiC/Y0yprVzipR5QrTCool+682NNBzxlX2UXzleIrVaK8okBtUYaC5gY6+DR1K1E3CqljZpHzXS0JfADjybtky6UyFsa9f3Lc+D8KhDwovS8sr80DA61XzoKLCKiea3E0W0DkitZFzkk8v/dXsUHKE6ZTj9p8Q4T1C8kWarIy100yusVpadGYxqrnG471mcpU1w08OK3fMl46q1P4X+wNUBElixvMBgAAAAABJRU5ErkJggg==" alt="打勾圖案" class="me-2 me-xl-3">多元環境</p>
-            <p class="w-50 fw-bold fs-5"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKlSURBVHgBxVVBbtpQEJ35NotKLMiuUkhLTwA9QIV9gjYnSHKCxqCsY9YtmBskOUHaE9hpD1BygiKVSFlaapb4T2f8wTbGBIpUdSRL9vef9978mfkD8I8Nd93YDAMHFLVB0wGAimauF+3it5XgZRi0bKWveKtTXCeAaaLRfXS96V8TGLXJB/7d5qfDSw1+YtJwI/+VgvdM0BISBJoy3f1cW+MqsjWC5vfRJWjwS8uTJ1Ybu14sH60waMwVhfzaWdmlwJ+96w02EhyGw1NUeJV+aBqwuom8/gYrWoIvTY6uBkmHgGICi/3gRNZJk/fg9sfVBHejnyihlzbtYgVx8azbO1gjOAyDDir6wQvTX93eG9jDcoH49sH10uhVgUkSKdURw55mEs4YFr1erqUEcp6kyJw90U4EciSs+KSSiGDc4ELICGoq8SU0Bo+eSB1vA5dKk/Nmn+viuq1T34lg1UGfZwQaVNeIV165WspKV8qYK624dyq+OvFSLIWpj52GJOrZlolZCXdRtgzcMqA5+Mzt++X9M/ciat6NMsxlkmOjNuiUHTKVArwFvIgh1ZgTLK4AVDpYJidXxEDFo3gGXHxxUSyaMMoIbEDfMKJTV/oW1sLu+9x8Z1zCp5vAxRa+HcFKCAYGG0xyjsLPHt9it9IIVcadfQ1bDU0v6eTs0b2YZhGkIYGVLhBiC/Y0yprVzipR5QrTCool+682NNBzxlX2UXzleIrVaK8okBtUYaC5gY6+DR1K1E3CqljZpHzXS0JfADjybtky6UyFsa9f3Lc+D8KhDwovS8sr80DA61XzoKLCKiea3E0W0DkitZFzkk8v/dXsUHKE6ZTj9p8Q4T1C8kWarIy100yusVpadGYxqrnG471mcpU1w08OK3fMl46q1P4X+wNUBElixvMBgAAAAABJRU5ErkJggg==" alt="打勾圖案" class="me-2 me-xl-3">24hr錄影</p>
+            <p class="w-50 fw-bold fs-5"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKlSURBVHgBxVVBbtpQEJ35NotKLMiuUkhLTwA9QIV9gjYnSHKCxqCsY9YtmBskOUHaE9hpD1BygiKVSFlaapb4T2f8wTbGBIpUdSRL9vef9978mfkD8I8Nd93YDAMHFLVB0wGAimauF+3it5XgZRi0bKWveKtTXCeAaaLRfXS96V8TGLXJB/7d5qfDSw1+YtJwI/+VgvdM0BISBJoy3f1cW+MqsjWC5vfRJWjwS8uTJ1Ybu14sH60waMwVhfzaWdmlwJ+96w02EhyGw1NUeJV+aBqwuom8/gYrWoIvTY6uBkmHgGICi/3gRNZJk/fg9sfVBHejnyihlzbtYgVx8azbO1gjOAyDDir6wQvTX93eG9jDcoH49sH10uhVgUkSKdURw55mEs4YFr1erqUEcp6kyJw90U4EciSs+KSSiGDc4ELICGoq8SU0Bo+eSB1vA5dKk/Nmn+viuq1T34lg1UGfZwQaVNeIV165WspKV8qYK624dyq+OvFSLIWpj52GJOrZlolZCXdRtgzcMqA5+Mzt++X9M/ciat6NMsxlkmOjNuiUHTKVArwFvIgh1ZgTLK4AVDpYJidXxEDFo3gGXHxxUSyaMMoIbEDfMKJTV/oW1sLu+9x8Z1zCp5vAxRa+HcFKCAYGG0xyjsLPHt9it9IIVcadfQ1bDU0v6eTs0b2YZhGkIYGVLhBiC/Y0yprVzipR5QrTCool+682NNBzxlX2UXzleIrVaK8okBtUYaC5gY6+DR1K1E3CqljZpHzXS0JfADjybtky6UyFsa9f3Lc+D8KhDwovS8sr80DA61XzoKLCKiea3E0W0DkitZFzkk8v/dXsUHKE6ZTj9p8Q4T1C8kWarIy100yusVpadGYxqrnG471mcpU1w08OK3fMl46q1P4X+wNUBElixvMBgAAAAABJRU5ErkJggg==" alt="打勾圖案"
+                class="me-2 me-xl-3">專業美容</p>
+            <p class="w-50 fw-bold fs-5"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKlSURBVHgBxVVBbtpQEJ35NotKLMiuUkhLTwA9QIV9gjYnSHKCxqCsY9YtmBskOUHaE9hpD1BygiKVSFlaapb4T2f8wTbGBIpUdSRL9vef9978mfkD8I8Nd93YDAMHFLVB0wGAimauF+3it5XgZRi0bKWveKtTXCeAaaLRfXS96V8TGLXJB/7d5qfDSw1+YtJwI/+VgvdM0BISBJoy3f1cW+MqsjWC5vfRJWjwS8uTJ1Ybu14sH60waMwVhfzaWdmlwJ+96w02EhyGw1NUeJV+aBqwuom8/gYrWoIvTY6uBkmHgGICi/3gRNZJk/fg9sfVBHejnyihlzbtYgVx8azbO1gjOAyDDir6wQvTX93eG9jDcoH49sH10uhVgUkSKdURw55mEs4YFr1erqUEcp6kyJw90U4EciSs+KSSiGDc4ELICGoq8SU0Bo+eSB1vA5dKk/Nmn+viuq1T34lg1UGfZwQaVNeIV165WspKV8qYK624dyq+OvFSLIWpj52GJOrZlolZCXdRtgzcMqA5+Mzt++X9M/ciat6NMsxlkmOjNuiUHTKVArwFvIgh1ZgTLK4AVDpYJidXxEDFo3gGXHxxUSyaMMoIbEDfMKJTV/oW1sLu+9x8Z1zCp5vAxRa+HcFKCAYGG0xyjsLPHt9it9IIVcadfQ1bDU0v6eTs0b2YZhGkIYGVLhBiC/Y0yprVzipR5QrTCool+682NNBzxlX2UXzleIrVaK8okBtUYaC5gY6+DR1K1E3CqljZpHzXS0JfADjybtky6UyFsa9f3Lc+D8KhDwovS8sr80DA61XzoKLCKiea3E0W0DkitZFzkk8v/dXsUHKE6ZTj9p8Q4T1C8kWarIy100yusVpadGYxqrnG471mcpU1w08OK3fMl46q1P4X+wNUBElixvMBgAAAAABJRU5ErkJggg==" alt="打勾圖案"
+                class="me-2 me-xl-3">優質照顧</p>
+            <p class="w-50 fw-bold fs-5"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKlSURBVHgBxVVBbtpQEJ35NotKLMiuUkhLTwA9QIV9gjYnSHKCxqCsY9YtmBskOUHaE9hpD1BygiKVSFlaapb4T2f8wTbGBIpUdSRL9vef9978mfkD8I8Nd93YDAMHFLVB0wGAimauF+3it5XgZRi0bKWveKtTXCeAaaLRfXS96V8TGLXJB/7d5qfDSw1+YtJwI/+VgvdM0BISBJoy3f1cW+MqsjWC5vfRJWjwS8uTJ1Ybu14sH60waMwVhfzaWdmlwJ+96w02EhyGw1NUeJV+aBqwuom8/gYrWoIvTY6uBkmHgGICi/3gRNZJk/fg9sfVBHejnyihlzbtYgVx8azbO1gjOAyDDir6wQvTX93eG9jDcoH49sH10uhVgUkSKdURw55mEs4YFr1erqUEcp6kyJw90U4EciSs+KSSiGDc4ELICGoq8SU0Bo+eSB1vA5dKk/Nmn+viuq1T34lg1UGfZwQaVNeIV165WspKV8qYK624dyq+OvFSLIWpj52GJOrZlolZCXdRtgzcMqA5+Mzt++X9M/ciat6NMsxlkmOjNuiUHTKVArwFvIgh1ZgTLK4AVDpYJidXxEDFo3gGXHxxUSyaMMoIbEDfMKJTV/oW1sLu+9x8Z1zCp5vAxRa+HcFKCAYGG0xyjsLPHt9it9IIVcadfQ1bDU0v6eTs0b2YZhGkIYGVLhBiC/Y0yprVzipR5QrTCool+682NNBzxlX2UXzleIrVaK8okBtUYaC5gY6+DR1K1E3CqljZpHzXS0JfADjybtky6UyFsa9f3Lc+D8KhDwovS8sr80DA61XzoKLCKiea3E0W0DkitZFzkk8v/dXsUHKE6ZTj9p8Q4T1C8kWarIy100yusVpadGYxqrnG471mcpU1w08OK3fMl46q1P4X+wNUBElixvMBgAAAAABJRU5ErkJggg==" alt="打勾圖案"
+                class="me-2 me-xl-3">多元環境</p>
+            <p class="w-50 fw-bold fs-5"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKlSURBVHgBxVVBbtpQEJ35NotKLMiuUkhLTwA9QIV9gjYnSHKCxqCsY9YtmBskOUHaE9hpD1BygiKVSFlaapb4T2f8wTbGBIpUdSRL9vef9978mfkD8I8Nd93YDAMHFLVB0wGAimauF+3it5XgZRi0bKWveKtTXCeAaaLRfXS96V8TGLXJB/7d5qfDSw1+YtJwI/+VgvdM0BISBJoy3f1cW+MqsjWC5vfRJWjwS8uTJ1Ybu14sH60waMwVhfzaWdmlwJ+96w02EhyGw1NUeJV+aBqwuom8/gYrWoIvTY6uBkmHgGICi/3gRNZJk/fg9sfVBHejnyihlzbtYgVx8azbO1gjOAyDDir6wQvTX93eG9jDcoH49sH10uhVgUkSKdURw55mEs4YFr1erqUEcp6kyJw90U4EciSs+KSSiGDc4ELICGoq8SU0Bo+eSB1vA5dKk/Nmn+viuq1T34lg1UGfZwQaVNeIV165WspKV8qYK624dyq+OvFSLIWpj52GJOrZlolZCXdRtgzcMqA5+Mzt++X9M/ciat6NMsxlkmOjNuiUHTKVArwFvIgh1ZgTLK4AVDpYJidXxEDFo3gGXHxxUSyaMMoIbEDfMKJTV/oW1sLu+9x8Z1zCp5vAxRa+HcFKCAYGG0xyjsLPHt9it9IIVcadfQ1bDU0v6eTs0b2YZhGkIYGVLhBiC/Y0yprVzipR5QrTCool+682NNBzxlX2UXzleIrVaK8okBtUYaC5gY6+DR1K1E3CqljZpHzXS0JfADjybtky6UyFsa9f3Lc+D8KhDwovS8sr80DA61XzoKLCKiea3E0W0DkitZFzkk8v/dXsUHKE6ZTj9p8Q4T1C8kWarIy100yusVpadGYxqrnG471mcpU1w08OK3fMl46q1P4X+wNUBElixvMBgAAAAABJRU5ErkJggg==" alt="打勾圖案"
+                class="me-2 me-xl-3">24hr錄影</p>
           </div>
         </li>
     </section>
@@ -268,10 +273,10 @@
     <section class="theBest">
       <ul class="ps-0 mb-0 d-flex flex-column flex-md-row">
         <li class="w-md-50">
-          <div class="best-img"></div>
+          <div class="best-img w-100 bg-repeat-no bg-size-cover"></div>
         </li>
         <li class="w-md-50">
-          <div class="best-content">
+          <div class="best-content bg-primary-l">
             <h2 class="d-inline-block fs-5 section-label">WE ARE BEST</h2>
             <h2 class="fw-bold section-h2 mb-4">業界第一</h2>
             <p class="text-black-80 mb-0">館內擁有大大的泳池及大片的草地</p>
