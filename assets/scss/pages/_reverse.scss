@@ -1,0 +1,148 @@
+/*-------------------------共同樣式-------------------------*/
+// banner
+@mixin banner($url, $bg-p-x, $bg-p-y) {
+    background-image: url($url);
+    height: 500px;
+    border-radius: 0 0 120px 120px;
+    background-position: $bg-p-x $bg-p-y;
+
+    @media (min-width:992px) {
+        border-radius: 0 0 160px 160px;
+    }
+}
+
+// link-hover效果
+@mixin link-slide($color, $slideColor, $bgColor, $slideBgColor) {
+    position: relative;
+    color: $color;
+    background-color: $bgColor;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5);
+    transition: .4s;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background-color: $slideBgColor;
+        box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5);
+        z-index: -1;
+        transition: .4s;
+    }
+
+    &:hover {
+        color: $slideColor;
+    }
+
+    &:hover::after {
+        width: 100%;
+        left: 0;
+    }
+}
+
+/*-------------------------Banner-------------------------*/
+.banner {
+    @include banner("https://images.unsplash.com/photo-1510020553968-30f966e1ec9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80", 50%, 30%);
+}
+
+/*-----------------------預約登入頁面----------------------*/
+.reserve {
+    padding: 80px 0;
+
+    @media (min-width:992px) {
+        padding: 160px 0 80px 0;
+    }
+}
+
+.reserve-title {
+    padding-bottom: 30px;
+    border-bottom: 1px solid $black;
+
+    @media (min-width:768px) {
+        padding-bottom: 48px;
+    }
+}
+
+.reserve-interface {
+    padding: 48px 0;
+
+    @media (min-width:768px) {
+        padding: 80px 0;
+    }
+}
+
+/*-------------------------登入會員-------------------------*/
+.line-right {
+    @media (min-width:992px) {
+        border-right: 1px solid $black;
+    }
+}
+
+.line-bottom {
+    border-bottom: 1px solid $black;
+
+    @media (min-width:768px) {
+        border-bottom: 0;
+    }
+}
+
+.form-control-plaintext {
+    border-bottom: 1px solid $black-40;
+
+    &::placeholder {
+        color: $black-40;
+    }
+
+    &:focus {
+        border-bottom: 1px solid $primary;
+    }
+}
+
+.login-link {
+    @include link-slide($white, $primary, $primary, $white);
+    padding: 11px 0;
+}
+
+.login-quick {
+
+    &:nth-child(1) {
+        background-color: $success;
+    }
+
+    &:nth-child(2) {
+        background-color: $blue;
+    }
+
+    &:nth-child(3) {
+        background-color: $red;
+    }
+
+    &:hover,
+    &:active {
+        box-shadow: inset 3px 3px 3px 0px rgba(255, 255, 255, .4);
+    }
+
+    @media (min-width:375px) {}
+
+    i {
+        display: block;
+
+        @media (min-width:375px) {
+            display: inline;
+        }
+    }
+}
+
+/*-------------------------註冊會員-------------------------*/
+.register-link {
+    @include link-slide($primary, $white, $white, $primary);
+    padding: 11px 0;
+    margin-bottom: 80px;
+
+    @media (min-width:992px) {
+        margin-bottom: 150px;
+    }
+}

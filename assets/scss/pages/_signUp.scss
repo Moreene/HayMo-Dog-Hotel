@@ -1,0 +1,40 @@
+/*-------------------------Banner-------------------------*/
+.signUp-banner {
+    @include banner("https://images.unsplash.com/photo-1551992536-0c58e0f32913?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80", 50%, 60%);
+}
+
+/*--------------------------狗裝飾--------------------------*/
+.dogs-deco{
+    height: 100px;
+
+    @media (min-width:768px) {
+        height: 150px;
+    }
+}
+
+/*--------------------------註冊--------------------------*/
+.signUp {
+    padding: 80px 0;
+
+    @media (min-width:992px) {
+        padding: 160px 0;
+    }
+}
+
+.singUp-form .form-control{
+    border-color: $black-60;
+
+    &:focus{
+        border-color: $primary;
+    }
+}
+
+.signUp-btn {
+    @include link-slide($white, $primary, $primary, $white);
+    padding: 11px 0;
+}
+
+.btn.signUp-btn:active {
+    top: 2px;
+    color: $primary;
+}
