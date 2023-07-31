@@ -1,0 +1,42 @@
+/*-------------------------共同樣式-------------------------*/
+.center-common-mb {
+    margin-bottom: 80px;
+
+    @media (min-width:992px) {
+        margin-bottom: 160px;
+    }
+}
+
+/*-------------------------會員中心-------------------------*/
+.member-center {
+    margin-top: 150px;
+
+    @media (min-width:768px) {
+        margin-top: 200px;
+    }
+}
+
+/*-------------------------基本資料-------------------------*/
+.member-img {
+    width: 120px;
+    height: 120px;
+
+    @media (min-width:992px) {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.img-modify {
+    cursor: pointer;
+}
+
+.cam-bg {
+    bottom: 0;
+    left: 0;
+    height: 33%;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/*-------------------------預約紀錄-------------------------*/

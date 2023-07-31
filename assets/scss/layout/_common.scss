@@ -12,10 +12,50 @@ ul {
     list-style: none;
 }
 
-img{
+img {
     vertical-align: middle;
 }
 
-.mb-200 {
-    margin-bottom: 200px;
+// banner
+@mixin banner($url, $bg-p-x, $bg-p-y) {
+    background-image: url($url);
+    height: 500px;
+    border-radius: 0 0 120px 120px;
+    background-position: $bg-p-x $bg-p-y;
+
+    @media (min-width:992px) {
+        border-radius: 0 0 160px 160px;
+    }
+}
+
+// link-hover效果
+@mixin link-slide($color, $slideColor, $bgColor, $slideBgColor) {
+    position: relative;
+    color: $color;
+    background-color: $bgColor;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5);
+    transition: .4s;
+    z-index: 1;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 100%;
+        background-color: $slideBgColor;
+        box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5);
+        z-index: -1;
+        transition: .4s;
+    }
+
+    &:hover {
+        color: $slideColor;
+    }
+
+    &:hover::after {
+        width: 100%;
+        left: 0;
+    }
 }

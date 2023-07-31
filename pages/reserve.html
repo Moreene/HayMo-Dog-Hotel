@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>嘿毛寵物旅館 | 登入</title>
+    <link rel="icon" href="../assets/images/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <!-- Banner -->
+        <div class="banner bg-size-cover bg-repeat-no d-flex justify-content-center align-items-center">
+            <h2 class="section-h2 fst-italic fw-bold text-white d-inline-block mb-0">線上預約專區</h2>
+        </div>
+
+        <!-- 預約登入頁面 -->
+        <main class="reserve">
+            <div class="container">
+                <h2 class="text-center reserve-title mb-0">
+                    <span><i class="bi bi-emoji-smile"></i> 請先加入會員再登入預約 <i class="bi bi-emoji-smile"></i></span>
+                </h2>
+                <div class="reserve-interface">
+                    <ul class="row row-cols-1 row-cols-lg-2 ps-0 mb-0">
+                        <!-- 登入 -->
+                        <li class="col line-right">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="pb-5 line-bottom">
+                                        <h3 class="fw-bold mb-4">會員登入</h3>
+                                        <form class="row row-cols-1 gy-3">
+                                            <div class="col">
+                                                <input type="email" class="form-control-plaintext py-3"
+                                                    placeholder="請輸入您的電子信箱">
+                                            </div>
+                                            <div class="col">
+                                                <input type="password" class="form-control-plaintext py-3"
+                                                    placeholder="請輸入您的密碼">
+                                            </div>
+                                            <div class="col">
+                                                <div class="d-flex justify-content-end mb-5">
+                                                    <a href="#" class="fs-7 border-bottom border-primary">忘記密碼了嗎?</a>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="mb-4">
+                                                    <a href="memberCenter.html"
+                                                    class="d-flex align-items-center justify-content-center login-link border border-primary w-100">登入會員<i
+                                                        class="bi bi-arrow-right d-block fs-4 ms-3"></i></a>
+                                                </div>
+                                                <p class="fs-7 text-black-80">
+                                                    歡迎登入會員專區，查詢最新預約情形！<br>如需住宿，六、日或是國定連假，請記得提前預約唷~
+                                                </p>
+                                            </div>
+                                            <div class="col">
+                                                <p class="text-center mb-4">快速註冊/登入</p>
+                                                <div class="d-flex justify-content-between text-center">
+                                                    <a href="#" class="login-quick fs-7 w-30 py-2 text-white">
+                                                        <i class="bi bi-line me-2"></i>Line</a>
+                                                    <a href="#" class="login-quick fs-7 w-30 py-2 text-white">
+                                                        <i class="bi bi-facebook me-2"></i>Facebook</a>
+                                                    <a href="#" class="login-quick fs-7 w-30 py-2 text-white">
+                                                        <i class="bi bi-google me-2"></i>Google</a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- 註冊 -->
+                        <li class="col">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="pt-5 pt-lg-0">
+                                        <h3 class="fw-bold mb-4">註冊新會員</h3>
+                                        <p class="text-black-80 pt-3 mb-5">還不是會員嗎，立即註冊即可線上預約！</p>
+                                        <a href="signUp.html"
+                                            class="d-flex align-items-center justify-content-center register-link border border-primary w-100">註冊新會員<i
+                                                class="bi bi-arrow-right d-block fs-4 ms-3"></i></a>
+                                        <img src="../assets/images/dogs.jpg" alt="狗狗們" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

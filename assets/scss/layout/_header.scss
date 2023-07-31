@@ -30,7 +30,7 @@ body {
   }
 }
 
-// 768px以上 - menu樣式
+// table-menu樣式
 .menu-item:not(:last-child) {
   margin-right: 32px;
 }
@@ -38,7 +38,6 @@ body {
 @media (min-width:768px) {
   .menu-link {
     color: $black-80;
-    position: relative;
 
     &::after {
       position: absolute;
@@ -60,25 +59,26 @@ body {
         background-color: $primary;
       }
     }
-  }
 
-  .menu-link.active {
-    color: $primary;
+    &.active {
+      color: $primary;
 
-    &::after {
-      position: absolute;
-      content: "";
-      display: block;
-      bottom: -16px;
-      left: 50%;
-      transform: translatex(-50%);
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: $primary;
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        bottom: -16px;
+        left: 50%;
+        transform: translatex(-50%);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $primary;
+      }
     }
   }
 }
+
 
 // 線上預約<a>樣式
 .reserve-link {
@@ -120,12 +120,10 @@ body {
   color: $primary;
 }
 
-// 768px以上 - 漢堡樣式
+// 漢堡樣式
 .ham {
-  position: relative;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
   cursor: pointer;
   z-index: 2;
 }
@@ -133,19 +131,14 @@ body {
 .ham-line,
 .ham-line::before,
 .ham-line::after {
-  content: "";
   position: absolute;
-  display: block;
+  content: "";
   width: 18px;
   height: 2px;
   background-color: $black;
-  transition: 0.3s;
 }
 
 .ham-line {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 
   &::before {
     top: -6px;
@@ -156,17 +149,12 @@ body {
   }
 }
 
-// 768px以下 - menu樣式
+// mobile-menu樣式
 @media (max-width: 767px) {
   .menu {
-    position: fixed;
     top: 0;
     left: 0;
-    flex-direction: column;
-    width: 100%;
     height: 0;
-    overflow: hidden;
-    background-color: $primary;
   }
 
   .menu-item:not(:last-child) {
@@ -174,24 +162,18 @@ body {
   }
 
   .menu-link {
-    color: $white;
     font-size: 48px;
-    font-weight: bold;
   }
 }
 
-// 768px以下 - 漢堡樣式
+// 漢堡關閉樣式
 .menu-closedHam {
-  display: flex;
-  justify-content: flex-end;
   padding: 16px 12px 0 0;
 }
 
 .closedHam {
-  position: relative;
   width: 80px;
   height: 80px;
-  border-radius: 50%;
   cursor: pointer;
   background-color: rgba($color: #fff, $alpha: 0.7);
 }
@@ -199,18 +181,14 @@ body {
 .closedHam-line,
 .closedHam-line::before,
 .closedHam-line::after {
-  content: "";
   position: absolute;
-  display: block;
+  content: "";
   width: 12px;
   height: 2px;
   background-color: #000;
 }
 
 .closedHam-line {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   background-color: transparent;
 
   &::before {

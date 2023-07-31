@@ -1,0 +1,103 @@
+/*-------------------------Banner-------------------------*/
+.banner {
+    @include banner("https://images.unsplash.com/photo-1510020553968-30f966e1ec9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80", 50%, 30%);
+}
+
+/*-----------------------預約登入頁面----------------------*/
+.reserve {
+    padding: 80px 0;
+
+    @media (min-width:992px) {
+        padding: 160px 0 80px 0;
+    }
+}
+
+.reserve-title {
+    padding-bottom: 30px;
+    border-bottom: 1px solid $black;
+
+    @media (min-width:768px) {
+        padding-bottom: 48px;
+    }
+}
+
+.reserve-interface {
+    padding: 48px 0;
+
+    @media (min-width:768px) {
+        padding: 80px 0;
+    }
+}
+
+/*-------------------------登入會員-------------------------*/
+.line-right {
+    @media (min-width:992px) {
+        border-right: 1px solid $black;
+    }
+}
+
+.line-bottom {
+    border-bottom: 1px solid $black;
+
+    @media (min-width:768px) {
+        border-bottom: 0;
+    }
+}
+
+.form-control-plaintext {
+    border-bottom: 1px solid $black-40;
+
+    &::placeholder {
+        color: $black-40;
+    }
+
+    &:focus {
+        border-bottom: 1px solid $primary;
+    }
+}
+
+.login-link {
+    @include link-slide($white, $primary, $primary, $white);
+    padding: 11px 0;
+}
+
+.login-quick {
+
+    &:nth-child(1) {
+        background-color: $success;
+    }
+
+    &:nth-child(2) {
+        background-color: $blue;
+    }
+
+    &:nth-child(3) {
+        background-color: $red;
+    }
+
+    &:hover,
+    &:active {
+        box-shadow: inset 3px 3px 3px 0px rgba(255, 255, 255, .4);
+    }
+
+    @media (min-width:375px) {}
+
+    i {
+        display: block;
+
+        @media (min-width:375px) {
+            display: inline;
+        }
+    }
+}
+
+/*-------------------------註冊會員-------------------------*/
+.register-link {
+    @include link-slide($primary, $white, $white, $primary);
+    padding: 11px 0;
+    margin-bottom: 80px;
+
+    @media (min-width:992px) {
+        margin-bottom: 150px;
+    }
+}
