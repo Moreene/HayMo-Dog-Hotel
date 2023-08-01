@@ -6,7 +6,7 @@
             <div class="d-none d-md-block">
                 <ul class="table-menu d-flex ps-0 mb-0">
                     <li class="menu-item">
-                        <a href="index.html" class="menu-link position-relative">首頁</a>
+                        <a href="index.html" class="menu-link position-relative <%- currentPage === 'index' ? 'active' : '' %>">首頁</a>
                     </li>
                     <li class="menu-item">
                         <a href="#" class="menu-link position-relative">關於我們</a>
@@ -21,7 +21,7 @@
             </div>
             <ul class="d-flex align-items-center ps-0 mb-0">
                 <li>
-                    <a href="reserve.html" class="reserve-link d-flex align-items-center justify-content-center">
+                    <a href="reserve.html" class="reserve-link d-flex align-items-center justify-content-center <%- currentPage === 'reserve' ? 'active' : '' %>">
                         <p class="reserve-text mb-0">線上<span class="d-md-block">預約</span></p>
                     </a>
                 </li>

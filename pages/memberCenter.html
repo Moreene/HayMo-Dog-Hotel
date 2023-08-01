@@ -11,7 +11,7 @@
 
 <body class="bg-secondary-l">
 
-    <%- include('./layout/memberCenter-header'); -%>
+    <%- include('./layout/memberCenter-header', { currentPage: 'memberCenter' }); -%>
 
         <h2 class="member-center section-h2 text-center fw-bold mb-5">嘿毛會員中心</h2>
         <div class="container">
@@ -173,28 +173,39 @@
                                     <thead class="text-center">
                                         <tr>
                                             <th scope="col">訂單編號</th>
-                                            <th scope="col">
+                                            <th scope="col">毛孩姓名</th>
+                                            <th scope="col">毛孩數量</th>
+                                            <th scope="col">安親日期</th>
+                                            <th scope="col">樂園服務</th>
+                                            <th scope="col">緊急聯絡人</th>
+                                            <th scope="col">電話</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <tr>
+                                            <th scope="row">
                                                 <a href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#exampleModal">毛孩姓名</a>
+                                                    data-bs-target="#order1Modal">Z123450</a>
                                                 <!-- Modal -->
-                                                <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal fade" id="order1Modal" tabindex="-1">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title" id="exampleModalLabel">訂單資訊</h5>
+                                                                <h5 class="modal-title" id="order1ModalLabel">訂單資訊</h5>
                                                                 <button type="button" class="btn-close"
                                                                     data-bs-dismiss="modal" aria-label="Close"></button>
                                                             </div>
-                                                            <div class="modal-body fw-normal">
-                                                                <p>毛孩姓名：大頭</p>
-                                                                <p>毛孩數量：1</p>
-                                                                <p>安親日期：2023/7/25</p>
-                                                                <p>安親時間：9:30</p>
-                                                                <p>樂園服務：是</p>
-                                                                <p>緊急聯絡人：Moreene</p>
-                                                                <p>電話：0987-878787</p>
-                                                                <p>預計金額：NT$1,000</p>
+                                                            <div class="modal-body mx-auto fw-normal">
+                                                                <div class="col-auto text-start">
+                                                                    <p>毛孩姓名：大頭</p>
+                                                                    <p>毛孩數量：1</p>
+                                                                    <p>安親日期：2023/8/25</p>
+                                                                    <p>安親時間：9:30</p>
+                                                                    <p>樂園服務：是</p>
+                                                                    <p>緊急聯絡人：Moreene</p>
+                                                                    <p>聯絡電話：0987-878787</p>
+                                                                    <p>預計金額：NT$1,000</p>
+                                                                </div>
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button"
@@ -207,16 +218,6 @@
                                                     </div>
                                                 </div>
                                             </th>
-                                            <th scope="col">毛孩數量</th>
-                                            <th scope="col">安親日期</th>
-                                            <th scope="col">樂園服務</th>
-                                            <th scope="col">緊急聯絡人</th>
-                                            <th scope="col">電話</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="text-center">
-                                        <tr>
-                                            <th scope="row">Z123450</th>
                                             <td>大頭</td>
                                             <td>1</td>
                                             <td>2023/8/25</td>
@@ -237,8 +238,8 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="tab-pane" id="cosmetic" role="tabpanel" aria-labelledby="cosmetic-tab">123</div>
-                        <div class="tab-pane" id="stay" role="tabpanel" aria-labelledby="stay-tab">321</div>
+                        <div class="tab-pane" id="cosmetic" role="tabpanel" aria-labelledby="cosmetic-tab"></div>
+                        <div class="tab-pane" id="stay" role="tabpanel" aria-labelledby="stay-tab"></div>
                     </div>
                 </section>
             </main>
