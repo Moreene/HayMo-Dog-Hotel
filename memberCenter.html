@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>嘿毛寵物旅館 | 會員中心</title>
     <link rel="icon" href="/HayMo-Dog-Hotel/assets/logo-09125146.ico" type="image/x-icon">
-  <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/main-d627b894.js"></script>
-  <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/main-e2a0aecf.css">
+  <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/main-03691610.js"></script>
+  <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/main-66ddf61a.css">
 </head>
 
 <body class="bg-secondary-l">
@@ -69,11 +69,13 @@
         </ul>
     </div>
 </div>
-        <h2 class="member-center section-h2 text-center fw-bold mb-5">嘿毛會員中心</h2>
+        <h2 class="member-center section-h2 text-center fw-bold">嘿毛會員中心</h2>
         <div class="container">
             <main class="col-lg-10 mx-auto">
                 <!-- 基本資料 -->
-                <h3 class="mb-4"><i class="bi bi-cursor me-1"></i>基本資料</h3>
+                <h3 class="fw-bold mb-4"><i class="bi bi-cursor me-1"></i>基本資料</h3>
+                <p class="mb-2">* 毛孩資訊非必填，若有完成資訊填寫，於線上預約時可自動帶入毛孩名字 *</p>
+                <p>* 若家裡有多位毛孩，毛孩資訊不需填寫，於線上預約時再填寫即可 *</p>
                 <section class="row flex-md-row gy-4 center-common-mb">
                     <div class="col-md-6">
                         <div class="card border-black py-4 py-xl-5">
@@ -134,7 +136,7 @@
                                         <p>姓名：Moreene</p>
                                         <p>手機：0987-878787</p>
                                         <p>信箱：moreenewu@gmail.com</p>
-                                        <p class="mb-0">加入日期：2023/5/1</p>
+                                        <p class="mb-0">加入日期：2023/1/1</p>
                                     </div>
                                 </li>
                             </ul>
@@ -150,7 +152,8 @@
                                     </div>
                                 </li>
                                 <li class="col-auto">
-                                    <p class="fs-4">毛孩資訊 <!-- modal -->
+                                    <p class="fs-4">毛孩資訊
+                                        <!-- modal -->
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#petInfoModal"><i
                                                 class="bi bi-pencil-square link-primary fs-4 ms-1"></i></a>
                                     <div class="modal fade" id="petInfoModal" tabindex="-1"
@@ -201,9 +204,10 @@
                         </div>
                     </div>
                 </section>
+
                 <!-- 預約紀錄 -->
-                <h3 class="mb-4"><i class="bi bi-cursor me-1"></i>您的預約</h3>
-                <label class="mb-5">
+                <h3 class="fw-bold mb-4"><i class="bi bi-cursor me-1"></i>您的預約</h3>
+                <label class="mb-4">
                     <input type="month" class="border border-black-80 rounded-pill p-2">
                 </label>
                 <section class="center-common-mb">
@@ -221,11 +225,10 @@
                                 data-bs-target="#stay" type="button" role="tab">住宿服務</button>
                         </li>
                     </ul>
-
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane active" id="dayCare" role="tabpanel" aria-labelledby="dayCare-tab">
-                            <div class="table-responsive">
-                                <table class="table text-nowrap">
+                            <div class="table-responsive rounded-bottom">
+                                <table class="table text-nowrap mb-0">
                                     <thead class="text-center">
                                         <tr>
                                             <th scope="col">訂單編號</th>
@@ -241,51 +244,23 @@
                                         <tr>
                                             <th scope="row">
                                                 <a href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#order1Modal">Z123450</a>
-                                                <!-- Modal -->
-                                                <div class="modal fade" id="order1Modal" tabindex="-1">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title" id="order1ModalLabel">訂單資訊</h5>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="modal-body mx-auto fw-normal">
-                                                                <div class="col-auto text-start">
-                                                                    <p>毛孩姓名：大頭</p>
-                                                                    <p>毛孩數量：1</p>
-                                                                    <p>安親日期：2023/8/25</p>
-                                                                    <p>安親時間：9:30</p>
-                                                                    <p>樂園服務：是</p>
-                                                                    <p>緊急聯絡人：Moreene</p>
-                                                                    <p>聯絡電話：0987-878787</p>
-                                                                    <p>預計金額：NT$1,000</p>
-                                                                </div>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button"
-                                                                    class="btn btn-secondary">編輯</button>
-                                                                <button type="button"
-                                                                    class="btn btn-primary show-example-btn info-store"
-                                                                    data-swal-template='#my-template'>儲存</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                    data-bs-target="#order1Modal">Z001183</a>
                                             </th>
                                             <td>大頭</td>
                                             <td>1</td>
-                                            <td>2023/8/25</td>
+                                            <td>2023/9/25</td>
                                             <td>否</td>
                                             <td>Moreene</td>
                                             <td>0987-878787</td>
                                         </tr>
                                         <tr>
-                                            <th scope="row">Z123450</th>
+                                            <th scope="row">
+                                                <a href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#order2Modal">Z002131</a>
+                                            </th>
                                             <td>大頭</td>
                                             <td>1</td>
-                                            <td>2023/9/10</td>
+                                            <td>2023/10/10</td>
                                             <td>是</td>
                                             <td>Moreene</td>
                                             <td>0987-878787</td>
@@ -294,8 +269,294 @@
                                 </table>
                             </div>
                         </div>
-                        <div class="tab-pane" id="cosmetic" role="tabpanel" aria-labelledby="cosmetic-tab"></div>
-                        <div class="tab-pane" id="stay" role="tabpanel" aria-labelledby="stay-tab"></div>
+                        <!-- Modal-1 -->
+                        <div class="modal fade" id="order1Modal" aria-labelledby="order1ModalLabel" aria-hidden="true"
+                            tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="order1ModalLabel">訂單資訊</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body mx-auto fw-normal">
+                                        <div class="col-auto text-start">
+                                            <p>毛孩姓名：大頭</p>
+                                            <p>毛孩數量：1</p>
+                                            <p>安親日期：2023/9/25</p>
+                                            <p>安親時間：9:30</p>
+                                            <p>樂園服務：是</p>
+                                            <p>緊急聯絡人：Moreene</p>
+                                            <p>聯絡電話：0987-878787</p>
+                                            <p>預計金額：NT$900</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary">編輯</button>
+                                        <button type="button" class="btn btn-primary show-example-btn info-store"
+                                            data-swal-template='#my-template'>儲存</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal-2 -->
+                        <div class="modal fade" id="order2Modal" aria-labelledby="order2ModalLabel" aria-hidden="true"
+                            tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="order2ModalLabel">訂單資訊</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body mx-auto fw-normal">
+                                        <div class="col-auto text-start">
+                                            <p>毛孩姓名：大頭</p>
+                                            <p>毛孩數量：1</p>
+                                            <p>安親日期：2023/10/10</p>
+                                            <p>安親時間：12:00</p>
+                                            <p>樂園服務：是</p>
+                                            <p>緊急聯絡人：Moreene</p>
+                                            <p>聯絡電話：0987-878787</p>
+                                            <p>預計金額：NT$1,100</p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary">編輯</button>
+                                        <button type="button" class="btn btn-primary show-example-btn info-store"
+                                            data-swal-template='#my-template'>儲存</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="cosmetic" role="tabpanel" aria-labelledby="cosmetic-tab">
+                            <div class="table-responsive">
+                                <table class="table text-nowrap">
+                                    <thead class="text-center">
+                                        <tr>
+                                            <th scope="col">訂單編號</th>
+                                            <th scope="col">毛孩姓名</th>
+                                            <th scope="col">毛孩數量</th>
+                                            <th scope="col">美容日期</th>
+                                            <th scope="col">樂園服務</th>
+                                            <th scope="col">緊急聯絡人</th>
+                                            <th scope="col">電話</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <tr>
+                                            <td colspan="7">您目前沒有美容服務的預約</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="stay" role="tabpanel" aria-labelledby="stay-tab">
+                            <div class="table-responsive">
+                                <table class="table text-nowrap">
+                                    <thead class="text-center">
+                                        <tr>
+                                            <th scope="col">訂單編號</th>
+                                            <th scope="col">毛孩姓名</th>
+                                            <th scope="col">毛孩數量</th>
+                                            <th scope="col">住宿日期</th>
+                                            <th scope="col">樂園服務</th>
+                                            <th scope="col">緊急聯絡人</th>
+                                            <th scope="col">電話</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <tr>
+                                            <td colspan="7">您目前沒有住宿服務的預約</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 歷史紀錄 -->
+                <h3 class="fw-bold mb-4"><i class="bi bi-cursor me-1"></i>歷史記錄</h3>
+                <label class="mb-4">
+                    <input type="month" class="border border-black-80 rounded-pill p-2">
+                </label>
+                <section class="center-common-mb">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active fs-5 border-bottom-0" id="history-dayCare-tab"
+                                data-bs-toggle="tab" data-bs-target="#history-dayCare" type="button"
+                                role="tab">安親服務</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fs-5 border-bottom-0" id="history-cosmetic-tab" data-bs-toggle="tab"
+                                data-bs-target="#history-cosmetic" type="button" role="tab">美容服務</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link fs-5 border-bottom-0" id="history-stay-tab" data-bs-toggle="tab"
+                                data-bs-target="#history-stay" type="button" role="tab">住宿服務</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane active" id="history-dayCare" role="tabpanel"
+                            aria-labelledby="history-dayCare-tab">
+                            <div class="table-group table-responsive rounded-bottom">
+                                <table class="table text-nowrap mb-0">
+                                    <thead class="text-center position-sticky top-0">
+                                        <tr>
+                                            <th scope="col">訂單編號</th>
+                                            <th scope="col">毛孩姓名</th>
+                                            <th scope="col">毛孩數量</th>
+                                            <th scope="col">安親日期</th>
+                                            <th scope="col">樂園服務</th>
+                                            <th scope="col">緊急聯絡人</th>
+                                            <th scope="col">電話</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <tr>
+                                            <th scope="row">Z000542</th>
+                                            <td>大頭</td>
+                                            <td>1</td>
+                                            <td>2023/1/24</td>
+                                            <td>是</td>
+                                            <td>Moreene</td>
+                                            <td>0987-878787</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Z000793</th>
+                                            <td>大頭</td>
+                                            <td>1</td>
+                                            <td>2023/2/15</td>
+                                            <td>是</td>
+                                            <td>Moreene</td>
+                                            <td>0987-878787</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Z000831</th>
+                                            <td>大頭</td>
+                                            <td>1</td>
+                                            <td>2023/3/24</td>
+                                            <td>否</td>
+                                            <td>Kevin</td>
+                                            <td>0931-123456</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Z001007</th>
+                                            <td>大頭</td>
+                                            <td>1</td>
+                                            <td>2023/4/04</td>
+                                            <td>否</td>
+                                            <td>Moreene</td>
+                                            <td>0987-878787</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Z001050</th>
+                                            <td>大頭</td>
+                                            <td>1</td>
+                                            <td>2023/5/30</td>
+                                            <td>否</td>
+                                            <td>Kevin</td>
+                                            <td>0931-123456</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Z00101109</th>
+                                            <td>大頭</td>
+                                            <td>1</td>
+                                            <td>2023/6/08</td>
+                                            <td>是</td>
+                                            <td>Kevin</td>
+                                            <td>0931-123456</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="history-cosmetic" role="tabpanel"
+                            aria-labelledby="history-cosmetic-tab">
+                            <div class="table-responsive rounded-bottom">
+                                <table class="table text-nowrap mb-0">
+                                    <thead class="text-center position-sticky top-0">
+                                        <tr>
+                                            <th scope="col">訂單編號</th>
+                                            <th scope="col">毛孩姓名</th>
+                                            <th scope="col">毛孩數量</th>
+                                            <th scope="col">美容日期</th>
+                                            <th scope="col">樂園服務</th>
+                                            <th scope="col">緊急聯絡人</th>
+                                            <th scope="col">電話</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <tr>
+                                            <th scope="row">Z000499</th>
+                                            <td>大頭</td>
+                                            <td>1</td>
+                                            <td>2023/3/15</td>
+                                            <td>否</td>
+                                            <td>Moreene</td>
+                                            <td>0987-878787</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Z000901</th>
+                                            <td>大頭</td>
+                                            <td>1</td>
+                                            <td>2023/4/22</td>
+                                            <td>否</td>
+                                            <td>Moreene</td>
+                                            <td>0987-878787</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Z000800</th>
+                                            <td>大頭</td>
+                                            <td>1</td>
+                                            <td>2023/5/18</td>
+                                            <td>否</td>
+                                            <td>Kevin</td>
+                                            <td>0931-123456</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="history-stay" role="tabpanel" aria-labelledby="history-stay-tab">
+                            <div class="table-responsive rounded-bottom">
+                                <table class="table text-nowrap mb-0">
+                                    <thead class="text-center position-sticky top-0">
+                                        <tr>
+                                            <th scope="col">訂單編號</th>
+                                            <th scope="col">毛孩姓名</th>
+                                            <th scope="col">毛孩數量</th>
+                                            <th scope="col">住宿日期</th>
+                                            <th scope="col">樂園服務</th>
+                                            <th scope="col">緊急聯絡人</th>
+                                            <th scope="col">電話</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="text-center">
+                                        <tr>
+                                            <th scope="row">Z000617</th>
+                                            <td>大頭</td>
+                                            <td>1</td>
+                                            <td>2023/1/31</td>
+                                            <td>是</td>
+                                            <td>Moreene</td>
+                                            <td>0987-878787</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Z000804</th>
+                                            <td>大頭</td>
+                                            <td>1</td>
+                                            <td>2023/2/27</td>
+                                            <td>是</td>
+                                            <td>Moreene</td>
+                                            <td>0987-878787</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
