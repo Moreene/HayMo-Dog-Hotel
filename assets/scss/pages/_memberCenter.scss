@@ -1,6 +1,6 @@
 /*-------------------------共同樣式-------------------------*/
 .center-common-mb {
-    margin-bottom: 80px;
+    margin-bottom: 90px;
 
     @media (min-width:992px) {
         margin-bottom: 160px;
@@ -10,9 +10,11 @@
 /*-------------------------會員中心-------------------------*/
 .member-center {
     margin-top: 150px;
+    margin-bottom: 60px;
 
     @media (min-width:768px) {
         margin-top: 200px;
+        margin-bottom: 80px;
     }
 }
 
@@ -40,3 +42,7 @@
 }
 
 /*-------------------------預約紀錄-------------------------*/
+.table-group{
+    height: 358px;
+    overflow-y: scroll;
+}
