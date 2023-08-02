@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let reverseLink = document.getElementById("reverseLink");
 
 
-    let signUpHref = "http://localhost:5173/HayMo-Dog-Hotel/pages/signUp.html";
-    let reverseCosmeticHref = "http://localhost:5173/HayMo-Dog-Hotel/pages/reverse-cosmetic.html";
-    let reverseStayHref = "http://localhost:5173/HayMo-Dog-Hotel/pages/reverse-stay.html";
+    let signUpHref = "https://moreene.github.io/HayMo-Dog-Hotel/signUp.html";
+    let reverseCosmeticHref = "https://moreene.github.io/HayMo-Dog-Hotel/reverse-cosmetic.html";
+    let reverseStayHref = "https://moreene.github.io/HayMo-Dog-Hotel/reverse-stay.html";
 
     switch (currentUrl) {
         case signUpHref:
