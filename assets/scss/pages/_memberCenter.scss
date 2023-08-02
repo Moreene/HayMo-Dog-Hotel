@@ -2,20 +2,15 @@
 .center-common-mb {
     margin-bottom: 90px;
 
-    @media (min-width:992px) {
+    @media (min-width:768px) {
         margin-bottom: 160px;
     }
 }
 
 /*-------------------------會員中心-------------------------*/
-.member-center {
-    margin-top: 150px;
-    margin-bottom: 60px;
-
-    @media (min-width:768px) {
-        margin-top: 200px;
-        margin-bottom: 80px;
-    }
+.paw {
+    background-image: url("../images/paw-right.png");
+    background-position: 95% 25%;
 }
 
 /*-------------------------基本資料-------------------------*/
@@ -38,11 +33,10 @@
     left: 0;
     height: 33%;
     background-color: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
 }
 
 /*-------------------------預約紀錄-------------------------*/
-.table-group{
+.table-group {
     height: 358px;
     overflow-y: scroll;
 }

@@ -1,5 +1,5 @@
 /*-----------------------預約登入頁面----------------------*/
-.reserve {
+.login {
     padding: 80px 0;
 
     @media (min-width:992px) {
@@ -55,7 +55,7 @@
     }
 }
 
-.login-link {
+.login-btn {
     @include link-slide($white, $primary, $primary, $white);
     padding: 11px 0;
 }

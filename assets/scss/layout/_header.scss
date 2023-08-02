@@ -18,15 +18,15 @@ body {
     top: 20px;
     padding: 20px 40px;
   }
-}
 
-.topbar-logo {
-  width: 64px;
-  height: 64px;
+  &-logo {
+    width: 64px;
+    height: 64px;
 
-  @media (min-width:768px) {
-    width: 80px;
-    height: 80px;
+    @media (min-width:768px) {
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
@@ -81,16 +81,20 @@ body {
 
 
 // 線上預約<a>樣式
-.reserve-link {
+.login-link {
   padding: 5px 6px;
   border: 2px solid $primary-l;
   border-radius: 50rem;
+
+  &-text {
+    color: $primary;
+  }
 
   &:hover {
     border: 2px solid $primary;
     background-color: $primary ;
 
-    .reserve-text {
+    .login-link-text {
       color: $white;
     }
   }
@@ -99,7 +103,7 @@ body {
     border: 2px solid $primary;
     background-color: $primary ;
 
-    .reserve-text {
+    .login-link-text {
       color: $white;
     }
   }
@@ -116,36 +120,31 @@ body {
   }
 }
 
-.reserve-text {
-  color: $primary;
-}
-
 // 漢堡樣式
 .ham {
   width: 40px;
   height: 40px;
   cursor: pointer;
   z-index: 2;
-}
 
-.ham-line,
-.ham-line::before,
-.ham-line::after {
-  position: absolute;
-  content: "";
-  width: 18px;
-  height: 2px;
-  background-color: $black;
-}
-
-.ham-line {
-
-  &::before {
-    top: -6px;
+  &-line,
+  &-line::before,
+  &-line::after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background-color: $black;
   }
 
-  &::after {
-    top: 6px;
+  &-line {
+    &::before {
+      top: -6px;
+    }
+
+    &::after {
+      top: 6px;
+    }
   }
 }
 
@@ -176,32 +175,31 @@ body {
   height: 80px;
   cursor: pointer;
   background-color: rgba($color: #fff, $alpha: 0.7);
-}
 
-.closedHam-line,
-.closedHam-line::before,
-.closedHam-line::after {
-  position: absolute;
-  content: "";
-  width: 12px;
-  height: 2px;
-  background-color: #000;
-}
-
-.closedHam-line {
-  background-color: transparent;
-
-  &::before {
-    top: 0;
-    transform: rotate(45deg);
+  &-line,
+  &-line::before,
+  &-line::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 2px;
+    background-color: $black;
   }
 
-  &::after {
-    top: 0;
-    transform: rotate(-45deg);
+  &-line {
+    background-color: transparent;
+
+    &::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
   }
 }
-
 
 // 768px以下 - menu透過js點擊展開
 .menu.open {

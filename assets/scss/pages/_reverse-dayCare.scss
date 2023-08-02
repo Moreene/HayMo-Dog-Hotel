@@ -1,0 +1,71 @@
+.reverse-content {
+    margin-bottom: 60px;
+
+    @media (min-width:768px) {
+        margin-bottom: 160px;
+    }
+}
+
+.reverse-title-line::after {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 1px;
+    background-color: $black;
+}
+
+.reverse-link:hover,
+.reverse-link:active,
+.reverse-link.active {
+    color: $white;
+    background-color: $primary;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .reverse-content{
+//     background-image: url("../images/big-paw-right.png"),url("../images/big-paw-left.png");
+//     background-repeat: no-repeat;
+//     background-position:90% 0% ,8% 70%;
+// }

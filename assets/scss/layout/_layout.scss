@@ -28,6 +28,12 @@ img {
     }
 }
 
+// title字體
+.title-font{
+    font-size: 48px;
+    font-weight: bold;
+}
+
 // link-hover效果
 @mixin link-slide($color, $slideColor, $bgColor, $slideBgColor) {
     position: relative;
@@ -57,5 +63,15 @@ img {
     &:hover::after {
         width: 100%;
         left: 0;
+    }
+}
+
+// 會員中心title
+.member-center-title {
+    margin-top: 150px;
+    margin-bottom: 60px;
+
+    @media (min-width:768px) {
+        margin-top: 182px;
     }
 }
