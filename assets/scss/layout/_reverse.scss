@@ -1,0 +1,66 @@
+.reverse-content {
+    margin-bottom: 60px;
+
+
+    @include pad {
+        margin-bottom: 160px;
+    }
+}
+
+.reverse-title-line::after {
+    position: absolute;
+    content: '';
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 1px;
+    background-color: $black;
+}
+
+.reverse-link:hover,
+.reverse-link:active,
+.reverse-link.active {
+    color: $white;
+    background-color: $primary;
+}
+
+.reverse-plan {
+    @include pad {
+        padding-left: 14px;
+    }
+}
+
+.reverse-time {
+    padding-left: 25px;
+
+    @include pad {
+        padding-left: 35px;
+    }
+}
+
+.reverse-info {
+    padding: 0 25px;
+
+    @include pad {
+        padding: 0 35px;
+    }
+}
+
+.form-control,
+textarea {
+    border-color: $black-80;
+
+    &:focus {
+        border-color: $primary;
+    }
+}
+
+.reverse-btn {
+    @include link-slide($white, $primary, $primary, $white);
+    padding: 11px 0;
+}
+
+.invalid-feedback.space {
+    margin-left: 50px;
+}

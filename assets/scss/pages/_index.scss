@@ -1,19 +1,12 @@
 /*-------------------------共同樣式-------------------------*/
-// 標題字體 
-.section-h2 {
-    font-size: 48px;
-}
-
-// mb間距
 %section-mb {
     margin-bottom: 120px;
 
-    @media (min-width:992px) {
+    @include pc {
         margin-bottom: 200px;
     }
 }
 
-// label 
 .section-label {
     padding: 12px 20px;
     border: 3px solid $black;
@@ -31,19 +24,19 @@
     &-inner {
         height: 865px;
 
-        @media (min-width:375px) {
+        @include mobile {
             height: 820px;
         }
 
-        @media (min-width:992px) {
+        @include pc {
             height: 620px;
         }
 
-        @media (min-width:1200px) {
+        @include pc-lg {
             height: 870px;
         }
 
-        @media (min-width:1400px) {
+        @include pc-xl {
             height: 1080px;
         }
     }
@@ -67,11 +60,11 @@
             background-position: 75% center;
         }
 
-        @media (min-width:1200px) {
+        @include pc-lg {
             height: 870px;
         }
 
-        @media (min-width:1400px) {
+        @include pc-xl {
             height: 1080px;
         }
     }
@@ -82,15 +75,15 @@
     left: 12px;
     top: 88%;
 
-    @media (min-width:768px) {
+    @include pad {
         left: 6.5%;
     }
 
-    @media (min-width:992px) {
+    @include pc {
         top: 33%;
     }
 
-    @media (min-width:1200px) {
+    @include pc-lg {
         top: 28%;
         left: 6.5%;
     }
@@ -104,12 +97,12 @@
     &.common {
         top: 100%;
 
-        @media (min-width:992px) {
+        @include pc {
             top: 48%;
             color: $white;
         }
 
-        @media (min-width:1200px) {
+        @include pc-lg {
             top: 41%;
         }
 
@@ -122,11 +115,11 @@
     &-slogan {
         font-size: 32px;
 
-        @media (min-width:1200px) {
+        @include pc-lg {
             font-size: 40px;
         }
 
-        @media (min-width:1400px) {
+        @include pc-xl {
             font-size: 48px;
         }
     }
@@ -147,11 +140,11 @@
     @extend %section-mb;
     height: 800px;
 
-    @media (min-width:375px) {
+    @include mobile {
         height: 687px;
     }
 
-    @media (min-width:1200px) {
+    @include pc-lg {
         height: 624px;
     }
 }
@@ -162,20 +155,20 @@
     &:nth-child(2) {
         margin-right: 24px;
 
-        @media (min-width:768px) {
+        @include pad {
             margin-right: 40px;
         }
     }
 
     // 768px-所有圖片的間距
-    @media (min-width:768px) {
+    @include pad {
         &:not(:last-child) {
             margin-right: 40px;
         }
     }
 
     // 1200px-第一張圖及content-txt間距設定
-    @media (min-width:1200px) {
+    @include pc-lg {
         &:nth-child(1) {
             margin-left: 144px;
         }
@@ -217,11 +210,11 @@
     left: 3.5%;
     z-index: 2;
 
-    @media (min-width:375px) {
+    @include mobile {
         padding: 0 12px 0 0;
     }
 
-    @media (min-width:768px) {
+    @include pad {
         padding: 0;
         left: 100%;
         transform: translateX(-100%);
@@ -231,7 +224,7 @@
     &-xl {
         width: 351px;
 
-        @media (min-width:992px) {
+        @include pc {
             width: 417px;
         }
     }
@@ -254,19 +247,19 @@
         z-index: -2;
         border-radius: 120px 0 120px 0;
 
-        @media (min-width:1200px) {
+        @include pc-lg {
             border-radius: 160px 0 160px 0;
         }
     }
 
-    @media (min-width:1200px) {
+    @include pc-lg {
         padding: 160px 0;
     }
 
     &-title {
         margin-bottom: 24px;
 
-        @media (min-width:1200px) {
+        @include pc-lg {
             margin-bottom: 40px;
         }
     }
@@ -274,7 +267,7 @@
     &-content {
         padding: 24px 0;
 
-        @media (min-width:1200px) {
+        @include pc-lg {
             padding: 40px 0;
         }
     }
@@ -283,7 +276,7 @@
 .subtitle {
     font-size: 28px;
 
-    @media (min-width:1200px) {
+    @include pc-lg {
         font-size: 32px;
         margin-bottom: 32px;
     }
@@ -296,12 +289,11 @@
 }
 
 .vector {
-
-    @media (min-width:768px) {
+    @include pad {
         margin-bottom: 20px;
     }
 
-    @media (min-width:992px) {
+    @include pc {
         margin-bottom: 32px;
     }
 
@@ -309,12 +301,12 @@
         background-image: url("../images/Vector-1-sm.png");
         @include vector-size(130px, 130px);
 
-        @media (min-width:375px) {
+        @include mobile {
             @include vector-size(160px, 160px);
             z-index: -1;
         }
 
-        @media (min-width:1200px) {
+        @include pc-lg {
             background-image: url("../images/Vector-1.png");
             @include vector-size(240px, 240px);
         }
@@ -325,7 +317,7 @@
         @include vector-size(139px, 160px);
         z-index: -1;
 
-        @media (min-width:1200px) {
+        @include pc-lg {
             background-image: url("../images/Vector-2.png");
             @include vector-size(208px, 240px);
         }
@@ -336,7 +328,7 @@
         @include vector-size(134px, 160px);
         z-index: -1;
 
-        @media (min-width:1200px) {
+        @include pc-lg {
             background-image: url("../images/Vector-3.png");
             @include vector-size(203px, 240px);
         }
@@ -347,7 +339,7 @@
         @include vector-size(160px, 148px);
         z-index: -1;
 
-        @media (min-width:1200px) {
+        @include pc-lg {
             background-image: url("../images/Vector-4.png");
             @include vector-size(240px, 222px);
         }
@@ -363,7 +355,7 @@
         transform: translate(-65%, -50%);
     }
 
-    @media (min-width:1200px) {
+    @include pc-lg {
         @include vector-size(80px, 80px);
     }
 }
@@ -378,16 +370,13 @@
     background-image: url("../images/happy-dog.png");
     background-position: right center;
 
-    @media (min-width:768px) {
+    @include pad {
         height: 100%;
         background-position: 80% center;
-    }
-
-    @media (min-width:768px) {
         border-bottom-left-radius: 120px;
     }
 
-    @media (min-width:1200px) {
+    @include pc-lg {
         border-bottom-left-radius: 160px;
     }
 }
@@ -396,11 +385,11 @@
     padding: 80px 24px 120px;
     border-bottom-left-radius: 120px;
 
-    @media (min-width:768px) {
+    @include pad {
         border-radius: 0;
     }
 
-    @media (min-width:1200px) {
+    @include pc-lg {
         padding: 143px 134px;
     }
 }

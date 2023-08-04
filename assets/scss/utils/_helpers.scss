@@ -1,0 +1,14 @@
+// title字體
+.title-font{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+// 線上預約背景
+.bg-two-paw {
+    @include pc-lg {
+        background-image: url("../images/big-paw-right.png"), url("../images/big-paw-left.png");
+        background-position: 90% 11%, 7% 75%;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,19 +1,32 @@
-body {
-    font-family: 'Noto Sans TC', sans-serif;
-    line-height: 1.5;
+// breakpoint
+@mixin mobile{
+    @media (min-width:375px) {
+        @content;
+    }
 }
 
-a {
-    text-decoration: none;
-    display: inline-block;
+@mixin pad{
+    @media (min-width:768px) {
+        @content;
+    }
 }
 
-ul {
-    list-style: none;
+@mixin pc{
+    @media (min-width:992px) {
+        @content;
+    }
 }
 
-img {
-    vertical-align: middle;
+@mixin pc-lg{
+    @media (min-width:1200px) {
+        @content;
+    }
+}
+
+@mixin pc-xl{
+    @media (min-width:1400px) {
+        @content;
+    }
 }
 
 // banner
@@ -28,13 +41,7 @@ img {
     }
 }
 
-// title字體
-.title-font{
-    font-size: 48px;
-    font-weight: bold;
-}
-
-// link-hover效果
+// link-hover
 @mixin link-slide($color, $slideColor, $bgColor, $slideBgColor) {
     position: relative;
     color: $color;
@@ -63,15 +70,5 @@ img {
     &:hover::after {
         width: 100%;
         left: 0;
-    }
-}
-
-// 會員中心title
-.member-center-title {
-    margin-top: 150px;
-    margin-bottom: 60px;
-
-    @media (min-width:768px) {
-        margin-top: 182px;
     }
 }

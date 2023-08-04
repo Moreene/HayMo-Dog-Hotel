@@ -14,28 +14,3 @@ function toggleMenu() {
 
 hamBtn.addEventListener('click', toggleMenu);
 hamCloseBtn.addEventListener("click", toggleMenu);
-
-// topbar 線上預約 active(無法透過currentPage來增加active樣式的部分)
-document.addEventListener("DOMContentLoaded", function () {
-    let currentUrl = window.location.href;
-    let loginLink = document.getElementById("loginLink");
-    let reverseLink = document.getElementById("reverseLink");
-
-
-    let signUpHref = "https://moreene.github.io/HayMo-Dog-Hotel/signUp.html";
-    let reverseCosmeticHref = "https://moreene.github.io/HayMo-Dog-Hotel/reverse-cosmetic.html";
-    let reverseStayHref = "https://moreene.github.io/HayMo-Dog-Hotel/reverse-stay.html";
-
-    switch (currentUrl) {
-        case signUpHref:
-            loginLink.classList.add("active");
-            break;
-        case reverseCosmeticHref:
-            reverseLink.classList.add("active");
-            break;
-        case reverseStayHref:
-            reverseLink.classList.add("active");
-            break;
-    }
-});
-

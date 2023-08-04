@@ -2,13 +2,22 @@
 .center-common-mb {
     margin-bottom: 90px;
 
-    @media (min-width:768px) {
+    @include pad {
         margin-bottom: 160px;
     }
 }
 
+.member-center-title {
+    margin-top: 150px;
+    margin-bottom: 60px;
+
+    @include pad {
+        margin-top: 182px;
+    }
+}
+
 /*-------------------------會員中心-------------------------*/
-.paw {
+.bg-paw-right {
     background-image: url("../images/paw-right.png");
     background-position: 95% 25%;
 }
@@ -18,7 +27,7 @@
     width: 120px;
     height: 120px;
 
-    @media (min-width:992px) {
+    @include pc {
         width: 150px;
         height: 150px;
     }
