@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>嘿毛寵物旅館 | 線上預約-安親</title>
     <link rel="icon" href="/HayMo-Dog-Hotel/assets/logo-09125146.ico" type="image/x-icon">
-  <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/main-219516e5.js"></script>
-  <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/main-a1e82558.css">
+  <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/main-04b9594d.js"></script>
+  <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/main-6e4e2810.css">
 </head>
 
 <body class="bg-secondary-l">
@@ -27,7 +27,7 @@
                         <a href="#" class="menu-link position-relative">服務項目</a>
                     </li>
                     <li class="menu-item">
-                        <a href="reverse-dayCare.html" class="menu-link position-relative active" id="reverseLink">線上預約</a>
+                        <a href="reverse-dayCare.html" class="menu-link position-relative active">線上預約</a>
                     </li>
                 </ul>
             </div>
@@ -69,37 +69,137 @@
         </ul>
     </div>
 </div>
-        <main class="reverse-content">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-10 col-xl-8">
-                        <h2 class="member-center-title title-font text-center">服務預約</h2>
-                        <form class="needs-validation" novalidate>
-                            <div class="row shadow-md-sm py-5 px-2 px-md-5 bg-white">
-                                <div class="col-12">
-                                    <h3 class="reverse-title-line position-relative mb-3"><span class="fs-1 fw-bold me-2">1</span>選擇服務
-                                    </h3>
-                                </div>
-                                <div class="col-12">
-                                    <div class="d-flex justify-content-between py-4 mb-3">
-                                        <a href="#"
-                                            class="reverse-link text-center p-3 py-md-4 border border-primary rounded-circle rounded-md-pill w-30 w-xl-25 active">狗狗安親</a>
-                                        <a href="reverse-cosmetic.html"
-                                            class="reverse-link text-center p-3 py-md-4 border border-primary rounded-circle rounded-md-pill w-30 w-xl-25">狗狗美容</a>
-                                        <a href="reverse-stay.html"
-                                            class="reverse-link text-center p-3 py-md-4 border border-primary rounded-circle rounded-md-pill w-30 w-xl-25">狗狗住宿</a>
+        <div class="bg-two-paw">
+            <main class="reverse-content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-xl-8">
+                            <h2 class="member-center-title title-font text-center">服務預約</h2>
+                            <form class="py-5 px-2 px-md-5 bg-white rounded-1 needs-validation" novalidate>
+                                <h3 class="reverse-title-line position-relative mb-3"><span class="fs-1 fw-bold me-2">1</span>選擇服務</h3>
+<div class="d-flex justify-content-between py-5">
+    <a href="reverse-dayCare.html"
+        class="reverse-link text-center p-3 py-md-4 border border-primary  rounded-pill w-30 w-xl-25 active">狗狗安親</a>
+    <a href="reverse-cosmetic.html"
+        class="reverse-link text-center p-3 py-md-4 border border-primary  rounded-pill w-30 w-xl-25">狗狗美容</a>
+    <a href="reverse-stay.html"
+        class="reverse-link text-center p-3 py-md-4 border border-primary  rounded-pill w-30 w-xl-25">狗狗住宿</a>
+</div>                                    <h3 class="reverse-title-line position-relative mb-3"><span
+                                            class="fs-1 fw-bold me-2">2</span>選擇方案</h3>
+                                    <div class="reverse-plan py-5">
+                                        <p class="d-flex"><i
+                                                class="bi bi-stars d-inline-block text-secondary me-1"></i>安親服務一次為8小時，不滿8小時以8小時計費，超時需另計收費
+                                        </p>
+                                        <p class="d-flex mb-0"><i
+                                                class="bi bi-stars d-inline-block text-secondary me-1"></i>開放安親時間為每周一至周日9:00-21:00
+                                        </p>
                                     </div>
-                                </div>
-                                <div class="col-12">
-                                    <h3 class="reverse-title-line position-relative mb-3"><span class="fs-1 fw-bold me-2">2</span>選擇方案
-                                    </h3>
-                                </div>
-                            </div>
-                        </form>
+                                    <h3 class="reverse-title-line position-relative mb-3"><span class="fs-1 fw-bold me-2">3</span>選擇日期</h3>
+<div class="reverse-time py-5">
+    <div class="row row-cols-1 row-cols-md-2 gy-4 gy-md-0">
+        <div class="col">
+            <label for="datePicker" class="me-2">日期</label>
+            <input type="date" id="datePicker" name="date" class="py-1 px-3 rounded-pill border border-black-80"
+                required>
+            <div class="invalid-feedback space">
+                請選擇預約日期
+            </div>
+        </div>
+        <div class="col">
+            <label for="timePicker" class="me-2">時間</label>
+            <input type="time" id="timePicker" name="time" class="py-1 px-4 rounded-pill border border-black-80"
+                required>
+            <div class="invalid-feedback space">
+                請選擇預約時間
+            </div>
+        </div>
+    </div>
+</div>
+<h3 class="reverse-title-line position-relative mb-3"><span class="fs-1 fw-bold me-2">4</span>填寫資料</h3>
+<div class="reverse-info col-lg-10 py-5">
+    <div class="row mb-5">
+        <label for="dogName" class="col-md-3 col-form-label">毛孩姓名 <span class="text-danger">*</span></label>
+        <div class="col-md-9">
+            <input list="dogName" name="dogName" class="form-control" required>
+            <datalist id="dogName">
+                <option value="大頭">
+            </datalist>
+            <div class="invalid-feedback">
+                請輸入毛孩姓名
+            </div>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <label for="dogNum" class="col-md-3 col-form-label">毛孩數量 <span class="text-danger">*</span></label>
+        <div class="col-md-9">
+            <input type="number" id="dogNum" name="dogNum" min="1" max="10" class="form-control" required>
+            <div class="invalid-feedback">
+                請確認毛孩數量
+            </div>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-md-3">
+            <div class="mb-3 mb-md-0">樂園服務 <span class="text-danger">*</span></div>
+        </div>
+        <div class="col-md-9">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="rides" id="rides-yes" value="是" required>
+                <label class="form-check-label" for="rides-yes">是
+                    +200元(2小時/隻)</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="rides" id="rides-no" value="否" required>
+                <label class="form-check-label" for="rides-no">否</label>
+            </div>
+            <div class="invalid-feedback">
+                請確認是否需要樂園服務
+            </div>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <label for="emergencyContact" class="col-md-3 col-form-label">緊急聯絡人 <span class="text-danger">*</span></label>
+        <div class="col-md-9">
+            <input list="emergencyContact" name="emergencyContact" class="form-control" placeholder="請輸入姓名" required>
+            <datalist id="emergencyContact">
+                <option value="Moreene">
+            </datalist>
+            <div class="invalid-feedback">
+                請輸入緊急聯絡人姓名
+            </div>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <label for="emergencyPhone" class="col-md-3 col-form-label">連絡電話 <span class="text-danger">*</span></label>
+        <div class="col-md-9">
+            <input list="emergencyPhone" name="emergencyPhone" class="form-control" placeholder="請輸入會接聽的電話號碼" required>
+            <datalist id="emergencyPhone">
+                <option value="0987-878787">
+            </datalist>
+            <div class="invalid-feedback">
+                請輸入緊急聯絡人電話
+            </div>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <label for="remark" class="col-md-3 col-form-label">其他備註</label>
+        <div class="col-md-9">
+            <textarea name="remark" id="remark" cols="30" rows="6" class="w-100"></textarea>
+        </div>
+    </div>
+    <div class="row justify-content-md-end">
+        <div class="col-md-9">
+            <button type="submit"
+                class="d-flex justify-content-center align-items-center btn btn-primary rounded-0 w-100 reverse-btn">送出<i
+                    class="bi bi-arrow-right d-block fs-4 ms-3"></i></button>
+        </div>
+    </div>
+</div>                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </main>
+            </main>
+        </div>
 
         <footer>
     <div class="container">
@@ -134,6 +234,22 @@
     </div>
 </footer>
             
+            <script>
+                (function () {
+                    'use strict'
+                    var forms = document.querySelectorAll('.needs-validation')
+                    Array.prototype.slice.call(forms)
+                        .forEach(function (form) {
+                            form.addEventListener('submit', function (event) {
+                                if (!form.checkValidity()) {
+                                    event.preventDefault()
+                                    event.stopPropagation()
+                                }
+                                form.classList.add('was-validated')
+                            }, false)
+                        })
+                })()
+            </script>
 </body>
 
 </html>
