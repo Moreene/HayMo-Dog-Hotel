@@ -44,7 +44,11 @@
 }
 
 .form-control-plaintext {
+    border-top: 0;
+    border-right:0;
+    border-left:0;
     border-bottom: 1px solid $black-60;
+    outline: 0;
 
     &::placeholder {
         color: $black-40;
