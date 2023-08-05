@@ -1,9 +1,13 @@
 .reverse-content {
     margin-bottom: 60px;
 
-
     @include pad {
         margin-bottom: 160px;
+    }
+
+    input,
+    textarea {
+        @extend %input-style;
     }
 }
 
@@ -37,30 +41,21 @@
     @include pad {
         padding-left: 35px;
     }
+
+    .invalid-feedback {
+        margin-left: 50px;
+    }
+}
+
+.reverse-service,
+.reverse-info {
+    @extend %pad-padding-35;
 }
 
 .reverse-info {
     padding: 0 25px;
-
-    @include pad {
-        padding: 0 35px;
-    }
-}
-
-.form-control,
-textarea {
-    border-color: $black-80;
-
-    &:focus {
-        border-color: $primary;
-    }
 }
 
 .reverse-btn {
     @include link-slide($white, $primary, $primary, $white);
-    padding: 11px 0;
-}
-
-.invalid-feedback.space {
-    margin-left: 50px;
 }

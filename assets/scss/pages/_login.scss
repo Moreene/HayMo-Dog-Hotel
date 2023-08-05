@@ -44,7 +44,7 @@
 }
 
 .form-control-plaintext {
-    border-bottom: 1px solid $black-40;
+    border-bottom: 1px solid $black-60;
 
     &::placeholder {
         color: $black-40;
@@ -57,7 +57,6 @@
 
 .login-btn {
     @include link-slide($white, $primary, $primary, $white);
-    padding: 11px 0;
 }
 
 .login-quick {
@@ -91,7 +90,6 @@
 /*-------------------------註冊會員-------------------------*/
 .register-link {
     @include link-slide($primary, $white, $white, $primary);
-    padding: 11px 0;
     margin-bottom: 80px;
 
     @include pc {

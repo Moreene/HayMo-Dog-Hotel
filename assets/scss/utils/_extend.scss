@@ -1,0 +1,19 @@
+%input-style {
+    border: 1px solid $black-80;
+
+    &:focus {
+        border: 1px solid $primary;
+        box-shadow: inset 0 0 0 1px $primary;
+    }
+
+    &:focus-visible {
+        outline: 0;
+    }
+}
+
+// reverse頁面通用padding
+%pad-padding-35 {
+    @include pad {
+        padding: 0 35px;
+    }
+}

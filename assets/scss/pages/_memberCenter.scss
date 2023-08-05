@@ -7,7 +7,7 @@
     }
 }
 
-.member-center-title {
+.center-title {
     margin-top: 150px;
     margin-bottom: 60px;
 
@@ -17,9 +17,13 @@
 }
 
 /*-------------------------會員中心-------------------------*/
-.bg-paw-right {
+.member-center {
     background-image: url("../images/paw-right.png");
     background-position: 95% 25%;
+
+    input {
+        @extend %input-style;
+    }
 }
 
 /*-------------------------基本資料-------------------------*/
