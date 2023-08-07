@@ -10,11 +10,11 @@ body {
     backdrop-filter: blur(10px);
     z-index: 3;
 
-    @media (min-width:375px) {
+    @include mobile {
         padding: 8px 40px;
     }
 
-    @media (min-width:768px) {
+    @include pad {
         top: 20px;
         padding: 20px 40px;
     }
@@ -24,7 +24,7 @@ body {
     width: 64px;
     height: 64px;
 
-    @media (min-width:768px) {
+    @include pad {
         width: 80px;
         height: 80px;
     }
@@ -35,7 +35,7 @@ body {
     margin-right: 32px;
 }
 
-@media (min-width:768px) {
+@include pad {
     .menu-link {
         color: $black-80;
 
@@ -103,11 +103,11 @@ body {
         }
     }
 
-    @media (min-width:375px) {
+    @include mobile {
         margin-right: 8px;
     }
 
-    @media (min-width:768px) {
+    @include pad {
         border-radius: 50%;
         width: 80px;
         height: 80px;

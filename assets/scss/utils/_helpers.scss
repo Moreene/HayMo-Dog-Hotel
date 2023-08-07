@@ -1,11 +1,21 @@
 // title字體
-.title-font{
+.title-font {
     font-size: 48px;
     font-weight: bold;
 }
 
-// 線上預約背景
-.bg-two-paw {
+// 會員中心-title
+.center-title {
+    margin-top: 150px;
+    margin-bottom: 60px;
+
+    @include pad {
+        margin-top: 182px;
+    }
+}
+
+// 會員中心-線上預約(背景)
+.bg-two-paws {
     @include pc-lg {
         background-image: url("../images/big-paw-right.png"), url("../images/big-paw-left.png");
         background-position: 90% 11%, 7% 75%;

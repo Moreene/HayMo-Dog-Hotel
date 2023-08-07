@@ -11,7 +11,7 @@
     }
 }
 
-.reverse-title-line::after {
+.title-line::after {
     position: absolute;
     content: '';
     display: block;
@@ -22,11 +22,28 @@
     background-color: $black;
 }
 
-.reverse-link:hover,
-.reverse-link:active,
-.reverse-link.active {
-    color: $white;
-    background-color: $primary;
+.reserve-option {
+    @extend %pad-padding-35;
+
+    .option-link {
+        color: $primary;
+
+        &:hover,
+        &:active,
+        &.active {
+            color: $white;
+            background-color: $primary;
+        }
+    }
+
+    .form-check-label {
+        cursor: pointer;
+    }
+
+    .form-check-input:checked~.form-check-label {
+        color: $white;
+        background-color: $primary;
+    }
 }
 
 .reverse-plan {
@@ -47,13 +64,9 @@
     }
 }
 
-.reverse-service,
-.reverse-info {
-    @extend %pad-padding-35;
-}
-
 .reverse-info {
     padding: 0 25px;
+    @extend %pad-padding-35;
 }
 
 .reverse-btn {

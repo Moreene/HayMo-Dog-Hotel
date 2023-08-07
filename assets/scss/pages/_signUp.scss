@@ -1,7 +1,7 @@
 .dogs-deco {
     height: 100px;
 
-    @media (min-width:768px) {
+    @include pad {
         height: 150px;
     }
 }

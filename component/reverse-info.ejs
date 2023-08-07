@@ -29,13 +29,16 @@
                 <input class="form-check-input" type="radio" name="rides" id="rides-yes" value="是" required>
                 <label class="form-check-label" for="rides-yes">是
                     +200元(2小時/隻)</label>
+                <div class="invalid-feedback">
+                    請選擇是否加購
+                </div>
             </div>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="rides" id="rides-no" value="否" required>
                 <label class="form-check-label" for="rides-no">否</label>
-            </div>
-            <div class="invalid-feedback">
-                請確認是否需要樂園服務
+                <div class="invalid-feedback">
+                    請選擇是否加購
+                </div>
             </div>
         </div>
     </div>
@@ -66,7 +69,7 @@
     <div class="row mb-5">
         <label for="remark" class="col-md-3 col-form-label">其他備註</label>
         <div class="col-md-9">
-            <textarea name="remark" id="remark" cols="30" rows="6" class="w-100 rounded-1"></textarea>
+            <textarea name="remark" id="remark" cols="30" rows="6" class="form-control w-100 rounded-1"></textarea>
         </div>
     </div>
     <div class="row justify-content-md-end">
