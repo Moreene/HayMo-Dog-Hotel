@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>嘿毛寵物旅館 | 線上預約-住宿</title>
     <link rel="icon" href="/HayMo-Dog-Hotel/assets/logo-09125146.ico" type="image/x-icon">
-  <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/main-e86933b6.js"></script>
-  <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/main-dcf4f70b.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.css">
+  <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/main-72a6f08b.js"></script>
+  <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/main-3aecc72d.css">
 </head>
 
-<body>
+<body class="bg-secondary-l">
     <div class="d-flex justify-content-center">
     <header class="topbar w-lg-75 w-xl-50 w-xxl-45 rounded-pill position-fixed">
         <div class="d-flex align-items-center justify-content-between try">
@@ -68,9 +70,187 @@
         </ul>
     </div>
 </div>
+        <div class="bg-two-paws">
+            <main class="reverse-content">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-xl-8">
+                            <h2 class="center-title title-font text-center">服務預約</h2>
+                            <form class="py-5 px-2 px-md-5 bg-white rounded-1 needs-validation" novalidate>
+                                <h3 class="title-line position-relative mb-3"><span class="fs-1 fw-bold me-2">1</span>選擇服務</h3>
+<div class="d-flex justify-content-between reserve-option py-5">
+    <a href="reverse-dayCare.html"
+        class="option-link text-center p-3 py-md-4 border border-primary rounded-pill w-30 w-xl-25 ">狗狗安親</a>
+    <a href="reverse-cosmetic.html"
+        class="option-link text-center p-3 py-md-4 border border-primary rounded-pill w-30 w-xl-25 ">狗狗美容</a>
+    <a href="reverse-stay.html"
+        class="option-link text-center p-3 py-md-4 border border-primary rounded-pill w-30 w-xl-25 active">狗狗住宿</a>
+</div>                                    <h3 class="title-line position-relative mb-3"><span
+                                            class="fs-1 fw-bold me-2">2</span>選擇房型</h3>
+                                    <div class="d-flex justify-content-between py-5 reserve-option">
+                                        <div class="form-check form-check-inline w-30 w-xl-25 p-0 m-0">
+                                            <input class="form-check-input d-none" type="radio" name="room" id="small"
+                                                value="小狗香香房" required>
+                                            <label
+                                                class="form-check-label option-link text-center border border-primary rounded-pill p-3 py-md-4 w-100"
+                                                for="small">小狗<span class="d-block d-md-inline">香香房</span></label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-30 w-xl-25 p-0 m-0">
+                                            <input class="form-check-input d-none" type="radio" name="room" id="medium"
+                                                value="中犬呼嚕房" required>
+                                            <label
+                                                class="form-check-label option-link text-center border border-primary rounded-pill p-3 py-md-4 w-100"
+                                                for="medium">忠犬<span class="d-block d-md-inline">呼嚕房</span></label>
+                                        </div>
+                                        <div class="form-check form-check-inline w-30 w-xl-25 p-0 m-0">
+                                            <input class="form-check-input d-none" type="radio" name="room" id="large"
+                                                value="大狗好眠房" required>
+                                            <label
+                                                class="form-check-label option-link text-center border border-primary rounded-pill p-3 py-md-4 w-100"
+                                                for="large">大狗<span class="d-block d-md-inline">好眠房</span></label>
+                                        </div>
+                                    </div>
+                                    <h3 class="title-line position-relative mb-3"><span
+                                            class="fs-1 fw-bold me-2">3</span>選擇日期</h3>
+                                    <div class="reverse-time py-5">
+                                        <div class="row row-cols-1 row-cols-md-3 align-items-center gy-4 gy-md-0 mb-4">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <label for="from" class="col-auto col-form-label me-3">從</label>
+                                                    <div class="col">
+                                                        <input type="text" id="from" name="from"
+                                                            class="form-control py-1 px-3 rounded-pill w-75 w-md-100 text-center "
+                                                            required>
+                                                        <div class="invalid-feedback">
+                                                            請選擇入住日期
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="row">
+                                                    <label for="to" class="col-auto col-form-label me-3">到</label>
+                                                    <div class="col">
+                                                        <input type="text" id="to" name="to"
+                                                            class="form-control py-1 px-3 rounded-pill w-75 w-md-100 text-center"
+                                                            required>
+                                                        <div class="invalid-feedback">
+                                                            請選擇退房日期
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <span>共計_____日</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="row">
+                                                    <label for="timepicker" class="col-auto col-form-label">時間</label>
+                                                    <div class="col">
+                                                        <input type="text" id="timepicker" name="time"
+                                                            class="timepicker form-control py-1 px-4 rounded-pill w-75 w-md-100 text-center"
+                                                            required>
+                                                        <div class="invalid-feedback">
+                                                            請選擇預約時間
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3 class="title-line position-relative mb-3"><span
+                                            class="fs-1 fw-bold me-2">4</span>填寫資料</h3>
+                                    <div class="reverse-info col-lg-10 py-5">
+    <div class="row mb-5">
+        <label for="dogName" class="col-md-3 col-form-label">毛孩姓名 <span class="text-danger">*</span></label>
+        <div class="col-md-9">
+            <input list="dogName" name="dogName" class="form-control" required>
+            <datalist id="dogName">
+                <option value="大頭">
+            </datalist>
+            <div class="invalid-feedback">
+                請輸入毛孩姓名
+            </div>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <label for="dogNum" class="col-md-3 col-form-label">毛孩數量 <span class="text-danger">*</span></label>
+        <div class="col-md-9">
+            <input type="number" id="dogNum" name="dogNum" min="1" max="10" class="form-control" required>
+            <div class="invalid-feedback">
+                請確認毛孩數量
+            </div>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-md-3">
+            <div class="mb-3 mb-md-0">樂園服務 <span class="text-danger">*</span></div>
+        </div>
+        <div class="col-md-9">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="rides" id="rides-yes" value="是" required>
+                <label class="form-check-label" for="rides-yes">是
+                    +200元(2小時/隻)</label>
+                <div class="invalid-feedback">
+                    請選擇是否加購
+                </div>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="rides" id="rides-no" value="否" required>
+                <label class="form-check-label" for="rides-no">否</label>
+                <div class="invalid-feedback">
+                    請選擇是否加購
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <label for="emergencyContact" class="col-md-3 col-form-label">緊急聯絡人 <span class="text-danger">*</span></label>
+        <div class="col-md-9">
+            <input list="emergencyContact" name="emergencyContact" class="form-control" placeholder="請輸入姓名" required>
+            <datalist id="emergencyContact">
+                <option value="Moreene">
+            </datalist>
+            <div class="invalid-feedback">
+                請輸入緊急聯絡人姓名
+            </div>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <label for="emergencyPhone" class="col-md-3 col-form-label">連絡電話 <span class="text-danger">*</span></label>
+        <div class="col-md-9">
+            <input list="emergencyPhone" name="emergencyPhone" class="form-control" placeholder="請輸入會接聽的電話號碼" required>
+            <datalist id="emergencyPhone">
+                <option value="0987-878787">
+            </datalist>
+            <div class="invalid-feedback">
+                請輸入緊急聯絡人電話
+            </div>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <label for="remark" class="col-md-3 col-form-label">其他備註</label>
+        <div class="col-md-9">
+            <textarea name="remark" id="remark" cols="30" rows="6" class="form-control w-100 rounded-1"></textarea>
+        </div>
+    </div>
+    <div class="row justify-content-md-end">
+        <div class="col-md-9">
+            <button type="submit"
+                class="d-flex justify-content-center align-items-center btn btn-primary rounded-0 w-100 reverse-btn">送出<i
+                    class="bi bi-arrow-right d-block fs-4 ms-3"></i></button>
+        </div>
+    </div>
+</div>                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
 
-
-    <footer>
+        <footer>
     <div class="container">
         <div class="row flex-column-reverse flex-xl-row w-100">
             <div class="col-md-10 col-xl-7 col-xxl-6">
@@ -103,6 +283,77 @@
     </div>
 </footer>
             
+            <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+            <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+            <script>
+
+                // 日期選擇
+                $(function () {
+                    //設定中文語系
+                    $.datepicker.regional['zh-TW'] = {
+                        dayNames: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"],
+                        dayNamesMin: ["日", "一", "二", "三", "四", "五", "六"],
+                        monthNames: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+                        monthNamesShort: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+                        prevText: "上月",
+                        nextText: "次月",
+                        weekHeader: "週"
+                    };
+                    //將預設語系設定為中文
+                    $.datepicker.setDefaults($.datepicker.regional["zh-TW"]);
+                    $(function () {
+                        $("#from").datepicker({
+                            dateFormat: "yy-mm-dd",
+                            minDate: 1,
+                            changeMonth: true,
+                            numberOfMonths: 1,
+                            onClose: function (selectedDate) {
+                                $("#to").datepicker("option", "minDate", selectedDate);
+                            }
+                        });
+                        $("#to").datepicker({
+                            dateFormat: "yy-mm-dd",
+                            maxDate: "+3M",
+                            changeMonth: true,
+                            numberOfMonths: 1,
+                            onClose: function (selectedDate) {
+                                $("#from").datepicker("option", "maxDate", selectedDate);
+                            }
+                        });
+                    });
+                });
+
+                // 時間選擇
+                $('.timepicker').timepicker({
+                    timeFormat: 'h:mm p',// 時間隔式
+                    interval: 30,//時間間隔
+                    minTime: '9',//最小時間
+                    maxTime: '21:00pm',//最大時間
+                    //defaultTime: '9',//預設起始時間
+                    startTime: '9:00',//開始時間
+                    dynamic: true,//是否顯示項目，使第一個項目按時間順序緊接在所選時間之後
+                    dropdown: true,//是否顯示時間條目的下拉列表
+                    scrollbar: true//是否顯示捲軸
+                });
+
+                // validation
+                (function () {
+                    'use strict'
+                    var forms = document.querySelectorAll('.needs-validation')
+                    Array.prototype.slice.call(forms)
+                        .forEach(function (form) {
+                            form.addEventListener('submit', function (event) {
+                                if (!form.checkValidity()) {
+                                    event.preventDefault()
+                                    event.stopPropagation()
+                                }
+
+                                form.classList.add('was-validated')
+                            }, false)
+                        })
+                })();
+            </script>
 </body>
 
 </html>

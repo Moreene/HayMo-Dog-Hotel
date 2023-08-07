@@ -9,8 +9,8 @@
     <link rel="icon" href="/HayMo-Dog-Hotel/assets/logo-09125146.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.css">
-  <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/main-e86933b6.js"></script>
-  <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/main-dcf4f70b.css">
+  <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/main-72a6f08b.js"></script>
+  <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/main-3aecc72d.css">
 </head>
 
 <body class="bg-secondary-l">
@@ -71,22 +71,22 @@
         </ul>
     </div>
 </div>
-        <div class="bg-two-paw">
+        <div class="bg-two-paws">
             <main class="reverse-content">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-10 col-xl-8">
                             <h2 class="center-title title-font text-center">服務預約</h2>
-                            <form class="py-5 px-2 px-md-5 bg-white rounded-1 needs-validation" novalidate>
-                                <h3 class="reverse-title-line position-relative mb-3"><span class="fs-1 fw-bold me-2">1</span>選擇服務</h3>
-<div class="d-flex justify-content-between py-5 reverse-service">
+                            <form class="form-inline py-5 px-2 px-md-5 bg-white rounded-1 needs-validation" novalidate>
+                                <h3 class="title-line position-relative mb-3"><span class="fs-1 fw-bold me-2">1</span>選擇服務</h3>
+<div class="d-flex justify-content-between reserve-option py-5">
     <a href="reverse-dayCare.html"
-        class="reverse-link text-center p-3 py-md-4 border border-primary rounded-pill w-30 w-xl-25 active">狗狗安親</a>
+        class="option-link text-center p-3 py-md-4 border border-primary rounded-pill w-30 w-xl-25 active">狗狗安親</a>
     <a href="reverse-cosmetic.html"
-        class="reverse-link text-center p-3 py-md-4 border border-primary rounded-pill w-30 w-xl-25">狗狗美容</a>
+        class="option-link text-center p-3 py-md-4 border border-primary rounded-pill w-30 w-xl-25 ">狗狗美容</a>
     <a href="reverse-stay.html"
-        class="reverse-link text-center p-3 py-md-4 border border-primary rounded-pill w-30 w-xl-25">狗狗住宿</a>
-</div>                                    <h3 class="reverse-title-line position-relative mb-3"><span
+        class="option-link text-center p-3 py-md-4 border border-primary rounded-pill w-30 w-xl-25 ">狗狗住宿</a>
+</div>                                    <h3 class="title-line position-relative mb-3"><span
                                             class="fs-1 fw-bold me-2">2</span>選擇方案</h3>
                                     <div class="reverse-plan py-5">
                                         <p class="d-flex"><i
@@ -96,26 +96,36 @@
                                                 class="bi bi-stars d-inline-block text-secondary me-1"></i>開放安親時間為每周一至周日9:00-21:00
                                         </p>
                                     </div>
-                                    <h3 class="reverse-title-line position-relative mb-3"><span
+                                    <h3 class="title-line position-relative mb-3"><span
                                             class="fs-1 fw-bold me-2">3</span>選擇日期</h3>
                                     <div class="reverse-time py-5">
     <div class="row row-cols-1 row-cols-md-2 gy-4 gy-md-0">
         <div class="col">
-            <label for="datepicker" class="me-2">日期</label> 
-            <input type="text" id="datepicker" name="date" class="py-1 px-3 rounded-pill w-50" required>
-            <div class="invalid-feedback">
-                請選擇預約日期
+            <div class="row">
+                <label for="datepicker" class="col-auto col-form-label me-2">日期</label>
+                <div class="col-8">
+                    <input type="text" id="datepicker" name="date"
+                        class="form-control py-1 px-4 rounded-pill w-lg-75 text-center" required>
+                    <div class="invalid-feedback">
+                        請選擇預約日期
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col">
-            <label for="timepicker" class="me-2">時間</label>
-            <input type="text" id="timepicker" name="time" class="timepicker py-1 px-4 rounded-pill w-50" required>
-            <div class="invalid-feedback">
-                請選擇預約時間
+            <div class="row">
+                <label for="timepicker" class="col-auto col-form-label me-2">時間</label>
+                <div class="col-8">
+                    <input type="text" id="timepicker" name="time"
+                        class="form-control timepicker py-1 px-4 rounded-pill w-lg-75 text-center" required>
+                    <div class="invalid-feedback">
+                        請選擇預約時間
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>                                        <h3 class="reverse-title-line position-relative mb-3"><span
+</div>                                        <h3 class="title-line position-relative mb-3"><span
                                                 class="fs-1 fw-bold me-2">4</span>填寫資料</h3>
                                         <div class="reverse-info col-lg-10 py-5">
     <div class="row mb-5">
@@ -148,13 +158,16 @@
                 <input class="form-check-input" type="radio" name="rides" id="rides-yes" value="是" required>
                 <label class="form-check-label" for="rides-yes">是
                     +200元(2小時/隻)</label>
+                <div class="invalid-feedback">
+                    請選擇是否加購
+                </div>
             </div>
             <div class="form-check form-check-inline">
                 <input class="form-check-input" type="radio" name="rides" id="rides-no" value="否" required>
                 <label class="form-check-label" for="rides-no">否</label>
-            </div>
-            <div class="invalid-feedback">
-                請確認是否需要樂園服務
+                <div class="invalid-feedback">
+                    請選擇是否加購
+                </div>
             </div>
         </div>
     </div>
@@ -185,7 +198,7 @@
     <div class="row mb-5">
         <label for="remark" class="col-md-3 col-form-label">其他備註</label>
         <div class="col-md-9">
-            <textarea name="remark" id="remark" cols="30" rows="6" class="w-100 rounded-1"></textarea>
+            <textarea name="remark" id="remark" cols="30" rows="6" class="form-control w-100 rounded-1"></textarea>
         </div>
     </div>
     <div class="row justify-content-md-end">
@@ -240,22 +253,6 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
 
             <script>
-                // modal
-                (function () {
-                    'use strict'
-                    var forms = document.querySelectorAll('.needs-validation')
-                    Array.prototype.slice.call(forms)
-                        .forEach(function (form) {
-                            form.addEventListener('submit', function (event) {
-                                if (!form.checkValidity()) {
-                                    event.preventDefault()
-                                    event.stopPropagation()
-                                }
-                                form.classList.add('was-validated')
-                            }, false)
-                        })
-                })();
-
                 // 日期選擇
                 $(function () {
                     //設定中文語系
@@ -285,12 +282,29 @@
                     interval: 30,//時間間隔
                     minTime: '9',//最小時間
                     maxTime: '21:00pm',//最大時間
-                    defaultTime: '9',//預設起始時間
+                    //defaultTime: '9',//預設起始時間
                     startTime: '9:00',//開始時間
                     dynamic: true,//是否顯示項目，使第一個項目按時間順序緊接在所選時間之後
                     dropdown: true,//是否顯示時間條目的下拉列表
                     scrollbar: true//是否顯示捲軸
                 });
+
+                // validation
+                (function () {
+                    'use strict'
+                    var forms = document.querySelectorAll('.needs-validation')
+                    Array.prototype.slice.call(forms)
+                        .forEach(function (form) {
+                            form.addEventListener('submit', function (event) {
+                                if (!form.checkValidity()) {
+                                    event.preventDefault()
+                                    event.stopPropagation()
+                                }
+
+                                form.classList.add('was-validated')
+                            }, false)
+                        })
+                })();
             </script>
 </body>
 
