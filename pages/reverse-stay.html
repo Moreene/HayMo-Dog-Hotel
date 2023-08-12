@@ -15,16 +15,16 @@
     <%- include('./layout/memberCenter-header', { currentPage: 'reserve-stay' }); -%>
 
         <div class="bg-two-paws">
-            <main class="reverse-content">
-                <div class="container">
+            <div class="container">
+                <main class="reverse">
                     <div class="row justify-content-center">
                         <div class="col-lg-10 col-xl-8">
-                            <h2 class="center-title title-font text-center">服務預約</h2>
+                            <h2 class="title-font text-center mt-lg-5 mb-5">服務預約</h2>
                             <form class="py-5 px-2 px-md-5 bg-white rounded-1 needs-validation" novalidate>
                                 <%- include('./component/reverse-service', { currentPage : 'stay' }); -%>
                                     <h3 class="title-line position-relative mb-3"><span
                                             class="fs-1 fw-bold me-2">2</span>選擇房型</h3>
-                                    <div class="d-flex justify-content-between py-5 reserve-option">
+                                    <div class="d-flex justify-content-between py-5 reverse-option">
                                         <div class="form-check form-check-inline w-30 w-xl-25 p-0 m-0">
                                             <input class="form-check-input d-none" type="radio" name="room" id="small"
                                                 value="小狗香香房" required>
@@ -103,8 +103,8 @@
                             </form>
                         </div>
                     </div>
-                </div>
-            </main>
+                </main>
+            </div>
         </div>
 
         <%- include('./layout/footer'); -%>

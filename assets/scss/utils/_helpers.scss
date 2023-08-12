@@ -4,16 +4,6 @@
     font-weight: bold;
 }
 
-// 會員中心-title
-.center-title {
-    margin-top: 150px;
-    margin-bottom: 60px;
-
-    @include pad {
-        margin-top: 182px;
-    }
-}
-
 // 會員中心-線上預約(背景)
 .bg-two-paws {
     @include pc-lg {

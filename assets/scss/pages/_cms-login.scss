@@ -5,7 +5,11 @@
     background-image: linear-gradient(to bottom, $primary-l, $secondary-l);
 
     @include pad {
-        padding: 220px 0 0 0;
+        padding: 200px 0 80px 0;
+    }
+
+    @include pc-xl{
+        padding-bottom: 0;
     }
 
     input {

@@ -16,11 +16,11 @@
     <%- include('./layout/memberCenter-header', { currentPage: 'reserve-dayCare' }); -%>
 
         <div class="bg-two-paws">
-            <main class="reverse-content">
-                <div class="container">
+            <div class="container">
+                <main class="reverse">
                     <div class="row justify-content-center">
                         <div class="col-lg-10 col-xl-8">
-                            <h2 class="center-title title-font text-center">服務預約</h2>
+                            <h2 class="title-font text-center mt-lg-5 mb-5">服務預約</h2>
                             <form class="form-inline py-5 px-2 px-md-5 bg-white rounded-1 needs-validation" novalidate>
                                 <%- include('./component/reverse-service', { currentPage : 'dayCare' }); -%>
                                     <h3 class="title-line position-relative mb-3"><span
@@ -42,8 +42,8 @@
                             </form>
                         </div>
                     </div>
-                </div>
-            </main>
+                </main>
+            </div>
         </div>
 
         <%- include('./layout/footer'); -%>

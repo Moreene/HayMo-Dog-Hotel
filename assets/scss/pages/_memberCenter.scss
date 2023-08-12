@@ -9,11 +9,17 @@
 
 /*-------------------------會員中心-------------------------*/
 .member-center {
-    background-image: url("../images/paw-right.png");
-    background-position: 95% 25%;
+    @include pc-lg {
+        background-image: url("../images/paw-right.png");
+        background-position: 95% 25%;
+    }
 
-    input {
-        @extend %input-style;
+    &-content {
+        padding: 160px 0;
+
+        input {
+            @extend %input-style;
+        }
     }
 }
 

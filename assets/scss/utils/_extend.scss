@@ -10,10 +10,3 @@
         outline: 0;
     }
 }
-
-// reverse頁面通用padding
-%pad-padding-35 {
-    @include pad {
-        padding: 0 35px;
-    }
-}
