@@ -1,0 +1,25 @@
+.cms-mb {
+    margin-bottom: 80px;
+}
+
+.profit-card{
+    height: 300px;
+}
+
+.arror-jump{
+    animation-name: arror-jump;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arror-jump {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: -20px;
+    }
+}

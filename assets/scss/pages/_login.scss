@@ -1,4 +1,3 @@
-/*-----------------------預約登入頁面----------------------*/
 .login {
     padding: 80px 0;
 
@@ -28,7 +27,6 @@
     }
 }
 
-/*-------------------------登入會員-------------------------*/
 .line-right {
     @include pc {
         border-right: 1px solid $black;
@@ -91,7 +89,6 @@
     }
 }
 
-/*-------------------------註冊會員-------------------------*/
 .register-link {
     @include link-slide($primary, $white, $white, $primary);
     margin-bottom: 80px;

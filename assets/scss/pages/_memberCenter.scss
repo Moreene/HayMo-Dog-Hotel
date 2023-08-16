@@ -1,5 +1,4 @@
-/*-------------------------共同樣式-------------------------*/
-.center-common-mb {
+.center-mb {
     margin-bottom: 90px;
 
     @include pad {
@@ -7,7 +6,6 @@
     }
 }
 
-/*-------------------------會員中心-------------------------*/
 .member-center {
     @include pc-lg {
         background-image: url("../images/paw-right.png");
@@ -23,7 +21,6 @@
     }
 }
 
-/*-------------------------基本資料-------------------------*/
 .member-img {
     width: 120px;
     height: 120px;
@@ -45,7 +42,6 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/*-------------------------預約紀錄-------------------------*/
 .table-group {
     height: 358px;
     overflow-y: scroll;

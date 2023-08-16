@@ -1,10 +1,5 @@
 .reverse {
     padding: 160px 0;
-    margin-bottom: 60px;
-
-    @include pad {
-        margin-bottom: 160px;
-    }
 
     input,
     textarea {

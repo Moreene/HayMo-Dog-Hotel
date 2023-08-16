@@ -128,6 +128,7 @@ $utilities: map-merge(
     // scss-docs-start utils-borders
     "border": (
       property: border,
+      responsive:true,//customer
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
         0: 0,
@@ -135,6 +136,7 @@ $utilities: map-merge(
     ),
     "border-top": (
       property: border-top,
+      responsive:true,//customer
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
         0: 0,
@@ -142,6 +144,7 @@ $utilities: map-merge(
     ),
     "border-end": (
       property: border-right,
+      responsive:true,//customer
       class: border-end,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -150,6 +153,7 @@ $utilities: map-merge(
     ),
     "border-bottom": (
       property: border-bottom,
+      responsive:true,//customer
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
         0: 0,
@@ -157,6 +161,7 @@ $utilities: map-merge(
     ),
     "border-start": (
       property: border-left,
+      responsive:true,//customer
       class: border-start,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
@@ -200,8 +205,10 @@ $utilities: map-merge(
       class: w,
       responsive:true, //customer
       values: (
+        14:14%,//customer
         25: 25%,
         30: 30%,//customer
+        33: 33%,//customer
         40: 40%,//customer
         45: 45%,//customer
         50: 50%,
@@ -733,6 +740,7 @@ $utilities: map-merge(
     "rounded-top": (
       property: border-top-left-radius border-top-right-radius,
       class: rounded-top,
+      responsive:true,//customer
       values: (
         null: var(--#{$prefix}border-radius),
         0: 0,
@@ -748,6 +756,7 @@ $utilities: map-merge(
     "rounded-end": (
       property: border-top-right-radius border-bottom-right-radius,
       class: rounded-end,
+      responsive:true,//customer
       values: (
         null: var(--#{$prefix}border-radius),
         0: 0,
@@ -763,6 +772,7 @@ $utilities: map-merge(
     "rounded-bottom": (
       property: border-bottom-right-radius border-bottom-left-radius,
       class: rounded-bottom,
+      responsive:true,//customer
       values: (
         null: var(--#{$prefix}border-radius),
         0: 0,
@@ -778,6 +788,7 @@ $utilities: map-merge(
     "rounded-start": (
       property: border-bottom-left-radius border-top-left-radius,
       class: rounded-start,
+      responsive:true,//customer
       values: (
         null: var(--#{$prefix}border-radius),
         0: 0,

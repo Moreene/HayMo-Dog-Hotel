@@ -48,12 +48,25 @@
 
         <%- include('./layout/footer'); -%>
 
-            <script type="module" src="../main.js"></script>
             <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
             <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+            <script type="module" src="../main.js"></script>
 
             <script>
+                const hamBtn = document.querySelector(".ham");
+                const mobileMenu = document.querySelector(".mobile-menu .menu");
+                const hamCloseBtn = document.querySelector(".closedHam");
+                const body = document.body;
+
+                function toggleMenu() {
+                    mobileMenu.classList.toggle('open');
+                    body.classList.toggle('hidden-y');
+                };
+
+                hamBtn.addEventListener('click', toggleMenu);
+                hamCloseBtn.addEventListener("click", toggleMenu);
+
                 // 日期選擇
                 $(function () {
                     //設定中文語系
@@ -90,7 +103,7 @@
                     scrollbar: true//是否顯示捲軸
                 });
 
-                // validation
+                // Validation
                 (function () {
                     'use strict'
                     var forms = document.querySelectorAll('.needs-validation')
