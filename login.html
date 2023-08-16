@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>嘿毛寵物旅館 | 登入</title>
     <link rel="icon" href="/HayMo-Dog-Hotel/assets/logo-09125146.ico" type="image/x-icon">
-  <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/main-08ece3fa.js"></script>
-  <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/main-7f2d4cd9.css">
+  <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/bootstrap-8bda4ac4.js"></script>
+  <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/bootstrap-3359c647.css">
 </head>
 
 <body>
@@ -186,6 +186,20 @@
     </div>
 </footer>
             
+            <script>
+                const hamBtn = document.querySelector(".ham");
+                const mobileMenu = document.querySelector(".mobile-menu .menu");
+                const hamCloseBtn = document.querySelector(".closedHam");
+                const body = document.body;
+
+                function toggleMenu() {
+                    mobileMenu.classList.toggle('open');
+                    body.classList.toggle('hidden-y');
+                };
+
+                hamBtn.addEventListener('click', toggleMenu);
+                hamCloseBtn.addEventListener("click", toggleMenu);
+            </script>
 </body>
 
 </html>
