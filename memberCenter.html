@@ -8,8 +8,8 @@
     <title>嘿毛寵物旅館 | 會員中心</title>
     <link rel="icon" href="/HayMo-Dog-Hotel/assets/logo-09125146.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
-  <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/bootstrap-8bda4ac4.js"></script>
-  <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/bootstrap-3359c647.css">
+  <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/bootstrap-9f7b1dc4.js"></script>
+  <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/bootstrap-f252acde.css">
 </head>
 
 <body class="bg-secondary-l">
@@ -20,7 +20,7 @@
             <a href="index.html"><img src="/HayMo-Dog-Hotel/assets/Logo-0e921db4.png" alt="Logo" class="topbar-logo"></a>
             <!-- table-menu -->
             <div class="d-none d-md-block">
-                <ul class="table-menu d-flex ps-0 mb-0">
+                <ul class="table-menu d-flex">
                     <li class="menu-item">
                         <a href="memberCenter.html" class="menu-link position-relative active">會員中心</a>
                     </li>
@@ -28,11 +28,11 @@
                         <a href="#" class="menu-link position-relative">服務項目</a>
                     </li>
                     <li class="menu-item">
-                        <a href="reverse-dayCare.html" class="menu-link position-relative ">線上預約</a>
+                        <a href="reverse.html" class="menu-link position-relative ">線上預約</a>
                     </li>
                 </ul>
             </div>
-            <ul class="d-flex align-items-center ps-0 mb-0">
+            <ul class="d-flex align-items-center">
                 <li>
                     <a href="login.html" class="logOut-link d-flex align-items-center justify-content-center">
                         <p class="logOut-text mb-0">登出</p>
@@ -49,7 +49,7 @@
 
     <!-- mobile-menu -->
     <div class="d-block d-md-none mobile-menu">
-        <ul class="menu bg-primary d-flex flex-column position-fixed w-100 overflow-hidden ps-0 mb-0">
+        <ul class="menu bg-primary d-flex flex-column position-fixed w-100 overflow-hidden">
             <li class="menu-closedHam d-flex justify-content-end">
                 <div class="closedHam position-relative rounded-circle">
                     <div class="closedHam-line position-absolute d-block top-50 start-50 translate-middle"></div>
@@ -62,7 +62,7 @@
                 <a href="#" class="menu-link text-white fw-bold">服務項目</a>
             </li>
             <li class="menu-item">
-                <a href="reverse-dayCare.html" class="menu-link text-white fw-bold">線上預約</a>
+                <a href="reverse.html" class="menu-link text-white fw-bold">線上預約</a>
             </li>
             <li class="menu-item">
                 <a href="login.html" class="menu-link text-white fw-bold">登出</a>
@@ -83,11 +83,11 @@
                         <p class="d-flex mb-4"><i
                                 class="bi bi-brightness-high-fill text-danger me-2"></i>若家裡有多位毛孩，毛孩資訊不需填寫，於線上預約時再填寫即可
                         </p>
-                        <section class="row flex-md-row gy-4 center-mb">
+                        <main class="row flex-md-row gy-4 center-mb">
                             <div class="col-md-6">
-                                <div class="card border-black py-4 py-xl-5">
-                                    <ul class="row flex-column align-items-center flex-xl-row gy-4 gy-xl-0 ps-0 mb-0">
-                                        <li class="col-md-5">
+                                <div class="card border-black py-4 py-xl-5 h-100">
+                                    <ul class="row flex-column align-items-center flex-xl-row gy-4 gy-xl-0">
+                                        <li class="col-md-6 col-xl-5">
                                             <div class="text-center">
                                                 <img src="/HayMo-Dog-Hotel/assets/member-img-2c2263d2.png" alt="會員照片"
                                                     class="member-img img-fluid">
@@ -96,53 +96,9 @@
                                         <li class="col-auto">
                                             <div>
                                                 <p class="fs-4">會員資訊
-                                                    <!-- modal -->
                                                     <a href="#" data-bs-toggle="modal"
                                                         data-bs-target="#memberInfoModal"><i
                                                             class="bi bi-pencil-square link-primary fs-4 ms-1"></i></a>
-                                                <div class="modal fade" id="memberInfoModal" tabindex="-1"
-                                                    aria-labelledby="memberInfoModal" aria-hidden="true">
-                                                    <div class="modal-dialog modal-dialog-centered">
-                                                        <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title" id="memberInfoModal">會員資訊 - 設定
-                                                                </h5>
-                                                                <button type="button" class="btn-close"
-                                                                    data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
-                                                            <!-- modal-body -->
-                                                            <div class="modal-body">
-                                                                <div class="row flex-column align-items-center">
-                                                                    <div class="col-4">
-                                                                        <div
-                                                                            class="text-center mb-3 img-modify position-relative rounded-circle overflow-hidden">
-                                                                            <img src="/HayMo-Dog-Hotel/assets/member-img-2c2263d2.png"
-                                                                                alt="會員照片" class="img-fluid">
-                                                                            <div class="cam-bg position-absolute w-100">
-                                                                                <i
-                                                                                    class="bi bi-camera fs-5 text-white"></i>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-auto mx-auto">
-                                                                        <div>
-                                                                            <p>姓名：Moreene</p>
-                                                                            <p>手機：0987-878787</p>
-                                                                            <p>信箱：moreenewu@gmail.com</p>
-                                                                            <p class="mb-0">密碼：**********</p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="modal-footer">
-                                                                <button type="button"
-                                                                    class="btn btn-secondary px-4">編輯</button>
-                                                                <button type="button"
-                                                                    class="btn btn-primary px-4 text-white info-store">儲存</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                                 </p>
                                                 <p>姓名：Moreene</p>
                                                 <p>手機：0987-878787</p>
@@ -154,8 +110,8 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="card border-black py-4 py-xl-5">
-                                    <ul class="row flex-column align-items-center flex-xl-row gy-4 gy-xl-0 ps-0 mb-0">
+                                <div class="card border-black py-4 py-xl-5 h-100">
+                                    <ul class="row flex-column align-items-center flex-xl-row gy-4 gy-xl-0">
                                         <li class="col-md-5">
                                             <div class="text-center">
                                                 <img src="/HayMo-Dog-Hotel/assets/pet-img-87f7f831.png" alt="狗狗照片"
@@ -164,49 +120,8 @@
                                         </li>
                                         <li class="col-auto">
                                             <p class="fs-4">毛孩資訊
-                                                <!-- modal -->
                                                 <a href="#" data-bs-toggle="modal" data-bs-target="#petInfoModal"><i
                                                         class="bi bi-pencil-square link-primary fs-4 ms-1"></i></a>
-                                            <div class="modal fade" id="petInfoModal" tabindex="-1"
-                                                aria-labelledby="petInfoModal" aria-hidden="true">
-                                                <div class="modal-dialog modal-dialog-centered">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="petInfoModal">毛孩資訊 - 設定</h5>
-                                                            <button type="button" class="btn-close"
-                                                                data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <!-- modal-body -->
-                                                        <div class="modal-body">
-                                                            <div class="row flex-column align-items-center">
-                                                                <div class="col-4">
-                                                                    <div
-                                                                        class="text-center mb-3 img-modify position-relative rounded-circle overflow-hidden">
-                                                                        <img src="/HayMo-Dog-Hotel/assets/pet-img-87f7f831.png"
-                                                                            alt="狗狗照片"
-                                                                            class="img-fluid rounded-circle border border-black-60">
-                                                                        <div class="cam-bg position-absolute w-100">
-                                                                            <i class="bi bi-camera fs-5 text-white"></i>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-auto mx-auto">
-                                                                    <p>姓名：大頭</p>
-                                                                    <p>品種：米克斯</p>
-                                                                    <p>年紀：7歲</p>
-                                                                    <p class="mb-0">性別：公</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button"
-                                                                class="btn btn-secondary px-4">編輯</button>
-                                                            <button type="button"
-                                                                class="btn btn-primary px-4 text-white info-store">儲存</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                             </p>
                                             <p>姓名：大頭</p>
                                             <p>品種：米克斯</p>
@@ -216,7 +131,86 @@
                                     </ul>
                                 </div>
                             </div>
-                        </section>
+                        </main>
+                        <!-- 會員資訊modal -->
+                        <div class="modal fade" id="memberInfoModal" tabindex="-1" aria-labelledby="memberInfoModal"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="memberInfoModal">會員資訊 - 設定
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row flex-column align-items-center">
+                                            <div class="col-4">
+                                                <div
+                                                    class="text-center mb-3 img-modify position-relative rounded-circle overflow-hidden">
+                                                    <img src="/HayMo-Dog-Hotel/assets/member-img-2c2263d2.png" alt="會員照片"
+                                                        class="img-fluid">
+                                                    <div class="cam-bg position-absolute w-100">
+                                                        <i class="bi bi-camera fs-5 text-white"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto mx-auto">
+                                                <div>
+                                                    <p>姓名：Moreene</p>
+                                                    <p>手機：0987-878787</p>
+                                                    <p>信箱：moreenewu@gmail.com</p>
+                                                    <p class="mb-0">密碼：**********</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary px-4">編輯</button>
+                                        <button type="button"
+                                            class="btn btn-primary px-4 text-white info-store">儲存</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 毛孩資訊modal -->
+                        <div class="modal fade" id="petInfoModal" tabindex="-1" aria-labelledby="petInfoModal"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="petInfoModal">毛孩資訊 - 設定</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row flex-column align-items-center">
+                                            <div class="col-4">
+                                                <div
+                                                    class="text-center mb-3 img-modify position-relative rounded-circle overflow-hidden">
+                                                    <img src="/HayMo-Dog-Hotel/assets/pet-img-87f7f831.png" alt="狗狗照片"
+                                                        class="img-fluid rounded-circle border border-black-60">
+                                                    <div class="cam-bg position-absolute w-100">
+                                                        <i class="bi bi-camera fs-5 text-white"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto mx-auto">
+                                                <p>姓名：大頭</p>
+                                                <p>品種：米克斯</p>
+                                                <p>年紀：7歲</p>
+                                                <p class="mb-0">性別：公</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary px-4">編輯</button>
+                                        <button type="button"
+                                            class="btn btn-primary px-4 text-white info-store">儲存</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <!-- 預約紀錄 -->
                         <h3 class="fw-bold mb-4"><i class="bi bi-cursor me-1"></i>您的預約</h3>
@@ -596,7 +590,7 @@
                     <h2 class="fw-bold text-white slogan-text mb-2">嘿 , 我們用心，</h2>
                     <h2 class="fw-bold text-white slogan-text mb-0">家長安心</h2>
                 </div>
-                <ul class="ps-0 d-flex footer-icon lh-1">
+                <ul class="d-flex footer-icon lh-1">
                     <li class="me-4"><a href="#" class="mr-4"><i class="bi bi-line fs-4 icon"></i></a></li>
                     <li class="me-4"><a href="#"><i class="bi bi-facebook fs-4 icon"></i></a></li>
                     <li><a href="#"><i class="bi bi-instagram fs-4 icon"></i></a></li>
@@ -637,7 +631,7 @@
 
                 hamBtn.addEventListener('click', toggleMenu);
                 hamCloseBtn.addEventListener("click", toggleMenu);
-                
+
                 // Sweetalert
                 const infoStore = document.querySelectorAll(".info-store");
 

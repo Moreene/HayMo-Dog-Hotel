@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>嘿毛寵物旅館</title>
   <link rel="icon" href="/HayMo-Dog-Hotel/assets/logo-09125146.ico" type="image/x-icon">
-  <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/bootstrap-8bda4ac4.js"></script>
-  <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/bootstrap-3359c647.css">
+  <script type="module" crossorigin src="/HayMo-Dog-Hotel/assets/bootstrap-9f7b1dc4.js"></script>
+  <link rel="stylesheet" href="/HayMo-Dog-Hotel/assets/bootstrap-f252acde.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
             <a href="index.html"><img src="/HayMo-Dog-Hotel/assets/Logo-0e921db4.png" alt="Logo" class="topbar-logo"></a>
             <!-- table-menu -->
             <div class="d-none d-md-block">
-                <ul class="table-menu d-flex ps-0 mb-0">
+                <ul class="table-menu d-flex">
                     <li class="menu-item">
                         <a href="index.html" class="menu-link position-relative active">首頁</a>
                     </li>
@@ -26,14 +26,14 @@
                         <a href="about.html" class="menu-link position-relative ">關於我們</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link position-relative">服務項目</a>
+                        <a href="service.html" class="menu-link position-relative ">服務項目</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link position-relative">常見問題</a>
+                        <a href="faq.html" class="menu-link position-relative ">常見問題</a>
                     </li>
                 </ul>
             </div>
-            <ul class="d-flex align-items-center ps-0 mb-0">
+            <ul class="d-flex align-items-center">
                 <li>
                     <a href="login.html" class="login-link d-flex align-items-center justify-content-center ">
                         <p class="login-link-text mb-0">線上<span class="d-md-block">預約</span></p>
@@ -50,7 +50,7 @@
 
     <!-- mobile-menu -->
     <div class="d-block d-md-none mobile-menu">
-        <ul class="menu bg-primary d-flex flex-column position-fixed w-100 overflow-hidden ps-0 mb-0">
+        <ul class="menu bg-primary d-flex flex-column position-fixed w-100 overflow-hidden">
             <li class="menu-closedHam d-flex justify-content-end">
                 <div class="closedHam position-relative rounded-circle">
                     <div class="closedHam-line position-absolute d-block top-50 start-50 translate-middle"></div>
@@ -63,10 +63,10 @@
                 <a href="about.html" class="menu-link text-white fw-bold">關於我們</a>
             </li>
             <li class="menu-item">
-                <a href="#" class="menu-link text-white fw-bold">服務項目</a>
+                <a href="service.html" class="menu-link text-white fw-bold">服務項目</a>
             </li>
             <li class="menu-item">
-                <a href="#" class="menu-link text-white fw-bold">常見問題</a>
+                <a href="faq.html" class="menu-link text-white fw-bold">常見問題</a>
             </li>
             <li class="menu-item d-md-none">
                 <a href="login.html" class="menu-link text-white fw-bold">線上預約</a>
@@ -75,16 +75,18 @@
     </div>
 </div>
     <!-- Banner -->
-    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
       <div class="carousel-inner">
         <!-- 輪播第一頁 -->
-        <div class="carousel-item first bg-size-cover active">
+        <div class="carousel-item first bg-size-cover active" data-bs-interval="6000">
           <div class="caption position-absolute">
             <h2 class="caption-slogan lh-base mb-4">
               <p class="fw-bold mb-0">嘿 , 讓我們提供您</p>
               <p class="fw-bolder mb-0">最好的服務</p>
-              <p class="fw-bolder mb-0 text-primary ">家長安心 , 毛小孩開心</p>
-              <p class="fw-bolder mb-0 ">是我們的唯一宗旨</p>
+              <div class="caption-slogan-hide">
+                <p class="fw-bolder mb-0 text-primary ">家長安心 , 毛小孩開心</p>
+                <p class="fw-bolder mb-0 ">是我們的唯一宗旨</p>
+              </div>
             </h2>
             <div class="d-flex align-items-center">
               <a href="#" data-bs-target="#carousel" data-bs-slide="prev" class="prev-link bg-black text-white lh-1"><i
@@ -95,7 +97,7 @@
           </div>
         </div>
         <!-- 輪播第二頁 -->
-        <div class="carousel-item second bg-size-cover">
+        <div class="carousel-item second bg-size-cover" data-bs-interval="6000">
           <div class="caption position-absolute common">
             <h2 class="caption-slogan lh-base mb-4">
               <p class="fw-bold mb-0">大狗友善，</p>
@@ -110,7 +112,7 @@
           </div>
         </div>
         <!-- 輪播第三頁 -->
-        <div class="carousel-item third bg-size-cover">
+        <div class="carousel-item third bg-size-cover" data-bs-interval="6000">
           <div class="caption position-absolute common">
             <h2 class="caption-slogan lh-base mb-4">
               <p class="fw-bold mb-0">專業照顧，</p>
@@ -129,7 +131,7 @@
 
     <!-- 我們擁有 -->
     <section class="weHave overflow-hidden">
-      <ul class="ps-0 mb-0 d-flex justify-content-around align-items-center weHave-content position-relative">
+      <ul class="d-flex justify-content-around align-items-center weHave-content position-relative">
         <li>
           <div class="have-img bg-size-cover bg-p-center bg-repeat-no first mx-auto d-none d-md-block"></div>
         </li>
@@ -184,14 +186,14 @@
     </section>
 
     <!-- 服務項目 -->
-    <main class="service">
+    <main class="serviceItem">
       <div class="container">
         <div class="text-center">
           <h2 class="d-inline-block fs-5 section-label">SERVICE</h2>
-          <h2 class="fw-bold title-font service-title">服務項目</h2>
-          <div class="service-content">
+          <h2 class="fw-bold title-font serviceItem-title">服務項目</h2>
+          <div class="serviceItem-content">
             <!-- 服務項目卡片 -->
-            <ul class="ps-0 mb-0 row row-cols-1 row-cols-md-2 row-cols-xl-4 gy-5 gy-xl-0">
+            <ul class="row row-cols-1 row-cols-md-2 row-cols-xl-4 gy-5 gy-xl-0">
               <li class="col">
                 <ul class="row row-cols-2 row-cols-md-1 align-items-center ps-0 mb-0">
                   <li class="col">
@@ -211,7 +213,7 @@
                 </ul>
               </li>
               <li class="col">
-                <ul class="ps-0 mb-0 row row-cols-2 row-cols-md-1 align-items-center">
+                <ul class="row row-cols-2 row-cols-md-1 align-items-center">
                   <li class="col">
                     <div class="vector position-relative bg-size-cover paradise mx-auto">
                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMmSURBVHgB7VjRkdMwEH3D8I+pANFBqAB1wFFBTAVJBzEVJFRgd3ChAl8HOSqwqSDXweHF2pHsSLJsy1wCvJkdO8pK2n27WksC/uPvxaaRUskaN4Z9I8+NnJXQ+w43ghStwadGEiUn1bbFDaBSIow2coKjkeCKkaJl2pbzGW4gCpQqLpY5CiWuFAItw7lHp1A6ApHwCvEg1fPo0XlQzztcIe7RsutbpAmGo/RioMpzCtSrem2ikZXx3q9ii4OZPQboFriMFEWvUm0hkYwOifASuVW6zPid+k1SGu9BiLWIhXpWAbq1erIDG+M/abzTWIOLPbYDPwN0a6MPibToUCp+R5tOtIciZ60pFduBOkD3ST3fwW48gYgo1HsG/YE0U+03XiMO3qBrnA+1er6Fe5tN7R/hxg9EBjFyHqFPupTjzxNF8EAxv8Qh7Ju6AtPwDWGpOgq2j5MNopEDpjN/wEIYckCiW+PHCPWjUiswElSDd4EdbQ5ItIydgcmMF5gB3h6QATlah4RDtzQcSDHPaJ4z6ODjW8S00B6UIyn0foUGP8F92yAxfx/ziO52YzIk/ExlSo83YIQC89jvC5GWY8YZYusZPO8ZnUCffecY7Puv40jId4AW4vtGvsC9XeZvADlQYz7SRj408rmRr9AnOYGZh6EUlyWOwFH6hOG0GxOJtTG3GZlJSHAZXq48vKffQlevMRWnhLty7dUcfDkWcuqz4t4xARks0F0Tp0DDM3QrFlWdFJdEJYqkAybcK1Hn0mOIVHpcXgH3dqGCZnqo1JpzCkyEhL8qnKEdKHuGcWRYuD30cqvAjJynyfbwp8ABXRaZdekZd2X0HcJ2hG4HEvbF2jfe1o/+yzBslMRCyGFn2lzArioQcvfJR8NFkOKyxlPId+hGQnjG8KURp0+OhVBAGy5V2xjjAZ1GpWd8gYWwQpc5ZizUeAZXo7XRtsHC7NuQQbM5ZnssoBd9Bh3FMSREgYC/ogz1NSsXvc/e278EKuhL20UQ81rFhycshD/lwGKIcbUo4F6clDrEvnT8X2OBS6qxyDC8dXZJhpmIEYEjprP4iH8dvwAEINAs/tTN2gAAAABJRU5ErkJggg==" alt="狗狗"
@@ -228,7 +230,7 @@
                 </ul>
               </li>
               <li class="col">
-                <ul class="row row-cols-2 row-cols-md-1 align-items-center ps-0 mb-0">
+                <ul class="row row-cols-2 row-cols-md-1 align-items-center">
                   <li class="col">
                     <div class="vector position-relative bg-size-cover cosmetic mx-auto">
                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJsSURBVHgB7ZmNbeMwDIUfcAtkBI6QDc4jdIN6g3SDcIN2g2SD3AYeISNkhN5N0DNhC3UoSpaNSJWBfADRwqajR/EHigM8+Vl+oR6a3n739q+3v9gYx96+Rrv1RqiQXW8vsMVd8R2AC2KHiqDePhHeYcZ9AF/jtWr4gL/DpHzOsAMgVFBSLfwd/mP4uUA7DKLfJ/6v+GEY9wF0M/6k/D9RMBOhhuWJmH3CZ7i+cfaBAtBkYUvokunSws9CdthYNLbbh9FHRikZ93UWCJlp4TdsqN4J89PphsIBCKwWvQb89vCD1UEUz4CDkVZCzs8Kgox7D0eaUqbDBfOTJQTDFyqf2WLZ6F3FGekNexx9boYf417sKwbB02tvyIBeJBQEJfgxhn6R3W/gZ4WQgTdjoZPhR4ZfLGN6Y7KUj4Phpz/FLxREa/g1yEyLoZEZw25LFjrM17rOmDx7w3xGs3LBfK2HmlOXTrbaxyhMduegrusdjDWs/HXnoyN88YxM7JTQK76FWI2dMmL1M1kbdz+zIMMOwsISL5tDyMwV8XplQ5TGEl/sywvBr3d93ueJqHZyXfze4YsXW3skWQVhOE7I5GkWPGNlTweZlQbD9DkgXbjsupSMPiKnNPnDINizOtZ0MeHFGhawa14LcRlpxv9PEeFiZxR6C0eIi19qEtQLCkEB8R38N2opwhkF330SbPHniU+VwgXCvPgj7MyInbBsSj0UwjrxJ1TCGvFF31/GaLBOfNEjQAzGvbjL5F714gX9gwSP1zchXrC+kIQOX9WJF6x385sR72ixYfGOBv447bAR8VOkpPao7LfbJ08ewH+7zdvnXAfacgAAAABJRU5ErkJggg==" alt="狗狗"
@@ -245,7 +247,7 @@
                 </ul>
               </li>
               <li class="col">
-                <ul class="row row-cols-2 row-cols-md-1 align-items-center ps-0 mb-0">
+                <ul class="row row-cols-2 row-cols-md-1 align-items-center">
                   <li class="col">
                     <div class="vector position-relative bg-size-cover sleeping mx-auto">
                       <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAI9SURBVHgB7ZntbcIwEIbfov4nG/TYJN2ATlA2KBuUDcoG0AnoBmGDdoOkE0AnoLGwFdfEn7FTiPJIJyu2c34P47MNwMiwodqK2g61nSLYjvvsTXws4bId0FMQOz7gtrYM3SHui/ks0APiEyPEI0MzC8kRAST1O8GNMwYQQIm/WaV0bGvl5mcgJaZF/AJ9Tje12fxGRTcQodnglh5tNr/R0Q3UdQ0MK42mZNzIXBhcAOyw9IomE5T8OYSj5DMWZOsgjsCqbZR+GXfGLJdsXtuCl6X0LqE7GffFfH60dZjDfpHoekFR0yLhMnUGX2hWHcW5Wqh4JryAYTZXCcTqAiBP8Ss4kEcUaTKC/9cmhyNrtE/drqNo2XTiN5q2NTwpFAfiULUNFOxiIqsslPo9LLhsZF+8fEB6jsrzyfZCWwAxNx5XxIdTKfUECy4BVK7OeN9ZbY/wQ4x5hCcxZ6DCWXiFJmhWhgQkIASgLjBdfVt6FIOW3OQ62/u28ZMHkBvElw7v28ZPHoCc58lT/NUEECo+agDqoKSpd1kHPrMm3vMK4B5xIV4WiHMHqGwd2gJQczGhSY0EMwXCqKSxTFoumBicCaa8/EY6fnip7kFBAahOZrycIh3iDwuCWYuVN1wuotjHaZ3t0H5l3cCRvAeRoZbrRE+UAK6VXNcwqB+29pa+FQKOuw4cYff7qWu4U54LtE/XO87XPUGmmAzBLLDS1G9re8Yl7Lr5BA/YJVpkA1Yu0R8rNEeQA3/+jxviiDO/yP1VMDlpq58AAAAASUVORK5CYII=" alt="狗狗"
@@ -269,7 +271,7 @@
 
     <!-- 業界第一 -->
     <section class="theBest">
-      <ul class="ps-0 mb-0 d-flex flex-column flex-md-row">
+      <ul class="d-flex flex-column flex-md-row">
         <li class="w-md-50">
           <div class="best-img w-100 bg-repeat-no bg-size-cover"></div>
         </li>
@@ -282,7 +284,7 @@
             <p class="text-black-80 mb-0">我們提供救生衣及配備專人在旁監督</p>
             <p class="text-black-80 mb-4">確保毛孩開心的同時也安安全全</p>
             <div class="d-flex">
-              <a href="#" class="bestBtn d-flex align-items-center fw-bold">查看更多<i
+              <a href="service.html" class="bestBtn d-flex align-items-center fw-bold">查看更多<i
                   class="bi bi-arrow-right d-block fs-4 ms-3"></i></a>
             </div>
           </div>
@@ -298,7 +300,7 @@
                     <h2 class="fw-bold text-white slogan-text mb-2">嘿 , 我們用心，</h2>
                     <h2 class="fw-bold text-white slogan-text mb-0">家長安心</h2>
                 </div>
-                <ul class="ps-0 d-flex footer-icon lh-1">
+                <ul class="d-flex footer-icon lh-1">
                     <li class="me-4"><a href="#" class="mr-4"><i class="bi bi-line fs-4 icon"></i></a></li>
                     <li class="me-4"><a href="#"><i class="bi bi-facebook fs-4 icon"></i></a></li>
                     <li><a href="#"><i class="bi bi-instagram fs-4 icon"></i></a></li>
@@ -330,13 +332,13 @@
         const body = document.body;
 
         function toggleMenu() {
-            mobileMenu.classList.toggle('open');
-            body.classList.toggle('hidden-y');
+          mobileMenu.classList.toggle('open');
+          body.classList.toggle('hidden-y');
         };
 
         hamBtn.addEventListener('click', toggleMenu);
         hamCloseBtn.addEventListener("click", toggleMenu);
-    </script>
+      </script>
 </body>
 
 </html>
