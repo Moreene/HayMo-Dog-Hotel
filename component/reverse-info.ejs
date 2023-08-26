@@ -1,24 +1,16 @@
 <div class="reverse-info col-lg-10 py-5">
     <div class="row mb-5">
-        <label for="dogName" class="col-md-3 col-form-label">毛孩姓名 <span class="text-danger">*</span></label>
-        <div class="col-md-9">
-            <input list="dogName" name="dogName" class="form-control" required>
-            <datalist id="dogName">
-                <option value="大頭">
-            </datalist>
-            <div class="invalid-feedback">
-                請輸入毛孩姓名
+        <label class="col col-form-label">
+            <div class="d-flex flex-column flex-md-row justify-content-md-between">
+                <div class="d-inline mb-3 mb-md-0">毛孩姓名 <span class="text-danger">*</span></div>
+                <div class="d-flex flex-column w-md-75">
+                    <input type="text" class="form-control d-inline" required>
+                    <div class="invalid-feedback">
+                        請輸入毛孩姓名
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="row mb-5">
-        <label for="dogNum" class="col-md-3 col-form-label">毛孩數量 <span class="text-danger">*</span></label>
-        <div class="col-md-9">
-            <input type="number" id="dogNum" name="dogNum" min="1" max="10" class="form-control" required>
-            <div class="invalid-feedback">
-                請確認毛孩數量
-            </div>
-        </div>
+        </label>
     </div>
     <div class="row mb-5">
         <div class="col-md-3">
@@ -27,49 +19,57 @@
         <div class="col-md-9">
             <div class="d-flex">
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="rides" id="rides-yes" value="是" required>
-                    <label class="form-check-label" for="rides-yes">是
-                        +200元(2小時/隻)</label>
-                    <div class="invalid-feedback ms-0">
-                        請選擇是否加購
-                    </div>
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="paradise" value="是" required>
+                        是（+200元）
+                        <div class="invalid-feedback ms-0">
+                            請選擇是否加購
+                        </div>
+                    </label>
                 </div>
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="rides" id="rides-no" value="否" required>
-                    <label class="form-check-label" for="rides-no">否</label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" name="paradise" value="否" required>
+                        否
+                    </label>
                 </div>
             </div>
         </div>
     </div>
     <div class="row mb-5">
-        <label for="emergencyContact" class="col-md-3 col-form-label">緊急聯絡人 <span class="text-danger">*</span></label>
-        <div class="col-md-9">
-            <input list="emergencyContact" name="emergencyContact" class="form-control" placeholder="請輸入姓名" required>
-            <datalist id="emergencyContact">
-                <option value="Moreene">
-            </datalist>
-            <div class="invalid-feedback">
-                請輸入緊急聯絡人姓名
+        <label class="col col-form-label">
+            <div class="d-flex flex-column flex-md-row justify-content-md-between">
+                <div class="d-inline mb-3 mb-md-0">緊急聯絡人 <span class="text-danger">*</span></div>
+                <div class="d-flex flex-column w-md-75">
+                    <input type="text" class="form-control d-inline" required>
+                    <div class="invalid-feedback">
+                        請輸入緊急聯絡人姓名
+                    </div>
+                </div>
             </div>
-        </div>
+        </label>
     </div>
     <div class="row mb-5">
-        <label for="emergencyPhone" class="col-md-3 col-form-label">連絡電話 <span class="text-danger">*</span></label>
-        <div class="col-md-9">
-            <input list="emergencyPhone" name="emergencyPhone" class="form-control" placeholder="請輸入會接聽的電話號碼" required>
-            <datalist id="emergencyPhone">
-                <option value="0987-878787">
-            </datalist>
-            <div class="invalid-feedback">
-                請輸入緊急聯絡人電話
+        <label class="col col-form-label">
+            <div class="d-flex flex-column flex-md-row justify-content-md-between">
+                <div class="d-inline mb-3 mb-md-0">連絡電話 <span class="text-danger">*</span></div>
+                <div class="d-flex flex-column w-md-75">
+                    <input type="tel" class="form-control d-inline" required>
+                    <div class="invalid-feedback">
+                        請輸入緊急聯絡人電話
+                    </div>
+                </div>
             </div>
-        </div>
+        </label>
     </div>
     <div class="row mb-5">
-        <label for="remark" class="col-md-3 col-form-label">其他備註</label>
-        <div class="col-md-9">
-            <textarea name="remark" id="remark" cols="30" rows="6" class="form-control w-100 rounded-1"></textarea>
-        </div>
+        <label class="col col-form-label">
+            <div class="d-flex flex-column flex-md-row justify-content-md-between">
+                <div class="d-inline mb-3 mb-md-0">其他備註</div>
+                <textarea name="remark" id="remark" cols="30" rows="6"
+                    class="form-control w-md-75 rounded-1"></textarea>
+            </div>
+        </label>
     </div>
     <div class="row justify-content-md-end">
         <div class="col-md-9">

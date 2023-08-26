@@ -2,16 +2,14 @@
     margin-bottom: 80px;
 }
 
-.profit-card{
+.profit-card {
     height: 300px;
 }
 
-.arror-jump{
+.arror-jump {
     animation-name: arror-jump;
     animation-duration: 0.7s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+    @extend %animation;
 }
 
 @keyframes arror-jump {

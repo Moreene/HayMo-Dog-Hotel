@@ -4,11 +4,6 @@
     font-weight: bold;
 }
 
-// 會員中心-線上預約(背景)
-.bg-two-paws {
-    @include pc-lg {
-        background-image: url("../images/big-paw-right.png"), url("../images/big-paw-left.png");
-        background-position: 90% 11%, 7% 75%;
-        background-repeat: no-repeat;
-    }
+.remark-list {
+    list-style: circle;
 }

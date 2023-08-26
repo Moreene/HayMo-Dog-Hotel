@@ -4,7 +4,7 @@
             <a href="index.html"><img src="../assets/images/Logo.png" alt="Logo" class="topbar-logo"></a>
             <!-- table-menu -->
             <div class="d-none d-md-block">
-                <ul class="table-menu d-flex ps-0 mb-0">
+                <ul class="table-menu d-flex">
                     <li class="menu-item">
                         <a href="index.html" class="menu-link position-relative <%- currentPage === 'index' ? 'active' : '' %>">首頁</a>
                     </li>
@@ -12,14 +12,14 @@
                         <a href="about.html" class="menu-link position-relative <%- currentPage === 'about' ? 'active' : '' %>">關於我們</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link position-relative">服務項目</a>
+                        <a href="service.html" class="menu-link position-relative <%- currentPage === 'service' ? 'active' : '' %>">服務項目</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" class="menu-link position-relative">常見問題</a>
+                        <a href="faq.html" class="menu-link position-relative <%- currentPage === 'faq' ? 'active' : '' %>">常見問題</a>
                     </li>
                 </ul>
             </div>
-            <ul class="d-flex align-items-center ps-0 mb-0">
+            <ul class="d-flex align-items-center">
                 <li>
                     <a href="login.html" class="login-link d-flex align-items-center justify-content-center <%- currentPage === 'login'|| currentPage === 'signUp' ? 'active' : '' %>">
                         <p class="login-link-text mb-0">線上<span class="d-md-block">預約</span></p>
@@ -36,7 +36,7 @@
 
     <!-- mobile-menu -->
     <div class="d-block d-md-none mobile-menu">
-        <ul class="menu bg-primary d-flex flex-column position-fixed w-100 overflow-hidden ps-0 mb-0">
+        <ul class="menu bg-primary d-flex flex-column position-fixed w-100 overflow-hidden">
             <li class="menu-closedHam d-flex justify-content-end">
                 <div class="closedHam position-relative rounded-circle">
                     <div class="closedHam-line position-absolute d-block top-50 start-50 translate-middle"></div>
@@ -49,10 +49,10 @@
                 <a href="about.html" class="menu-link text-white fw-bold">關於我們</a>
             </li>
             <li class="menu-item">
-                <a href="#" class="menu-link text-white fw-bold">服務項目</a>
+                <a href="service.html" class="menu-link text-white fw-bold">服務項目</a>
             </li>
             <li class="menu-item">
-                <a href="#" class="menu-link text-white fw-bold">常見問題</a>
+                <a href="faq.html" class="menu-link text-white fw-bold">常見問題</a>
             </li>
             <li class="menu-item d-md-none">
                 <a href="login.html" class="menu-link text-white fw-bold">線上預約</a>

@@ -304,7 +304,7 @@ $secondary:     #FFF100;//$gray-600 !default; customer
 $secondary-l:   #FCF5F0;//customer
 $success:       #15c906;//$green !default; customer
 $info:          $cyan !default;
-$warning:       $yellow !default;
+$warning:       $yellow-100;//$yellow !default; customer
 $danger:        #dc4a38;//$red !default; customer
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
@@ -312,6 +312,7 @@ $black-80:      #525252;//customer
 $black-60:      #919191;//customer
 $black-40:      #D1D1D1;//customer
 $black-20:      #F2F2F2;//customer
+$beige:          #F8F6EE;//customer
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -329,7 +330,8 @@ $theme-colors: (
   "black-80":   $black-80, //customer
   "black-60":   $black-60,//customer
   "black-40":   $black-40,//customer
-  "black-20":   $black-20 //customer
+  "black-20":   $black-20, //customer
+  "beige":      $beige //customer  
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -427,6 +429,7 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  6: 64px, //customer
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -447,7 +450,7 @@ $position-values: (
 // Settings for the `<body>` element.
 
 $body-text-align:           null !default;
-$body-color:                $gray-900 !default;
+$body-color:                $black;//$gray-900 !default; customer
 $body-bg:                   $white !default;
 
 $body-secondary-color:      rgba($body-color, .75) !default;
@@ -463,7 +466,7 @@ $body-emphasis-color:       $black !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-decoration:                         none;//underline !default; customer
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -1374,7 +1377,7 @@ $accordion-padding-x:                     1.25rem !default;
 $accordion-color:                         var(--#{$prefix}body-color) !default;
 $accordion-bg:                            var(--#{$prefix}body-bg) !default;
 $accordion-border-width:                  var(--#{$prefix}border-width) !default;
-$accordion-border-color:                  var(--#{$prefix}border-color) !default;
+$accordion-border-color:                  none;//var(--#{$prefix}border-color) !default; customer
 $accordion-border-radius:                 var(--#{$prefix}border-radius) !default;
 $accordion-inner-border-radius:           subtract($accordion-border-radius, $accordion-border-width) !default;
 
@@ -1383,23 +1386,23 @@ $accordion-body-padding-x:                $accordion-padding-x !default;
 
 $accordion-button-padding-y:              $accordion-padding-y !default;
 $accordion-button-padding-x:              $accordion-padding-x !default;
-$accordion-button-color:                  var(--#{$prefix}body-color) !default;
+$accordion-button-color:                  $black;//var(--#{$prefix}body-color) !default; customer
 $accordion-button-bg:                     var(--#{$prefix}accordion-bg) !default;
 $accordion-transition:                    $btn-transition, border-radius .15s ease !default;
-$accordion-button-active-bg:              var(--#{$prefix}primary-bg-subtle) !default;
-$accordion-button-active-color:           var(--#{$prefix}primary-text-emphasis) !default;
+$accordion-button-active-bg:              none;//var(--#{$prefix}primary-bg-subtle) !default; customer
+$accordion-button-active-color:           $black;//var(--#{$prefix}primary-text-emphasis) !default; customer
 
-$accordion-button-focus-border-color:     $input-focus-border-color !default;
-$accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
+$accordion-button-focus-border-color:     none;//$input-focus-border-color !default; customer
+$accordion-button-focus-box-shadow:       none;//$btn-focus-box-shadow !default; customer
 
 $accordion-icon-width:                    1.25rem !default;
 $accordion-icon-color:                    $body-color !default;
 $accordion-icon-active-color:             $primary-text-emphasis !default;
 $accordion-icon-transition:               transform .2s ease-in-out !default;
-$accordion-icon-transform:                rotate(-180deg) !default;
+$accordion-icon-transform:                rotate(0deg); //rotate(-180deg) !default; customer
 
-$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
-$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default;
+$accordion-button-icon:         none;//url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default; customer
+$accordion-button-active-icon:  none;//url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !default; customer
 // scss-docs-end accordion-variables
 
 // Tooltips

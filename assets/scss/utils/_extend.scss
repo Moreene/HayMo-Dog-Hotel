@@ -10,3 +10,9 @@
         outline: 0;
     }
 }
+
+%animation{
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}

@@ -4,7 +4,7 @@
             <a href="index.html"><img src="../assets/images/Logo.png" alt="Logo" class="topbar-logo"></a>
             <!-- table-menu -->
             <div class="d-none d-md-block">
-                <ul class="table-menu d-flex ps-0 mb-0">
+                <ul class="table-menu d-flex">
                     <li class="menu-item">
                         <a href="memberCenter.html" class="menu-link position-relative <%- currentPage === 'memberCenter' ? 'active' : '' %>">會員中心</a>
                     </li>
@@ -12,11 +12,11 @@
                         <a href="#" class="menu-link position-relative">服務項目</a>
                     </li>
                     <li class="menu-item">
-                        <a href="reverse-dayCare.html" class="menu-link position-relative <%- currentPage === 'reserve-dayCare' || currentPage === 'reserve-cosmetic' || currentPage === 'reserve-stay' ? 'active' : '' %>">線上預約</a>
+                        <a href="reverse.html" class="menu-link position-relative <%- currentPage === 'reserve' ? 'active' : '' %>">線上預約</a>
                     </li>
                 </ul>
             </div>
-            <ul class="d-flex align-items-center ps-0 mb-0">
+            <ul class="d-flex align-items-center">
                 <li>
                     <a href="login.html" class="logOut-link d-flex align-items-center justify-content-center">
                         <p class="logOut-text mb-0">登出</p>
@@ -33,7 +33,7 @@
 
     <!-- mobile-menu -->
     <div class="d-block d-md-none mobile-menu">
-        <ul class="menu bg-primary d-flex flex-column position-fixed w-100 overflow-hidden ps-0 mb-0">
+        <ul class="menu bg-primary d-flex flex-column position-fixed w-100 overflow-hidden">
             <li class="menu-closedHam d-flex justify-content-end">
                 <div class="closedHam position-relative rounded-circle">
                     <div class="closedHam-line position-absolute d-block top-50 start-50 translate-middle"></div>
@@ -46,7 +46,7 @@
                 <a href="#" class="menu-link text-white fw-bold">服務項目</a>
             </li>
             <li class="menu-item">
-                <a href="reverse-dayCare.html" class="menu-link text-white fw-bold">線上預約</a>
+                <a href="reverse.html" class="menu-link text-white fw-bold">線上預約</a>
             </li>
             <li class="menu-item">
                 <a href="login.html" class="menu-link text-white fw-bold">登出</a>

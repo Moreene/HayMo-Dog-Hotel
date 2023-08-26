@@ -2,26 +2,24 @@
     <div class="row row-cols-1 row-cols-md-2 gy-4 gy-md-0">
         <div class="col">
             <div class="row">
-                <label for="datepicker" class="col-auto col-form-label me-2">日期</label>
-                <div class="col-8">
-                    <input type="text" id="datepicker" name="date"
-                        class="form-control py-1 px-4 rounded-pill w-lg-75 text-center" required>
-                    <div class="invalid-feedback">
-                        請選擇預約日期
-                    </div>
-                </div>
+                <label class="col-auto col-form-label"><span class="me-2">日期</span>
+                    <input type="text" name="date"
+                        class="form-control d-inline datepicker py-1 px-4 rounded-pill w-75 text-center" required>
+                        <div class="invalid-feedback w-50">
+                            請選擇預約日期
+                        </div>
+                </label>
             </div>
         </div>
         <div class="col">
             <div class="row">
-                <label for="timepicker" class="col-auto col-form-label me-2">時間</label>
-                <div class="col-8">
-                    <input type="text" id="timepicker" name="time"
-                        class="form-control timepicker py-1 px-4 rounded-pill w-lg-75 text-center" required>
-                    <div class="invalid-feedback">
+                <label class="col-auto col-form-label"><span class="me-2">時間</span>
+                    <input type="text" name="time"
+                        class="form-control d-inline timepicker py-1 px-4 rounded-pill w-75 text-center " required>
+                    <div class="invalid-feedback w-50">
                         請選擇預約時間
                     </div>
-                </div>
+                </label>
             </div>
         </div>
     </div>

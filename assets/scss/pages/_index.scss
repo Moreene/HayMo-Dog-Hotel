@@ -22,11 +22,7 @@
     // 設定carousel-inner高度
     // 讓caption的文字在手機板時可以定位在圖片下方
     &-inner {
-        height: 865px;
-
-        @include mobile {
-            height: 820px;
-        }
+        height: 820px;
 
         @include pc {
             height: 620px;
@@ -73,37 +69,25 @@
 .caption {
     // 第一頁輪播-文字定位
     left: 12px;
-    top: 88%;
+    bottom: -32%;
 
     @include pad {
         left: 6.5%;
     }
 
     @include pc {
-        top: 33%;
-    }
-
-    @include pc-lg {
-        top: 28%;
-        left: 6.5%;
+        top: 32%;
     }
 
     @media (min-width:1600px) {
-        top: 32%;
         left: 16.5%;
     }
 
     // 第二、三頁輪播-文字定位
     &.common {
-        top: 100%;
-
         @include pc {
             top: 48%;
             color: $white;
-        }
-
-        @include pc-lg {
-            top: 41%;
         }
 
         @media (min-width:1600px) {
@@ -114,6 +98,12 @@
     // banner文字
     &-slogan {
         font-size: 32px;
+
+        &-hide {
+            @media (max-width:374px) {
+                display: none;
+            }
+        }
 
         @include pc-lg {
             font-size: 40px;
@@ -231,7 +221,7 @@
 }
 
 /*-------------------------服務項目-------------------------*/
-.service {
+.serviceItem {
     @extend %section-mb;
     padding: 80px 0;
     position: relative;
