@@ -1,31 +1,18 @@
-footer {
-  position: relative;
-  padding: 120px 0 40px 0;
+footer::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: $primary;
+  border-top-right-radius: 120px;
 
-  @include pc-xl {
-    padding: 120px 0;
+  @include pad {
+    width: 85%;
+    border-top-right-radius: 160px;
   }
-
-  &::after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background-color: $primary;
-    border-top-right-radius: 120px;
-
-    @include pad {
-      width: 85%;
-      border-top-right-radius: 160px;
-    }
-  }
-}
-
-.slogan {
-  margin-bottom: 40px;
 }
 
 .slogan-text {
@@ -37,14 +24,10 @@ footer {
 }
 
 .footer-icon {
-  margin-bottom: 40px;
+  color: $white;
 
-  .icon {
-    color: $white;
-
-    &:hover {
-      color: $secondary;
-    }
+  &:hover {
+    color: $secondary;
   }
 }
 
@@ -96,6 +79,5 @@ footer {
   @include pc-lg {
     width: 180px;
     height: 180px;
-    margin-bottom: 0px;
   }
 }

@@ -1,68 +1,32 @@
 .reverse {
-    padding: 160px 0;
 
     input,
-    textarea {
+    textarea,
+    .form-select {
         @extend %input-style;
     }
 
-    &-option {
-        @include pad {
-            padding: 0 35px;
-        }
-
-        .option-link {
-            color: $primary;
-            background-color: $white;
-            cursor: pointer;
-
-            &:hover,
-            &:active,
-            &.active {
-                color: $white;
-                background-color: $primary;
-            }
-        }
+    &-btn:first-child:active {
+        color: $primary;
     }
+}
 
-    .form-check-input:checked~.option-link {
+.option-link {
+    color: $primary;
+    background-color: $white;
+    cursor: pointer;
+
+    &:hover,
+    &:active,
+    &.active {
         color: $white;
         background-color: $primary;
     }
+}
 
-    &-plan {
-        @include pad {
-            padding-left: 14px;
-        }
-    }
-
-    &-time {
-        padding-left: 25px;
-
-        @include pad {
-            padding-left: 35px;
-        }
-
-        .invalid-feedback {
-            margin-left: 50px;
-        }
-    }
-
-    &-info {
-        padding: 0 25px;
-
-        @include pad {
-            padding: 0 35px;
-        }
-    }
-
-    &-btn {
-        @include link-slide($white, $primary, $primary, $white);
-
-        &:first-child:active {
-            color: $primary;
-        }
-    }
+.form-check-input:checked~.option-link {
+    color: $white;
+    background-color: $primary;
 }
 
 .title-line::after {

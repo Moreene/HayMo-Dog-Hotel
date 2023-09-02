@@ -11,21 +11,17 @@
     margin-left: 280px;
     transition: margin-left .2s;
 
-    @include pc{
+    @include pc {
         width: calc(100vw - 280px);
     }
 }
 
-.sidebar {
-    height: 100vh;
+.sidebar-link {
+    color: $white;
 
-    &-link {
-        color: $white;
-
-        &:hover,
-        &:active,
-        &.active {
-            color: $secondary;
-        }
+    &:hover,
+    &:active,
+    &.active {
+        color: $secondary;
     }
 }

@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>嘿毛寵物旅館 | 會員中心</title>
     <link rel="icon" href="../assets/images/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
 </head>
 
 <body class="bg-secondary-l">
@@ -16,21 +15,18 @@
 
         <div class="member-center bg-repeat-no">
             <div class="container">
-                <div class="member-center-content">
-                    <h2 class="title-font text-center mt-lg-5 mb-5">會員中心</h2>
-                    <main class="col-lg-10 mx-auto">
+                <div class="py-160">
+                    <h2 class="title-font text-center mt-lg-48 mb-48">會員中心</h2>
+                    <div class="col-lg-10 mx-auto">
                         <!-- 基本資料 -->
-                        <h3 class="fw-bold mb-4"><i class="bi bi-cursor me-1"></i>基本資料</h3>
-                        <p class="d-flex mb-2"><i
-                                class="bi bi-brightness-high-fill text-danger me-2"></i>毛孩資訊非必填，若有完成資訊填寫，於線上預約時可自動帶入毛孩名字
+                        <h3 class="fw-bold mb-24"><i class="bi bi-cursor me-24"></i>基本資料</h3>
+                        <p class="d-flex mb-24"><i
+                                class="bi bi-brightness-high-fill text-danger me-8"></i>請先設定毛孩資訊，於線上預約時將可直接選擇毛孩姓名
                         </p>
-                        <p class="d-flex mb-4"><i
-                                class="bi bi-brightness-high-fill text-danger me-2"></i>若家裡有多位毛孩，毛孩資訊不需填寫，於線上預約時再填寫即可
-                        </p>
-                        <main class="row flex-md-row gy-4 center-mb">
+                        <main class="row flex-md-row gy-24 mb-90 mb-md-160">
                             <div class="col-md-6">
-                                <div class="card border-black py-4 py-xl-5 h-100">
-                                    <ul class="row flex-column align-items-center flex-xl-row gy-4 gy-xl-0">
+                                <div class="card border-black py-24 py-xl-48 h-100">
+                                    <ul class="row flex-column align-items-center flex-xl-row gy-24 gy-xl-0">
                                         <li class="col-md-6 col-xl-5">
                                             <div class="text-center">
                                                 <img src="../assets/images/member-img.png" alt="會員照片"
@@ -42,7 +38,7 @@
                                                 <p class="fs-4">會員資訊
                                                     <a href="#" data-bs-toggle="modal"
                                                         data-bs-target="#memberInfoModal"><i
-                                                            class="bi bi-pencil-square link-primary fs-4 ms-1"></i></a>
+                                                            class="bi bi-pencil-square link-primary fs-4 ms-4"></i></a>
                                                 </p>
                                                 <p>姓名：Moreene</p>
                                                 <p>手機：0987-878787</p>
@@ -54,25 +50,62 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="card border-black py-4 py-xl-5 h-100">
-                                    <ul class="row flex-column align-items-center flex-xl-row gy-4 gy-xl-0">
-                                        <li class="col-md-5">
-                                            <div class="text-center">
-                                                <img src="../assets/images/pet-img.png" alt="狗狗照片"
-                                                    class="member-img img-fluid rounded-circle border border-black-60">
+                                <!-- swiper -->
+                                <div class="swiper dogInfoSwiper h-100">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide card border-black py-24 py-xl-48 h-100">
+                                            <ul class="row flex-column align-items-center flex-xl-row gy-24 gy-xl-0">
+                                                <li class="col-md-5">
+                                                    <div class="text-center">
+                                                        <img src="../assets/images/zhaMao.jpg" alt="狗狗照片"
+                                                            class="member-img img-fluid rounded-circle border border-black-60">
+                                                    </div>
+                                                </li>
+                                                <li class="col-auto">
+                                                    <p class="fs-4">毛孩資訊
+                                                        <a href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#petInfoModal1"><i
+                                                                class="bi bi-pencil-square link-primary fs-4 ms-4"></i></a>
+                                                    </p>
+                                                    <p>姓名：炸毛</p>
+                                                    <p>品種：聖伯納犬</p>
+                                                    <p>年紀：2歲</p>
+                                                    <p>性別：公</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="swiper-slide card border-black py-24 py-xl-48 h-100">
+                                            <ul class="row flex-column align-items-center flex-xl-row gy-24 gy-xl-0">
+                                                <li class="col-md-5">
+                                                    <div class="text-center">
+                                                        <img src="../assets/images/mimi.jpeg" alt="狗狗照片"
+                                                            class="member-img img-fluid rounded-circle border border-black-60">
+                                                    </div>
+                                                </li>
+                                                <li class="col-auto">
+                                                    <p class="fs-4">毛孩資訊
+                                                        <a href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#petInfoModal2"><i
+                                                                class="bi bi-pencil-square link-primary fs-4 ms-4"></i></a>
+                                                    </p>
+                                                    <p>姓名：米米</p>
+                                                    <p>品種：米克斯</p>
+                                                    <p>年紀：3歲</p>
+                                                    <p>性別：母</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div
+                                            class="swiper-slide card border-black py-24 py-xl-48 d-flex justify-content-center align-items-center h-100">
+                                            <div class="text-center h-lg-100">
+                                                <h4 class="mb-48">增加毛孩資訊卡</h4>
+                                                <a href="#" class="stretched-link" data-bs-toggle="modal"
+                                                    data-bs-target="#petInfoModal3"><i
+                                                        class="bi bi-plus-lg display-1"></i></a>
                                             </div>
-                                        </li>
-                                        <li class="col-auto">
-                                            <p class="fs-4">毛孩資訊
-                                                <a href="#" data-bs-toggle="modal" data-bs-target="#petInfoModal"><i
-                                                        class="bi bi-pencil-square link-primary fs-4 ms-1"></i></a>
-                                            </p>
-                                            <p>姓名：大頭</p>
-                                            <p>品種：米克斯</p>
-                                            <p>年紀：7歲</p>
-                                            <p class="mb-0">性別：公</p>
-                                        </li>
-                                    </ul>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
                                 </div>
                             </div>
                         </main>
@@ -82,7 +115,7 @@
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="memberInfoModal">會員資訊 - 設定
+                                        <h5 class="modal-title" id="memberInfoModal">會員資訊 - 編輯
                                         </h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
@@ -91,9 +124,9 @@
                                         <div class="row flex-column align-items-center">
                                             <div class="col-4">
                                                 <div
-                                                    class="text-center mb-3 img-modify position-relative rounded-circle overflow-hidden">
+                                                    class="text-center mb-16 img-modify position-relative rounded-circle overflow-hidden">
                                                     <img src="../assets/images/member-img.png" alt="會員照片"
-                                                        class="img-fluid">
+                                                        class="img-fluid member-modal-img">
                                                     <div class="cam-bg position-absolute w-100">
                                                         <i class="bi bi-camera fs-5 text-white"></i>
                                                     </div>
@@ -110,20 +143,20 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary px-4">編輯</button>
+                                        <button type="button" class="btn btn-secondary px-24">編輯</button>
                                         <button type="button"
-                                            class="btn btn-primary px-4 text-white info-store">儲存</button>
+                                            class="btn btn-primary px-24 text-white info-store">儲存</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- 毛孩資訊modal -->
-                        <div class="modal fade" id="petInfoModal" tabindex="-1" aria-labelledby="petInfoModal"
+                        <!-- 毛孩資訊modal-1 -->
+                        <div class="modal fade" id="petInfoModal1" tabindex="-1" aria-labelledby="petInfoModal1"
                             aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="petInfoModal">毛孩資訊 - 設定</h5>
+                                        <h5 class="modal-title" id="petInfoModal1">毛孩資訊 - 編輯</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
@@ -131,45 +164,121 @@
                                         <div class="row flex-column align-items-center">
                                             <div class="col-4">
                                                 <div
-                                                    class="text-center mb-3 img-modify position-relative rounded-circle overflow-hidden">
-                                                    <img src="../assets/images/pet-img.png" alt="狗狗照片"
-                                                        class="img-fluid rounded-circle border border-black-60">
+                                                    class="text-center mb-16 img-modify position-relative rounded-circle overflow-hidden">
+                                                    <img src="../assets/images/zhaMao.jpg" alt="狗狗照片"
+                                                        class="img-fluid member-modal-img rounded-circle border border-black-60">
                                                     <div class="cam-bg position-absolute w-100">
                                                         <i class="bi bi-camera fs-5 text-white"></i>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-auto mx-auto">
-                                                <p>姓名：大頭</p>
-                                                <p>品種：米克斯</p>
-                                                <p>年紀：7歲</p>
+                                                <p>姓名：炸毛</p>
+                                                <p>品種：聖伯納犬</p>
+                                                <p>年紀：2歲</p>
                                                 <p class="mb-0">性別：公</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary px-4">編輯</button>
+                                        <button type="button" class="btn btn-secondary px-24">編輯</button>
                                         <button type="button"
-                                            class="btn btn-primary px-4 text-white info-store">儲存</button>
+                                            class="btn btn-primary px-24 text-white info-store">儲存</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 毛孩資訊modal-2 -->
+                        <div class="modal fade" id="petInfoModal2" tabindex="-1" aria-labelledby="petInfoModal2"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="petInfoModal2">毛孩資訊 - 編輯</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row flex-column align-items-center">
+                                            <div class="col-4">
+                                                <div
+                                                    class="text-center mb-16 img-modify position-relative rounded-circle overflow-hidden">
+                                                    <img src="../assets/images/mimi.jpeg" alt="狗狗照片"
+                                                        class="img-fluid member-modal-img rounded-circle border border-black-60">
+                                                    <div class="cam-bg position-absolute w-100">
+                                                        <i class="bi bi-camera fs-5 text-white"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto mx-auto">
+                                                <p>姓名：米米</p>
+                                                <p>品種：米克斯</p>
+                                                <p>年紀：3歲</p>
+                                                <p class="mb-0">性別：母</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary px-24">編輯</button>
+                                        <button type="button"
+                                            class="btn btn-primary px-24 text-white info-store">儲存</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 毛孩資訊modal-3 -->
+                        <div class="modal fade" id="petInfoModal3" tabindex="-1" aria-labelledby="petInfoModal3"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="petInfoModal3">毛孩資訊 - 編輯</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row flex-column align-items-center">
+                                            <div class="col-4">
+                                                <div
+                                                    class="text-center mb-16 img-modify position-relative rounded-circle overflow-hidden">
+                                                    <img src="../assets/images/member-img.png" alt="狗狗空白照片"
+                                                        class="img-fluid member-modal-img">
+                                                    <div class="cam-bg position-absolute w-100">
+                                                        <i class="bi bi-camera fs-5 text-white"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto mx-auto">
+                                                <p>姓名：</p>
+                                                <p>品種：</p>
+                                                <p>年紀：</p>
+                                                <p class="mb-0">性別：</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary px-24">編輯</button>
+                                        <button type="button"
+                                            class="btn btn-primary px-24 text-white info-store">儲存</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- 預約紀錄 -->
-                        <h3 class="fw-bold mb-4"><i class="bi bi-cursor me-1"></i>您的預約</h3>
-                        <p class="d-flex mb-2"><i
-                                class="bi bi-brightness-high-fill text-danger me-2"></i>若要修改預約日期，最慢請於原預約日的前三日修改</p>
-                        <p class="d-flex mb-2"><i
-                                class="bi bi-brightness-high-fill text-danger me-2"></i>若要取消訂單，最慢請於原預約日的前五日來電或用通訊軟體告知，並附上訂單編號
+                        <h3 class="fw-bold mb-24"><i class="bi bi-cursor me-1"></i>您的預約</h3>
+                        <p class="d-flex mb-8"><i
+                                class="bi bi-brightness-high-fill text-danger me-8"></i>若要修改預約日期，最慢請於原預約日的前三日修改</p>
+                        <p class="d-flex mb-8"><i
+                                class="bi bi-brightness-high-fill text-danger me-8"></i>若要取消訂單，最慢請於原預約日的前五日來電或用通訊軟體告知，並附上訂單編號
                         </p>
-                        <p class="d-flex mb-4"><i
-                                class="bi bi-brightness-high-fill text-danger me-2"></i>若超過三次無法赴約卻未事先取消，嘿毛有權利拒絕您往後任何方式的預約
+                        <p class="d-flex mb-24"><i
+                                class="bi bi-brightness-high-fill text-danger me-8"></i>若超過三次無法赴約卻未事先取消，嘿毛有權利拒絕您往後任何方式的預約
                         </p>
-                        <label class="mb-4">
-                            <input type="month" class="rounded-pill p-2">
+                        <label class="mb-24">
+                            <input type="month" class="rounded-pill p-8">
                         </label>
-                        <section class="center-mb">
+                        <section class="mb-90 mb-md-160">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active fs-5 border-bottom-0" id="dayCare-tab"
@@ -193,7 +302,6 @@
                                                 <tr>
                                                     <th scope="col">訂單編號</th>
                                                     <th scope="col">毛孩姓名</th>
-                                                    <th scope="col">毛孩數量</th>
                                                     <th scope="col">安親日期</th>
                                                     <th scope="col">樂園服務</th>
                                                     <th scope="col">緊急聯絡人</th>
@@ -206,8 +314,7 @@
                                                         <a href="#" data-bs-toggle="modal"
                                                             data-bs-target="#order1Modal">Z010790</a>
                                                     </th>
-                                                    <td>大頭</td>
-                                                    <td>1</td>
+                                                    <td>炸毛</td>
                                                     <td>2023/9/25</td>
                                                     <td>否</td>
                                                     <td>Moreene</td>
@@ -218,8 +325,7 @@
                                                         <a href="#" data-bs-toggle="modal"
                                                             data-bs-target="#order2Modal">Z010814</a>
                                                     </th>
-                                                    <td>大頭</td>
-                                                    <td>1</td>
+                                                    <td>米米</td>
                                                     <td>2023/10/10</td>
                                                     <td>是</td>
                                                     <td>Moreene</td>
@@ -239,17 +345,19 @@
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body mx-auto fw-normal">
-                                                <div class="col-auto text-start">
-                                                    <p>毛孩姓名：大頭</p>
-                                                    <p>毛孩數量：1</p>
-                                                    <p>安親日期：2023/9/25</p>
-                                                    <p>安親時間：9:30</p>
-                                                    <p>樂園服務：否</p>
-                                                    <p>緊急聯絡人：Moreene</p>
-                                                    <p>聯絡電話：0987-878787</p>
-                                                    <p>預計金額：NT$900</p>
-                                                </div>
+                                            <div class="modal-body py-24">
+                                                <ul class="d-md-flex justify-content-md-around">
+                                                    <li class="mb-16 mb-md-0">
+                                                        <p>毛孩姓名：炸毛</p>
+                                                        <p>安親日期：2023/9/25</p>
+                                                        <p>安親時間：9:30</p>
+                                                        <p class="mb-0">樂園服務：否</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>緊急聯絡人：Moreene</p>
+                                                        <p class="mb-0">聯絡電話：0987-878787</p>
+                                                    </li>
+                                                </ul>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary w-25">編輯</button>
@@ -269,17 +377,19 @@
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                     aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body mx-auto fw-normal">
-                                                <div class="col-auto text-start">
-                                                    <p>毛孩姓名：大頭</p>
-                                                    <p>毛孩數量：1</p>
-                                                    <p>安親日期：2023/10/10</p>
-                                                    <p>安親時間：12:00</p>
-                                                    <p>樂園服務：是</p>
-                                                    <p>緊急聯絡人：Moreene</p>
-                                                    <p>聯絡電話：0987-878787</p>
-                                                    <p>預計金額：NT$1,100</p>
-                                                </div>
+                                            <div class="modal-body py-24">
+                                                <ul class="d-md-flex justify-content-md-around">
+                                                    <li class="mb-16 mb-md-0">
+                                                        <p>毛孩姓名：米米</p>
+                                                        <p>安親日期：2023/10/10</p>
+                                                        <p>安親時間：12:00</p>
+                                                        <p class="mb-0">樂園服務：是</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>緊急聯絡人：Moreene</p>
+                                                        <p class="mb-0">聯絡電話：0987-878787</p>
+                                                    </li>
+                                                </ul>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary w-25">編輯</button>
@@ -296,7 +406,6 @@
                                                 <tr>
                                                     <th scope="col">訂單編號</th>
                                                     <th scope="col">毛孩姓名</th>
-                                                    <th scope="col">毛孩數量</th>
                                                     <th scope="col">美容日期</th>
                                                     <th scope="col">樂園服務</th>
                                                     <th scope="col">緊急聯絡人</th>
@@ -318,7 +427,6 @@
                                                 <tr>
                                                     <th scope="col">訂單編號</th>
                                                     <th scope="col">毛孩姓名</th>
-                                                    <th scope="col">毛孩數量</th>
                                                     <th scope="col">住宿日期</th>
                                                     <th scope="col">樂園服務</th>
                                                     <th scope="col">緊急聯絡人</th>
@@ -337,9 +445,9 @@
                         </section>
 
                         <!-- 歷史紀錄 -->
-                        <h3 class="fw-bold mb-4"><i class="bi bi-cursor me-1"></i>歷史記錄</h3>
-                        <label class="mb-4">
-                            <input type="month" class="rounded-pill p-2">
+                        <h3 class="fw-bold mb-24"><i class="bi bi-cursor me-1"></i>歷史記錄</h3>
+                        <label class="mb-24">
+                            <input type="month" class="rounded-pill p-8">
                         </label>
                         <section>
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -368,7 +476,6 @@
                                                 <tr>
                                                     <th scope="col">訂單編號</th>
                                                     <th scope="col">毛孩姓名</th>
-                                                    <th scope="col">毛孩數量</th>
                                                     <th scope="col">安親日期</th>
                                                     <th scope="col">樂園服務</th>
                                                     <th scope="col">緊急聯絡人</th>
@@ -378,8 +485,7 @@
                                             <tbody class="text-center">
                                                 <tr>
                                                     <th scope="row">Z008192</th>
-                                                    <td>大頭</td>
-                                                    <td>1</td>
+                                                    <td>炸毛</td>
                                                     <td>2023/1/24</td>
                                                     <td>是</td>
                                                     <td>Moreene</td>
@@ -387,8 +493,7 @@
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">Z008305</th>
-                                                    <td>大頭</td>
-                                                    <td>1</td>
+                                                    <td>炸毛</td>
                                                     <td>2023/2/15</td>
                                                     <td>是</td>
                                                     <td>Moreene</td>
@@ -396,8 +501,7 @@
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">Z008411</th>
-                                                    <td>大頭</td>
-                                                    <td>1</td>
+                                                    <td>米米</td>
                                                     <td>2023/3/24</td>
                                                     <td>否</td>
                                                     <td>Kevin</td>
@@ -405,8 +509,7 @@
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">Z008496</th>
-                                                    <td>大頭</td>
-                                                    <td>1</td>
+                                                    <td>炸毛</td>
                                                     <td>2023/4/04</td>
                                                     <td>否</td>
                                                     <td>Moreene</td>
@@ -414,8 +517,7 @@
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">Z008621</th>
-                                                    <td>大頭</td>
-                                                    <td>1</td>
+                                                    <td>炸毛</td>
                                                     <td>2023/5/30</td>
                                                     <td>否</td>
                                                     <td>Kevin</td>
@@ -423,8 +525,7 @@
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">Z08788</th>
-                                                    <td>大頭</td>
-                                                    <td>1</td>
+                                                    <td>米米</td>
                                                     <td>2023/6/08</td>
                                                     <td>是</td>
                                                     <td>Kevin</td>
@@ -442,7 +543,6 @@
                                                 <tr>
                                                     <th scope="col">訂單編號</th>
                                                     <th scope="col">毛孩姓名</th>
-                                                    <th scope="col">毛孩數量</th>
                                                     <th scope="col">美容日期</th>
                                                     <th scope="col">樂園服務</th>
                                                     <th scope="col">緊急聯絡人</th>
@@ -452,8 +552,7 @@
                                             <tbody class="text-center">
                                                 <tr>
                                                     <th scope="row">Z008362</th>
-                                                    <td>大頭</td>
-                                                    <td>1</td>
+                                                    <td>炸毛</td>
                                                     <td>2023/3/15</td>
                                                     <td>否</td>
                                                     <td>Moreene</td>
@@ -461,8 +560,7 @@
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">Z008551</th>
-                                                    <td>大頭</td>
-                                                    <td>1</td>
+                                                    <td>炸毛</td>
                                                     <td>2023/4/22</td>
                                                     <td>否</td>
                                                     <td>Moreene</td>
@@ -470,8 +568,7 @@
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">Z008574</th>
-                                                    <td>大頭</td>
-                                                    <td>1</td>
+                                                    <td>炸毛</td>
                                                     <td>2023/5/18</td>
                                                     <td>否</td>
                                                     <td>Kevin</td>
@@ -489,7 +586,6 @@
                                                 <tr>
                                                     <th scope="col">訂單編號</th>
                                                     <th scope="col">毛孩姓名</th>
-                                                    <th scope="col">毛孩數量</th>
                                                     <th scope="col">住宿日期</th>
                                                     <th scope="col">樂園服務</th>
                                                     <th scope="col">緊急聯絡人</th>
@@ -499,8 +595,7 @@
                                             <tbody class="text-center">
                                                 <tr>
                                                     <th scope="row">Z008205</th>
-                                                    <td>大頭</td>
-                                                    <td>1</td>
+                                                    <td>炸毛</td>
                                                     <td>2023/1/31</td>
                                                     <td>是</td>
                                                     <td>Moreene</td>
@@ -508,8 +603,7 @@
                                                 </tr>
                                                 <tr>
                                                     <th scope="row">Z008344</th>
-                                                    <td>大頭</td>
-                                                    <td>1</td>
+                                                    <td>米米</td>
                                                     <td>2023/2/27</td>
                                                     <td>是</td>
                                                     <td>Moreene</td>
@@ -521,17 +615,15 @@
                                 </div>
                             </div>
                         </section>
-                    </main>
+                    </div>
                 </div>
             </div>
         </div>
 
         <%- include('./layout/footer'); -%>
 
-            <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-            <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-            <script type="module" src="../main.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script type="module" src="../main.js"></script>
             <script>
                 const hamBtn = document.querySelector(".ham");
                 const mobileMenu = document.querySelector(".mobile-menu .menu");

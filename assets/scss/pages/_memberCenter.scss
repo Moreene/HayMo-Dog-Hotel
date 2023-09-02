@@ -1,33 +1,31 @@
-.center-mb {
-    margin-bottom: 90px;
-
-    @include pad {
-        margin-bottom: 160px;
-    }
-}
-
 .member-center {
     @include pc-lg {
         background-image: url("../images/paw-right.png");
         background-position: 95% 25%;
     }
 
-    &-content {
-        padding: 160px 0;
-
-        input {
-            @extend %input-style;
-        }
+    input {
+        @extend %input-style;
     }
 }
 
-.member-img {
-    width: 120px;
-    height: 120px;
+.member {
+    &-img {
+        width: 120px;
+        height: 120px;
 
-    @include pc {
-        width: 150px;
-        height: 150px;
+        @include pc {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    &-modal-img {
+        height: 92px;
+
+        @include pad {
+            height: 139px;
+        }
     }
 }
 

@@ -1,31 +1,62 @@
 // breakpoint
-@mixin mobile{
+@mixin mobile {
     @media (min-width:375px) {
         @content;
     }
 }
 
-@mixin pad{
+@mixin pad {
     @media (min-width:768px) {
         @content;
     }
 }
 
-@mixin pc{
+@mixin pc {
     @media (min-width:992px) {
         @content;
     }
 }
 
-@mixin pc-lg{
+@mixin pc-lg {
     @media (min-width:1200px) {
         @content;
     }
 }
 
-@mixin pc-xl{
+@mixin pc-xl {
     @media (min-width:1400px) {
         @content;
+    }
+}
+
+// topbar circle link
+@mixin link-circle($py, $px) {
+    padding: $py $px;
+    border: 2px solid $primary-l;
+    border-radius: 50rem;
+
+    &-txt {
+        color: $primary;
+    }
+
+    &:hover,
+    &.active {
+        border: 2px solid $primary;
+        background-color: $primary ;
+
+        .link-circle-txt {
+            color: $white;
+        }
+    }
+
+    @include mobile {
+        margin-right: 8px;
+    }
+
+    @include pad {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
     }
 }
 

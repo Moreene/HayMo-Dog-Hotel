@@ -212,7 +212,7 @@ $utilities: map-merge(
         40: 40%,//customer
         45: 45%,//customer
         50: 50%,
-        65: 60%,//customer
+        62: 62%,//customer
         75: 75%,
         100: 100%,
         auto: auto
@@ -235,6 +235,7 @@ $utilities: map-merge(
     ),
     "height": (
       property: height,
+      responsive:true,// customer
       class: h,
       values: (
         25: 25%,

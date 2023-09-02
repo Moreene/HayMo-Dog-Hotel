@@ -19,6 +19,7 @@
         }
 
         .nav-link {
+
             &:hover,
             &:active,
             &.active {
@@ -31,7 +32,7 @@
                     left: 50%;
                     width: 100px;
                     height: 40px;
-                    border: 1px solid $primary;
+                    border: 2px solid $primary;
                     border-radius: 50%;
                     transform: translate(-50%, -50%) rotate(-45deg);
                     z-index: -1;
@@ -41,20 +42,16 @@
     }
 
     .card:hover {
-        .title {
-            z-index: 1;
-
-            &::before {
-                position: absolute;
-                content: '';
-                width: 25px;
-                height: 25px;
-                background-color: $secondary;
-                border-radius: 50%;
-                top: 0;
-                left: -15px;
-                z-index: -1;
-            }
+        .title::before {
+            position: absolute;
+            content: '';
+            width: 25px;
+            height: 25px;
+            background-color: $secondary;
+            border-radius: 50%;
+            top: 0;
+            left: -15px;
+            z-index: -1;
         }
     }
 }
@@ -105,14 +102,5 @@
 
     @include pc {
         height: 400px;
-    }
-}
-
-.swiper-btn {
-    color: $white;
-
-    &::before,
-    &::after {
-        font-size: 28px;
     }
 }

@@ -20,6 +20,7 @@
     "gh-pages": "^5.0.0",
     "glob": "^10.2.2",
     "sass-loader": "^13.2.2",
+    "swiper": "^10.2.0",
     "vite-plugin-live-reload": "^3.0.2"
   }
 }

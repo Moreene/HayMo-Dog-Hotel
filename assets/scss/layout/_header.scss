@@ -1,164 +1,16 @@
-body {
-  overflow-y: auto;
-}
-
-.topbar {
-  width: 94%;
-  background-color: rgba($color: $white, $alpha: 0.8);
-  top: 16px;
-  padding: 8px 30px;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter:blur(10px);
-  z-index: 3;
-
-  @include mobile {
-    padding: 8px 40px;
-  }
-
-  @include pad {
-    top: 20px;
-    padding: 20px 40px;
-  }
-
-  &-logo {
-    width: 64px;
-    height: 64px;
-
-    @include pad {
-      width: 80px;
-      height: 80px;
-    }
-  }
-}
-
-// table-menu樣式
-.menu-item:not(:last-child) {
-  margin-right: 32px;
-}
-
-@include pad {
-  .menu-link {
-    color: $black-80;
-
-    &::after {
-      position: absolute;
-      content: "";
-      display: block;
-      bottom: -16px;
-      left: 50%;
-      transform: translatex(-50%);
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: transparent;
-    }
-
-    &:hover {
-      color: $primary;
-
-      &::after {
-        background-color: $primary;
-      }
-    }
-
-    &.active {
-      color: $primary;
-
-      &::after {
-        position: absolute;
-        content: "";
-        display: block;
-        bottom: -16px;
-        left: 50%;
-        transform: translatex(-50%);
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: $primary;
-      }
-    }
-  }
-}
-
-
 // 線上預約<a>樣式
 .login-link {
-  padding: 5px 6px;
-  border: 2px solid $primary-l;
-  border-radius: 50rem;
-
-  &-text {
-    color: $primary;
-  }
-
-  &:hover {
-    border: 2px solid $primary;
-    background-color: $primary ;
-
-    .login-link-text {
-      color: $white;
-    }
-  }
-
-  &.active {
-    border: 2px solid $primary;
-    background-color: $primary ;
-
-    .login-link-text {
-      color: $white;
-    }
-  }
+  @include link-circle(5px, 6px);
 
   @include mobile {
     padding: 8px 12px;
-    margin-right: 8px;
-  }
-
-  @include pad {
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-  }
-}
-
-// 漢堡樣式
-.ham {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  z-index: 2;
-
-  &-line,
-  &-line::before,
-  &-line::after {
-    position: absolute;
-    content: "";
-    width: 18px;
-    height: 2px;
-    background-color: $black;
-  }
-
-  &-line {
-    &::before {
-      top: -6px;
-    }
-
-    &::after {
-      top: 6px;
-    }
   }
 }
 
 // mobile-menu樣式
 @media (max-width: 767px) {
   .menu {
-    top: 0;
-    left: 0;
     height: 0;
-  }
-
-  .menu-item:not(:last-child) {
-    margin-bottom: 32px;
   }
 
   .menu-link {
@@ -166,54 +18,10 @@ body {
   }
 }
 
-// 漢堡關閉樣式
-.menu-closedHam {
-  padding: 16px 12px 0 0;
-}
-
-.closedHam {
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  background-color: rgba($color: #fff, $alpha: 0.7);
-
-  &-line,
-  &-line::before,
-  &-line::after {
-    position: absolute;
-    content: "";
-    width: 12px;
-    height: 2px;
-    background-color: $black;
-  }
-
-  &-line {
-    background-color: transparent;
-
-    &::before {
-      top: 0;
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      top: 0;
-      transform: rotate(-45deg);
-    }
-  }
-}
-
 // 768px以下 - menu透過js點擊展開
 .menu.open {
   height: 100%;
-  z-index: 5;
-
-  .menu-item {
-    margin-left: 12px;
-
-    &:nth-child(2) {
-      margin-top: 24px;
-    }
-  }
+  z-index: 3;
 
   .menu-link {
     line-height: 1.2;

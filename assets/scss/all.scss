@@ -62,6 +62,13 @@
 @import './utils/mixin';
 @import './utils/extend';
 @import './utils/helpers';
+@import './components/topbar';
+@import './components/topbar-menu';
+@import './components/ham';
+@import './components/ham-closed';
+@import './components/btn-link-slide';
+@import './components/carousel-link';
+@import './components/swiper';
 @import './layout/header';
 @import './layout/footer';
 @import './layout/memberCenter-header';
@@ -78,3 +85,4 @@
 @import './pages/cms-room';
 @import './pages/service';
 @import './pages/faq';
+@import './pages/article';
