@@ -1185,7 +1185,8 @@ $zindex-levels: (
   3: 3,
   4: 4, // customer
   5: 5, // customer
-  6: 6 // customer
+  6: 6, // customer
+  99: 99 // customer
 ) !default;
 // scss-docs-end zindex-levels-map
 
@@ -1339,7 +1340,7 @@ $pagination-bg:                     var(--#{$prefix}body-bg) !default;
 $pagination-border-radius:          0;//var(--#{$prefix}border-radius) !default; customer
 $pagination-border-width:           var(--#{$prefix}border-width) !default;
 $pagination-margin-start:           calc(#{$pagination-border-width} * -1) !default; // stylelint-disable-line function-disallowed-list
-$pagination-border-color:           $black-40;//var(--#{$prefix}border-color) !default; customer
+$pagination-border-color:           none;//var(--#{$prefix}border-color) !default; customer
 
 $pagination-focus-color:            var(--#{$prefix}link-hover-color) !default;
 $pagination-focus-bg:               var(--#{$prefix}secondary-bg) !default;

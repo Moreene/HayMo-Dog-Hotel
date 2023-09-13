@@ -1,12 +1,24 @@
-.cms-btn{
-    color: $dark;
+.order {
+    .checkbox {
+        width: 18px;
+        height: 18px;
+    }
 
-    &:hover{
-        color: $primary;
+    .nav-link:hover {
+        color: $white;
+        background-color: $primary;
+    }
+
+    input,
+    textarea {
+        @extend %input-style;
     }
 }
 
-.checkbox{
-    width: 18px;
-    height: 18px;
+.cms-btn {
+    color: $dark;
+
+    &:hover {
+        color: $primary;
+    }
 }
