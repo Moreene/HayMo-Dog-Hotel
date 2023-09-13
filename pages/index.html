@@ -12,7 +12,7 @@
 <body>
 
   <%- include('./layout/header', { currentPage: 'index' }); -%>
-  
+
     <%- include('./layout/to-top-btn'); -%>
 
       <!-- Banner -->
@@ -245,6 +245,20 @@
           integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script type="module" src="../main.js"></script>
         <script>
+          // 漢堡選單
+          const hamBtn = document.querySelector(".ham");
+          const mobileMenu = document.querySelector(".mobile-menu .menu");
+          const hamCloseBtn = document.querySelector(".closedHam");
+          const body = document.body;
+
+          function toggleMenu() {
+            mobileMenu.classList.toggle('open');
+            body.classList.toggle('hidden-y');
+          };
+
+          hamBtn.addEventListener('click', toggleMenu);
+          hamCloseBtn.addEventListener("click", toggleMenu);
+
           // back to top
           $(function () {
             $(function () {
@@ -262,20 +276,6 @@
               });
             });
           });
-
-          // 漢堡選單
-          const hamBtn = document.querySelector(".ham");
-          const mobileMenu = document.querySelector(".mobile-menu .menu");
-          const hamCloseBtn = document.querySelector(".closedHam");
-          const body = document.body;
-
-          function toggleMenu() {
-            mobileMenu.classList.toggle('open');
-            body.classList.toggle('hidden-y');
-          };
-
-          hamBtn.addEventListener('click', toggleMenu);
-          hamCloseBtn.addEventListener("click", toggleMenu);
         </script>
 </body>
 
