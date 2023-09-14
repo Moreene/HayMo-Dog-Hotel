@@ -8,7 +8,9 @@
         color: $white;
         background-color: $primary;
     }
+}
 
+.blacklist {
     input,
     textarea {
         @extend %input-style;
